@@ -1,0 +1,5007 @@
+[
+ {
+  "en": "a bid to do sth.",
+  "zh": "试图做某事 / 努力做某事",
+  "group": "Part 01",
+  "ipa": "/ˈeɪ/ /bˈɪd/ /tˈuː/ /ˈdu/",
+  "audio": "audio/a_bid_to_do_sth.mp3"
+ },
+ {
+  "en": "above all",
+  "zh": "首先；尤其是",
+  "group": "Part 01",
+  "ipa": "/əbˈʌv/ /ˈɔːl/",
+  "audio": "audio/above_all.mp3"
+ },
+ {
+  "en": "act out",
+  "zh": "表演出来；付诸行动",
+  "group": "Part 01",
+  "ipa": "/ˈækt/ /ˈaʊt/",
+  "audio": "audio/act_out.mp3"
+ },
+ {
+  "en": "after all",
+  "zh": "毕竟；终究",
+  "group": "Part 01",
+  "ipa": "/ˈɑːftə/ /ˈɔːl/",
+  "audio": "audio/after_all.mp3"
+ },
+ {
+  "en": "aim at",
+  "zh": "瞄准；旨在",
+  "group": "Part 01",
+  "ipa": "/ˈeɪm/ /ˈæt/",
+  "audio": "audio/aim_at.mp3"
+ },
+ {
+  "en": "all but",
+  "zh": "几乎；除...之外都",
+  "group": "Part 01",
+  "ipa": "/ˈɔːl/ /bˈʌt/",
+  "audio": "audio/all_but.mp3"
+ },
+ {
+  "en": "as well as",
+  "zh": "也；和...一样",
+  "group": "Part 01",
+  "ipa": "/ˈæz/ /wˈɛl/ /ˈæz/",
+  "audio": "audio/as_well_as.mp3"
+ },
+ {
+  "en": "at a time",
+  "zh": "一次；每次",
+  "group": "Part 01",
+  "ipa": "/ˈæt/ /ˈeɪ/ /tˈaɪm/",
+  "audio": "audio/at_a_time.mp3"
+ },
+ {
+  "en": "at heart",
+  "zh": "内心里；本质上",
+  "group": "Part 01",
+  "ipa": "/ˈæt/ /hˈɑːt/",
+  "audio": "audio/at_heart.mp3"
+ },
+ {
+  "en": "at home",
+  "zh": "在家；自在",
+  "group": "Part 01",
+  "ipa": "/ˈæt/ /hˈəʊm/",
+  "audio": "audio/at_home.mp3"
+ },
+ {
+  "en": "at the moment",
+  "zh": "此刻；目前",
+  "group": "Part 01",
+  "ipa": "/ˈæt/ /ðə/ /mˈəʊmənt/",
+  "audio": "audio/at_the_moment.mp3"
+ },
+ {
+  "en": "at the same time",
+  "zh": "同时；然而",
+  "group": "Part 01",
+  "ipa": "/ˈæt/ /ðə/ /sˈeɪm/ /tˈaɪm/",
+  "audio": "audio/at_the_same_time.mp3"
+ },
+ {
+  "en": "at work",
+  "zh": "在工作；在起作用",
+  "group": "Part 01",
+  "ipa": "/ˈæt/ /wˈɜːk/",
+  "audio": "audio/at_work.mp3"
+ },
+ {
+  "en": "all in all",
+  "zh": "总的来说",
+  "group": "Part 01",
+  "ipa": "/ˈɔːl/ /ˈɪn/ /ˈɔːl/",
+  "audio": "audio/all_in_all.mp3"
+ },
+ {
+  "en": "all manner of",
+  "zh": "各种各样的",
+  "group": "Part 01",
+  "ipa": "/ˈɔːl/ /mˈænə/ /ˈɒv/",
+  "audio": "audio/all_manner_of.mp3"
+ },
+ {
+  "en": "all over",
+  "zh": "到处；遍及",
+  "group": "Part 01",
+  "ipa": "/ˈɔːl/ /ˈəʊvə/",
+  "audio": "audio/all_over.mp3"
+ },
+ {
+  "en": "all the time",
+  "zh": "一直；始终",
+  "group": "Part 01",
+  "ipa": "/ˈɔːl/ /ðə/ /tˈaɪm/",
+  "audio": "audio/all_the_time.mp3"
+ },
+ {
+  "en": "all the way",
+  "zh": "一路上；一直",
+  "group": "Part 01",
+  "ipa": "/ˈɔːl/ /ðə/ /wˈeɪ/",
+  "audio": "audio/all_the_way.mp3"
+ },
+ {
+  "en": "along with",
+  "zh": "连同；与...一起",
+  "group": "Part 01",
+  "ipa": "/əlˈɒŋ/ /wˈɪð/",
+  "audio": "audio/along_with.mp3"
+ },
+ {
+  "en": "anything but",
+  "zh": "绝不；根本不",
+  "group": "Part 01",
+  "ipa": "/ˈɛnɪθˌɪŋ/ /bˈʌt/",
+  "audio": "audio/anything_but.mp3"
+ },
+ {
+  "en": "as a result",
+  "zh": "结果；因此",
+  "group": "Part 01",
+  "ipa": "/ˈæz/ /ˈeɪ/ /ɹɪzˈʌlt/",
+  "audio": "audio/as_a_result.mp3"
+ },
+ {
+  "en": "as far as",
+  "zh": "远至；就...而言",
+  "group": "Part 01",
+  "ipa": "/ˈæz/ /fˈɑː/ /ˈæz/",
+  "audio": "audio/as_far_as.mp3"
+ },
+ {
+  "en": "as for/to",
+  "zh": "至于；关于",
+  "group": "Part 01",
+  "ipa": "/ˈæz/ /fˈɔː/ /tˈuː/",
+  "audio": "audio/as_for_to.mp3"
+ },
+ {
+  "en": "as good as",
+  "zh": "和...几乎一样；实际上等于",
+  "group": "Part 01",
+  "ipa": "/ˈæz/ /ɡˈʊd/ /ˈæz/",
+  "audio": "audio/as_good_as.mp3"
+ },
+ {
+  "en": "as if/though",
+  "zh": "好像；仿佛",
+  "group": "Part 01",
+  "ipa": "/ˈæz/ /ˈɪf/ /ðˈəʊ/",
+  "audio": "audio/as_if_though.mp3"
+ },
+ {
+  "en": "as it is/was",
+  "zh": "实际上；照现状",
+  "group": "Part 01",
+  "ipa": "/ˈæz/ /ˈɪt/ /ˈɪz/ /wˈɒz/",
+  "audio": "audio/as_it_is_was.mp3"
+ },
+ {
+  "en": "as it were",
+  "zh": "可以说；仿佛",
+  "group": "Part 01",
+  "ipa": "/ˈæz/ /ˈɪt/ /wˈɜː/",
+  "audio": "audio/as_it_were.mp3"
+ },
+ {
+  "en": "as soon as",
+  "zh": "一...就...",
+  "group": "Part 01",
+  "ipa": "/ˈæz/ /sˈuːn/ /ˈæz/",
+  "audio": "audio/as_soon_as.mp3"
+ },
+ {
+  "en": "be about to do sth.",
+  "zh": "即将做某事",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /əbˈaʊt/ /tˈuː/ /ˈdu/",
+  "audio": "audio/be_about_to_do_sth.mp3"
+ },
+ {
+  "en": "be addicted to",
+  "zh": "沉溺于；对...上瘾",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ədˈɪktɪd/ /tˈuː/",
+  "audio": "audio/be_addicted_to.mp3"
+ },
+ {
+  "en": "be based on",
+  "zh": "基于；以...为基础",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /bˈeɪst/ /ˈɒn/",
+  "audio": "audio/be_based_on.mp3"
+ },
+ {
+  "en": "be better off",
+  "zh": "状况更好；更富裕",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /bˈɛtə/ /ˈɒf/",
+  "audio": "audio/be_better_off.mp3"
+ },
+ {
+  "en": "be in doubt",
+  "zh": "不确定；感到怀疑",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ˈɪn/ /dˈaʊt/",
+  "audio": "audio/be_in_doubt.mp3"
+ },
+ {
+  "en": "be involved in",
+  "zh": "参与；卷入",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ɪnvˈɒlvd/ /ˈɪn/",
+  "audio": "audio/be_involved_in.mp3"
+ },
+ {
+  "en": "be made up of",
+  "zh": "由...组成",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /mˈeɪd/ /ˈʌp/ /ˈɒv/",
+  "audio": "audio/be_made_up_of.mp3"
+ },
+ {
+  "en": "be/keep/get in touch with",
+  "zh": "与...保持联系",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /kˈiːp/ /ɡˈɛt/ /ˈɪn/ /tˈʌtʃ/ /wˈɪð/",
+  "audio": "audio/be_keep_get_in_touch_with.mp3"
+ },
+ {
+  "en": "be critical of",
+  "zh": "对...挑剔；批评",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /kɹˈɪtɪkəl/ /ˈɒv/",
+  "audio": "audio/be_critical_of.mp3"
+ },
+ {
+  "en": "be destructive to",
+  "zh": "对...有破坏性",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /dɪstɹˈʌktɪv/ /tˈuː/",
+  "audio": "audio/be_destructive_to.mp3"
+ },
+ {
+  "en": "be doomed to",
+  "zh": "注定",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /dˈuːmd/ /tˈuː/",
+  "audio": "audio/be_doomed_to.mp3"
+ },
+ {
+  "en": "be economical of",
+  "zh": "节约...",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ˌiːkənˈɒmɪkəl/ /ˈɒv/",
+  "audio": "audio/be_economical_of.mp3"
+ },
+ {
+  "en": "be embedded in sth.",
+  "zh": "嵌入/深深植根于...",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ɛmbˈɛdɪd/ /ˈɪn/",
+  "audio": "audio/be_embedded_in_sth.mp3"
+ },
+ {
+  "en": "be enthusiastic about",
+  "zh": "对...热心/充满热情",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ɛnθjˌuːzɪˈæstɪk/ /əbˈaʊt/",
+  "audio": "audio/be_enthusiastic_about.mp3"
+ },
+ {
+  "en": "be equivalent to",
+  "zh": "相当于；等于",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ɪkwˈɪvələnt/ /tˈuː/",
+  "audio": "audio/be_equivalent_to.mp3"
+ },
+ {
+  "en": "be identical with/to",
+  "zh": "与...完全相同",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /aɪdˈɛntɪkəl/ /wˈɪð/ /tˈuː/",
+  "audio": "audio/be_identical_with_to.mp3"
+ },
+ {
+  "en": "be indicative of",
+  "zh": "表明；暗示",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ɪndˈɪkətˌɪv/ /ˈɒv/",
+  "audio": "audio/be_indicative_of.mp3"
+ },
+ {
+  "en": "be indifferent to",
+  "zh": "对...漠不关心",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ɪndˈɪfɹənt/ /tˈuː/",
+  "audio": "audio/be_indifferent_to.mp3"
+ },
+ {
+  "en": "be intent on",
+  "zh": "专心致志于；决心要",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ɪntˈɛnt/ /ˈɒn/",
+  "audio": "audio/be_intent_on.mp3"
+ },
+ {
+  "en": "come at",
+  "zh": "扑向；达到；得到",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /ˈæt/",
+  "audio": "audio/come_at.mp3"
+ },
+ {
+  "en": "come between",
+  "zh": "介入...之间；离间",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /bɪtwˈiːn/",
+  "audio": "audio/come_between.mp3"
+ },
+ {
+  "en": "come by",
+  "zh": "顺便拜访；获得",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /bˈaɪ/",
+  "audio": "audio/come_by.mp3"
+ },
+ {
+  "en": "come down",
+  "zh": "下来；下降；传承",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /dˈaʊn/",
+  "audio": "audio/come_down.mp3"
+ },
+ {
+  "en": "come down to",
+  "zh": "归结为；涉及到",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /dˈaʊn/ /tˈuː/",
+  "audio": "audio/come_down_to.mp3"
+ },
+ {
+  "en": "come in for",
+  "zh": "受到；接受",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /ˈɪn/ /fˈɔː/",
+  "audio": "audio/come_in_for.mp3"
+ },
+ {
+  "en": "come off",
+  "zh": "成功；举行；脱落",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /ˈɒf/",
+  "audio": "audio/come_off.mp3"
+ },
+ {
+  "en": "come on",
+  "zh": "来吧；加油；进展",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /ˈɒn/",
+  "audio": "audio/come_on.mp3"
+ },
+ {
+  "en": "come out",
+  "zh": "出来；出版；结果是",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /ˈaʊt/",
+  "audio": "audio/come_out.mp3"
+ },
+ {
+  "en": "come over",
+  "zh": "过来；顺便来访",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /ˈəʊvə/",
+  "audio": "audio/come_over.mp3"
+ },
+ {
+  "en": "come through",
+  "zh": "经历；安然度过；成功",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /θɹˈuː/",
+  "audio": "audio/come_through.mp3"
+ },
+ {
+  "en": "come true",
+  "zh": "实现；成真",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /tɹˈuː/",
+  "audio": "audio/come_true.mp3"
+ },
+ {
+  "en": "be on circuit",
+  "zh": "巡回；在巡回中",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ˈɒn/ /sˈɜːkɪt/",
+  "audio": "audio/be_on_circuit.mp3"
+ },
+ {
+  "en": "be out of control",
+  "zh": "失控",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ˈaʊt/ /ˈɒv/ /kəntɹˈəʊl/",
+  "audio": "audio/be_out_of_control.mp3"
+ },
+ {
+  "en": "be pleased with",
+  "zh": "对...满意",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /plˈiːzd/ /wˈɪð/",
+  "audio": "audio/be_pleased_with.mp3"
+ },
+ {
+  "en": "be tied to",
+  "zh": "被束缚于；与...紧密相连",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /tˈaɪd/ /tˈuː/",
+  "audio": "audio/be_tied_to.mp3"
+ },
+ {
+  "en": "be used to",
+  "zh": "习惯于（doing）/ 被用来（do）",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /ˈjuzd/ /tˈuː/",
+  "audio": "audio/be_used_to.mp3"
+ },
+ {
+  "en": "be willing to do sth.",
+  "zh": "愿意做某事",
+  "group": "Part 01",
+  "ipa": "/bˈiː/ /wˈɪlɪŋ/ /tˈuː/ /ˈdu/",
+  "audio": "audio/be_willing_to_do_sth.mp3"
+ },
+ {
+  "en": "bear/keep...in mind",
+  "zh": "记住；牢记",
+  "group": "Part 01",
+  "ipa": "/bˈeə/ /kˈiːp/ /ˈɪn/ /mˈaɪnd/",
+  "audio": "audio/bear_keep_in_mind.mp3"
+ },
+ {
+  "en": "become of",
+  "zh": "发生；变成（通常指遭遇）",
+  "group": "Part 01",
+  "ipa": "/bɪkˈʌm/ /ˈɒv/",
+  "audio": "audio/become_of.mp3"
+ },
+ {
+  "en": "begin with",
+  "zh": "以...开始",
+  "group": "Part 01",
+  "ipa": "/bɪɡˈɪn/ /wˈɪð/",
+  "audio": "audio/begin_with.mp3"
+ },
+ {
+  "en": "beside the point",
+  "zh": "离题；不相关",
+  "group": "Part 01",
+  "ipa": "/bɪsˈaɪd/ /ðə/ /pˈɔɪnt/",
+  "audio": "audio/beside_the_point.mp3"
+ },
+ {
+  "en": "black and blue",
+  "zh": "青一块紫一块；遍体鳞伤",
+  "group": "Part 01",
+  "ipa": "/blˈæk/ /ˈænd/ /blˈuː/",
+  "audio": "audio/black_and_blue.mp3"
+ },
+ {
+  "en": "break away (from)",
+  "zh": "脱离；摆脱",
+  "group": "Part 01",
+  "ipa": "/bɹˈeɪk/ /əwˈeɪ/ /fɹˈɒm/",
+  "audio": "audio/break_away_from.mp3"
+ },
+ {
+  "en": "break down",
+  "zh": "出故障；崩溃；分解",
+  "group": "Part 01",
+  "ipa": "/bɹˈeɪk/ /dˈaʊn/",
+  "audio": "audio/break_down.mp3"
+ },
+ {
+  "en": "break off",
+  "zh": "中断；折断；突然停止",
+  "group": "Part 01",
+  "ipa": "/bɹˈeɪk/ /ˈɒf/",
+  "audio": "audio/break_off.mp3"
+ },
+ {
+  "en": "break one's heart",
+  "zh": "使人心碎",
+  "group": "Part 01",
+  "ipa": "/bɹˈeɪk/ /wˈɒn/ /ˈɛs/ /hˈɑːt/",
+  "audio": "audio/break_one_s_heart.mp3"
+ },
+ {
+  "en": "break out",
+  "zh": "爆发；突然发生",
+  "group": "Part 01",
+  "ipa": "/bɹˈeɪk/ /ˈaʊt/",
+  "audio": "audio/break_out.mp3"
+ },
+ {
+  "en": "care for",
+  "zh": "照顾；喜欢；关心",
+  "group": "Part 01",
+  "ipa": "/kˈeə/ /fˈɔː/",
+  "audio": "audio/care_for.mp3"
+ },
+ {
+  "en": "carry away",
+  "zh": "带走；使失去理智",
+  "group": "Part 01",
+  "ipa": "/kˈæɹi/ /əwˈeɪ/",
+  "audio": "audio/carry_away.mp3"
+ },
+ {
+  "en": "carry off",
+  "zh": "成功完成；夺走（生命）",
+  "group": "Part 01",
+  "ipa": "/kˈæɹi/ /ˈɒf/",
+  "audio": "audio/carry_off.mp3"
+ },
+ {
+  "en": "carry on",
+  "zh": "继续；从事",
+  "group": "Part 01",
+  "ipa": "/kˈæɹi/ /ˈɒn/",
+  "audio": "audio/carry_on.mp3"
+ },
+ {
+  "en": "carry out",
+  "zh": "执行；实施",
+  "group": "Part 01",
+  "ipa": "/kˈæɹi/ /ˈaʊt/",
+  "audio": "audio/carry_out.mp3"
+ },
+ {
+  "en": "carry over",
+  "zh": "延期；结转",
+  "group": "Part 01",
+  "ipa": "/kˈæɹi/ /ˈəʊvə/",
+  "audio": "audio/carry_over.mp3"
+ },
+ {
+  "en": "carry through",
+  "zh": "完成；帮助度过难关",
+  "group": "Part 01",
+  "ipa": "/kˈæɹi/ /θɹˈuː/",
+  "audio": "audio/carry_through.mp3"
+ },
+ {
+  "en": "catch/take/get hold of",
+  "zh": "抓住；掌握",
+  "group": "Part 01",
+  "ipa": "/kˈætʃ/ /tˈeɪk/ /ɡˈɛt/ /hˈəʊld/ /ˈɒv/",
+  "audio": "audio/catch_take_get_hold_of.mp3"
+ },
+ {
+  "en": "catch up with",
+  "zh": "赶上；追上",
+  "group": "Part 01",
+  "ipa": "/kˈætʃ/ /ˈʌp/ /wˈɪð/",
+  "audio": "audio/catch_up_with.mp3"
+ },
+ {
+  "en": "change one's mind",
+  "zh": "改变主意",
+  "group": "Part 01",
+  "ipa": "/tʃˈeɪndʒ/ /wˈɒn/ /ˈɛs/ /mˈaɪnd/",
+  "audio": "audio/change_one_s_mind.mp3"
+ },
+ {
+  "en": "come about",
+  "zh": "发生；产生",
+  "group": "Part 01",
+  "ipa": "/kˈʌm/ /əbˈaʊt/",
+  "audio": "audio/come_about.mp3"
+ },
+ {
+  "en": "come across",
+  "zh": "偶然遇到；碰见",
+  "group": "Part 02",
+  "ipa": "/kˈʌm/ /əkɹˈɒs/",
+  "audio": "audio/come_across.mp3"
+ },
+ {
+  "en": "come along",
+  "zh": "出现；一起来；进展",
+  "group": "Part 02",
+  "ipa": "/kˈʌm/ /əlˈɒŋ/",
+  "audio": "audio/come_along.mp3"
+ },
+ {
+  "en": "come apart",
+  "zh": "破碎；瓦解",
+  "group": "Part 02",
+  "ipa": "/kˈʌm/ /əpˈɑːt/",
+  "audio": "audio/come_apart.mp3"
+ },
+ {
+  "en": "come around/round",
+  "zh": "苏醒；顺道拜访；改变看法",
+  "group": "Part 02",
+  "ipa": "/kˈʌm/ /əɹˈaʊnd/ /ɹˈaʊnd/",
+  "audio": "audio/come_around_round.mp3"
+ },
+ {
+  "en": "break through",
+  "zh": "突破；冲破",
+  "group": "Part 02",
+  "ipa": "/bɹˈeɪk/ /θɹˈuː/",
+  "audio": "audio/break_through.mp3"
+ },
+ {
+  "en": "break up",
+  "zh": "分手；解散；打碎",
+  "group": "Part 02",
+  "ipa": "/bɹˈeɪk/ /ˈʌp/",
+  "audio": "audio/break_up.mp3"
+ },
+ {
+  "en": "bring about",
+  "zh": "导致；引起",
+  "group": "Part 02",
+  "ipa": "/bɹˈɪŋ/ /əbˈaʊt/",
+  "audio": "audio/bring_about.mp3"
+ },
+ {
+  "en": "bring around/round",
+  "zh": "说服；使苏醒",
+  "group": "Part 02",
+  "ipa": "/bɹˈɪŋ/ /əɹˈaʊnd/ /ɹˈaʊnd/",
+  "audio": "audio/bring_around_round.mp3"
+ },
+ {
+  "en": "bring down",
+  "zh": "降低；打倒",
+  "group": "Part 02",
+  "ipa": "/bɹˈɪŋ/ /dˈaʊn/",
+  "audio": "audio/bring_down.mp3"
+ },
+ {
+  "en": "bring forth",
+  "zh": "产生；提出",
+  "group": "Part 02",
+  "ipa": "/bɹˈɪŋ/ /fˈɔːθ/",
+  "audio": "audio/bring_forth.mp3"
+ },
+ {
+  "en": "bring forward",
+  "zh": "提出；提前",
+  "group": "Part 02",
+  "ipa": "/bɹˈɪŋ/ /fˈɔːwəd/",
+  "audio": "audio/bring_forward.mp3"
+ },
+ {
+  "en": "bring off",
+  "zh": "成功完成",
+  "group": "Part 02",
+  "ipa": "/bɹˈɪŋ/ /ˈɒf/",
+  "audio": "audio/bring_off.mp3"
+ },
+ {
+  "en": "bring on",
+  "zh": "引起；导致；促进",
+  "group": "Part 02",
+  "ipa": "/bɹˈɪŋ/ /ˈɒn/",
+  "audio": "audio/bring_on.mp3"
+ },
+ {
+  "en": "bring out",
+  "zh": "出版；生产；使显出",
+  "group": "Part 02",
+  "ipa": "/bɹˈɪŋ/ /ˈaʊt/",
+  "audio": "audio/bring_out.mp3"
+ },
+ {
+  "en": "bring through",
+  "zh": "使度过难关；拯救",
+  "group": "Part 02",
+  "ipa": "/bɹˈɪŋ/ /θɹˈuː/",
+  "audio": "audio/bring_through.mp3"
+ },
+ {
+  "en": "bring to",
+  "zh": "使苏醒；使恢复知觉",
+  "group": "Part 02",
+  "ipa": "/bɹˈɪŋ/ /tˈuː/",
+  "audio": "audio/bring_to.mp3"
+ },
+ {
+  "en": "bring up",
+  "zh": "抚养；提出；呕吐",
+  "group": "Part 02",
+  "ipa": "/bɹˈɪŋ/ /ˈʌp/",
+  "audio": "audio/bring_up.mp3"
+ },
+ {
+  "en": "brush aside",
+  "zh": "漠视；置之不理",
+  "group": "Part 02",
+  "ipa": "/bɹˈʌʃ/ /əsˈaɪd/",
+  "audio": "audio/brush_aside.mp3"
+ },
+ {
+  "en": "brush up",
+  "zh": "复习；重温",
+  "group": "Part 02",
+  "ipa": "/bɹˈʌʃ/ /ˈʌp/",
+  "audio": "audio/brush_up.mp3"
+ },
+ {
+  "en": "cut back",
+  "zh": "削减；修剪",
+  "group": "Part 02",
+  "ipa": "/kˈʌt/ /bˈæk/",
+  "audio": "audio/cut_back.mp3"
+ },
+ {
+  "en": "cut down",
+  "zh": "削减；砍倒",
+  "group": "Part 02",
+  "ipa": "/kˈʌt/ /dˈaʊn/",
+  "audio": "audio/cut_down.mp3"
+ },
+ {
+  "en": "cut in",
+  "zh": "插嘴；超车抢道",
+  "group": "Part 02",
+  "ipa": "/kˈʌt/ /ˈɪn/",
+  "audio": "audio/cut_in.mp3"
+ },
+ {
+  "en": "cut off",
+  "zh": "切断；中断；隔绝",
+  "group": "Part 02",
+  "ipa": "/kˈʌt/ /ˈɒf/",
+  "audio": "audio/cut_off.mp3"
+ },
+ {
+  "en": "cut out",
+  "zh": "删除；裁剪；停止",
+  "group": "Part 02",
+  "ipa": "/kˈʌt/ /ˈaʊt/",
+  "audio": "audio/cut_out.mp3"
+ },
+ {
+  "en": "cut up",
+  "zh": "切碎；抨击",
+  "group": "Part 02",
+  "ipa": "/kˈʌt/ /ˈʌp/",
+  "audio": "audio/cut_up.mp3"
+ },
+ {
+  "en": "draw in",
+  "zh": "引诱；进站；吸收",
+  "group": "Part 02",
+  "ipa": "/dɹˈɔː/ /ˈɪn/",
+  "audio": "audio/draw_in.mp3"
+ },
+ {
+  "en": "draw on",
+  "zh": "利用；吸（烟）；临近",
+  "group": "Part 02",
+  "ipa": "/dɹˈɔː/ /ˈɒn/",
+  "audio": "audio/draw_on.mp3"
+ },
+ {
+  "en": "draw up",
+  "zh": "起草；停下",
+  "group": "Part 02",
+  "ipa": "/dɹˈɔː/ /ˈʌp/",
+  "audio": "audio/draw_up.mp3"
+ },
+ {
+  "en": "drive at",
+  "zh": "意指；试图说明",
+  "group": "Part 02",
+  "ipa": "/dɹˈaɪv/ /ˈæt/",
+  "audio": "audio/drive_at.mp3"
+ },
+ {
+  "en": "drive away",
+  "zh": "赶走；驱车离开",
+  "group": "Part 02",
+  "ipa": "/dɹˈaɪv/ /əwˈeɪ/",
+  "audio": "audio/drive_away.mp3"
+ },
+ {
+  "en": "due to",
+  "zh": "由于；因为",
+  "group": "Part 02",
+  "ipa": "/djˈuː/ /tˈuː/",
+  "audio": "audio/due_to.mp3"
+ },
+ {
+  "en": "every now and then",
+  "zh": "时常；不时地",
+  "group": "Part 02",
+  "ipa": "/ˈɛvɹi/ /nˈaʊ/ /ˈænd/ /ðˈɛn/",
+  "audio": "audio/every_now_and_then.mp3"
+ },
+ {
+  "en": "face to face",
+  "zh": "面对面地",
+  "group": "Part 02",
+  "ipa": "/fˈeɪs/ /tˈuː/ /fˈeɪs/",
+  "audio": "audio/face_to_face.mp3"
+ },
+ {
+  "en": "build up",
+  "zh": "逐渐建立；增强",
+  "group": "Part 02",
+  "ipa": "/bˈɪld/ /ˈʌp/",
+  "audio": "audio/build_up.mp3"
+ },
+ {
+  "en": "but for",
+  "zh": "要不是；如果没有",
+  "group": "Part 02",
+  "ipa": "/bˈʌt/ /fˈɔː/",
+  "audio": "audio/but_for.mp3"
+ },
+ {
+  "en": "by far",
+  "zh": "...得多；显然（修饰比较级/最高级）",
+  "group": "Part 02",
+  "ipa": "/bˈaɪ/ /fˈɑː/",
+  "audio": "audio/by_far.mp3"
+ },
+ {
+  "en": "by heart",
+  "zh": "凭记忆；熟记",
+  "group": "Part 02",
+  "ipa": "/bˈaɪ/ /hˈɑːt/",
+  "audio": "audio/by_heart.mp3"
+ },
+ {
+  "en": "by the way",
+  "zh": "顺便说一下",
+  "group": "Part 02",
+  "ipa": "/bˈaɪ/ /ðə/ /wˈeɪ/",
+  "audio": "audio/by_the_way.mp3"
+ },
+ {
+  "en": "by/take turns",
+  "zh": "轮流；依次",
+  "group": "Part 02",
+  "ipa": "/bˈaɪ/ /tˈeɪk/ /tˈɜːnz/",
+  "audio": "audio/by_take_turns.mp3"
+ },
+ {
+  "en": "by way of",
+  "zh": "通过...方式；经由",
+  "group": "Part 02",
+  "ipa": "/bˈaɪ/ /wˈeɪ/ /ˈɒv/",
+  "audio": "audio/by_way_of.mp3"
+ },
+ {
+  "en": "call at",
+  "zh": "拜访（某地）；停靠",
+  "group": "Part 02",
+  "ipa": "/kˈɔːl/ /ˈæt/",
+  "audio": "audio/call_at.mp3"
+ },
+ {
+  "en": "call for",
+  "zh": "要求；需要；去接",
+  "group": "Part 02",
+  "ipa": "/kˈɔːl/ /fˈɔː/",
+  "audio": "audio/call_for.mp3"
+ },
+ {
+  "en": "call in",
+  "zh": "召集；来访；请来",
+  "group": "Part 02",
+  "ipa": "/kˈɔːl/ /ˈɪn/",
+  "audio": "audio/call_in.mp3"
+ },
+ {
+  "en": "call off",
+  "zh": "取消",
+  "group": "Part 02",
+  "ipa": "/kˈɔːl/ /ˈɒf/",
+  "audio": "audio/call_off.mp3"
+ },
+ {
+  "en": "call on/upon (sb. to do sth.)",
+  "zh": "号召；拜访；请求",
+  "group": "Part 02",
+  "ipa": "/kˈɔːl/ /ˈɒn/ /əpˈɒn/ /tˈuː/ /ˈdu/",
+  "audio": "audio/call_on_upon_sb_to_do_sth.mp3"
+ },
+ {
+  "en": "call up",
+  "zh": "打电话；召集；使人想起",
+  "group": "Part 02",
+  "ipa": "/kˈɔːl/ /ˈʌp/",
+  "audio": "audio/call_up.mp3"
+ },
+ {
+  "en": "can not but (do)",
+  "zh": "不得不；只好",
+  "group": "Part 02",
+  "ipa": "/kˈæn/ /nˈɒt/ /bˈʌt/ /ˈdu/",
+  "audio": "audio/can_not_but_do.mp3"
+ },
+ {
+  "en": "care about",
+  "zh": "关心；在乎",
+  "group": "Part 02",
+  "ipa": "/kˈeə/ /əbˈaʊt/",
+  "audio": "audio/care_about.mp3"
+ },
+ {
+  "en": "come up",
+  "zh": "走近；发生；被提出",
+  "group": "Part 02",
+  "ipa": "/kˈʌm/ /ˈʌp/",
+  "audio": "audio/come_up.mp3"
+ },
+ {
+  "en": "come up against",
+  "zh": "遇到（困难、反对等）",
+  "group": "Part 02",
+  "ipa": "/kˈʌm/ /ˈʌp/ /əɡˈɛnst/",
+  "audio": "audio/come_up_against.mp3"
+ },
+ {
+  "en": "come up to",
+  "zh": "达到；符合",
+  "group": "Part 02",
+  "ipa": "/kˈʌm/ /ˈʌp/ /tˈuː/",
+  "audio": "audio/come_up_to.mp3"
+ },
+ {
+  "en": "come up with",
+  "zh": "想出；提出",
+  "group": "Part 02",
+  "ipa": "/kˈʌm/ /ˈʌp/ /wˈɪð/",
+  "audio": "audio/come_up_with.mp3"
+ },
+ {
+  "en": "compete with",
+  "zh": "与...竞争",
+  "group": "Part 02",
+  "ipa": "/kəmpˈiːt/ /wˈɪð/",
+  "audio": "audio/compete_with.mp3"
+ },
+ {
+  "en": "consensus on",
+  "zh": "关于...的共识",
+  "group": "Part 02",
+  "ipa": "/kənsˈɛnsəs/ /ˈɒn/",
+  "audio": "audio/consensus_on.mp3"
+ },
+ {
+  "en": "count against",
+  "zh": "对...不利",
+  "group": "Part 02",
+  "ipa": "/kˈaʊnt/ /əɡˈɛnst/",
+  "audio": "audio/count_against.mp3"
+ },
+ {
+  "en": "count down",
+  "zh": "倒计时",
+  "group": "Part 02",
+  "ipa": "/kˈaʊnt/ /dˈaʊn/",
+  "audio": "audio/count_down.mp3"
+ },
+ {
+  "en": "count in",
+  "zh": "把...算在内",
+  "group": "Part 02",
+  "ipa": "/kˈaʊnt/ /ˈɪn/",
+  "audio": "audio/count_in.mp3"
+ },
+ {
+  "en": "count on/upon",
+  "zh": "依靠；指望",
+  "group": "Part 02",
+  "ipa": "/kˈaʊnt/ /ˈɒn/ /əpˈɒn/",
+  "audio": "audio/count_on_upon.mp3"
+ },
+ {
+  "en": "count out",
+  "zh": "逐一数出；不把...算入",
+  "group": "Part 02",
+  "ipa": "/kˈaʊnt/ /ˈaʊt/",
+  "audio": "audio/count_out.mp3"
+ },
+ {
+  "en": "count up",
+  "zh": "共计；把...加起来",
+  "group": "Part 02",
+  "ipa": "/kˈaʊnt/ /ˈʌp/",
+  "audio": "audio/count_up.mp3"
+ },
+ {
+  "en": "cut across",
+  "zh": "抄近路穿过；超越",
+  "group": "Part 02",
+  "ipa": "/kˈʌt/ /əkɹˈɒs/",
+  "audio": "audio/cut_across.mp3"
+ },
+ {
+  "en": "cut away",
+  "zh": "切掉；砍掉",
+  "group": "Part 02",
+  "ipa": "/kˈʌt/ /əwˈeɪ/",
+  "audio": "audio/cut_away.mp3"
+ },
+ {
+  "en": "face up to",
+  "zh": "勇敢面对；正视",
+  "group": "Part 02",
+  "ipa": "/fˈeɪs/ /ˈʌp/ /tˈuː/",
+  "audio": "audio/face_up_to.mp3"
+ },
+ {
+  "en": "fall apart",
+  "zh": "崩溃；破碎；瓦解",
+  "group": "Part 02",
+  "ipa": "/fˈɔːl/ /əpˈɑːt/",
+  "audio": "audio/fall_apart.mp3"
+ },
+ {
+  "en": "fall back",
+  "zh": "后退；退却",
+  "group": "Part 02",
+  "ipa": "/fˈɔːl/ /bˈæk/",
+  "audio": "audio/fall_back.mp3"
+ },
+ {
+  "en": "fall back on",
+  "zh": "依靠；求助于",
+  "group": "Part 02",
+  "ipa": "/fˈɔːl/ /bˈæk/ /ˈɒn/",
+  "audio": "audio/fall_back_on.mp3"
+ },
+ {
+  "en": "fall behind",
+  "zh": "落后；拖欠",
+  "group": "Part 02",
+  "ipa": "/fˈɔːl/ /bɪhˈaɪnd/",
+  "audio": "audio/fall_behind.mp3"
+ },
+ {
+  "en": "fall for",
+  "zh": "爱上；上当；受骗",
+  "group": "Part 02",
+  "ipa": "/fˈɔːl/ /fˈɔː/",
+  "audio": "audio/fall_for.mp3"
+ },
+ {
+  "en": "fall in with",
+  "zh": "同意；赞成；偶然遇到",
+  "group": "Part 02",
+  "ipa": "/fˈɔːl/ /ˈɪn/ /wˈɪð/",
+  "audio": "audio/fall_in_with.mp3"
+ },
+ {
+  "en": "fall on/upon",
+  "zh": "降临；落在；进攻",
+  "group": "Part 02",
+  "ipa": "/fˈɔːl/ /ˈɒn/ /əpˈɒn/",
+  "audio": "audio/fall_on_upon.mp3"
+ },
+ {
+  "en": "fall out",
+  "zh": "争吵；脱落；解散",
+  "group": "Part 02",
+  "ipa": "/fˈɔːl/ /ˈaʊt/",
+  "audio": "audio/fall_out.mp3"
+ },
+ {
+  "en": "fall out with",
+  "zh": "与...争吵",
+  "group": "Part 02",
+  "ipa": "/fˈɔːl/ /ˈaʊt/ /wˈɪð/",
+  "audio": "audio/fall_out_with.mp3"
+ },
+ {
+  "en": "fall through",
+  "zh": "失败；落空",
+  "group": "Part 02",
+  "ipa": "/fˈɔːl/ /θɹˈuː/",
+  "audio": "audio/fall_through.mp3"
+ },
+ {
+  "en": "fall to sth.",
+  "zh": "开始做某事；落到...身上",
+  "group": "Part 02",
+  "ipa": "/fˈɔːl/ /tˈuː/",
+  "audio": "audio/fall_to_sth.mp3"
+ },
+ {
+  "en": "far and wide",
+  "zh": "到处；四面八方",
+  "group": "Part 02",
+  "ipa": "/fˈɑː/ /ˈænd/ /wˈaɪd/",
+  "audio": "audio/far_and_wide.mp3"
+ },
+ {
+  "en": "far from",
+  "zh": "远非；一点也不",
+  "group": "Part 02",
+  "ipa": "/fˈɑː/ /fɹˈɒm/",
+  "audio": "audio/far_from.mp3"
+ },
+ {
+  "en": "grow up",
+  "zh": "长大；成熟",
+  "group": "Part 02",
+  "ipa": "/ɡɹˈəʊ/ /ˈʌp/",
+  "audio": "audio/grow_up.mp3"
+ },
+ {
+  "en": "hand down",
+  "zh": "传下去；传给后代",
+  "group": "Part 02",
+  "ipa": "/hˈænd/ /dˈaʊn/",
+  "audio": "audio/hand_down.mp3"
+ },
+ {
+  "en": "hand in",
+  "zh": "上交；提交",
+  "group": "Part 02",
+  "ipa": "/hˈænd/ /ˈɪn/",
+  "audio": "audio/hand_in.mp3"
+ },
+ {
+  "en": "hand in hand",
+  "zh": "手拉手；密切关联",
+  "group": "Part 02",
+  "ipa": "/hˈænd/ /ˈɪn/ /hˈænd/",
+  "audio": "audio/hand_in_hand.mp3"
+ },
+ {
+  "en": "hand out",
+  "zh": "分发；散发",
+  "group": "Part 02",
+  "ipa": "/hˈænd/ /ˈaʊt/",
+  "audio": "audio/hand_out.mp3"
+ },
+ {
+  "en": "hand over",
+  "zh": "移交；交出",
+  "group": "Part 02",
+  "ipa": "/hˈænd/ /ˈəʊvə/",
+  "audio": "audio/hand_over.mp3"
+ },
+ {
+  "en": "hang about/around",
+  "zh": "闲荡；徘徊",
+  "group": "Part 02",
+  "ipa": "/hˈæŋ/ /əbˈaʊt/ /əɹˈaʊnd/",
+  "audio": "audio/hang_about_around.mp3"
+ },
+ {
+  "en": "hang on",
+  "zh": "坚持；稍等；紧紧抓住",
+  "group": "Part 02",
+  "ipa": "/hˈæŋ/ /ˈɒn/",
+  "audio": "audio/hang_on.mp3"
+ },
+ {
+  "en": "hang on to",
+  "zh": "紧紧抓住；保留",
+  "group": "Part 02",
+  "ipa": "/hˈæŋ/ /ˈɒn/ /tˈuː/",
+  "audio": "audio/hang_on_to.mp3"
+ },
+ {
+  "en": "hang together",
+  "zh": "团结一致；相符",
+  "group": "Part 02",
+  "ipa": "/hˈæŋ/ /təɡˈɛðə/",
+  "audio": "audio/hang_together.mp3"
+ },
+ {
+  "en": "hang up",
+  "zh": "挂断电话；挂起",
+  "group": "Part 02",
+  "ipa": "/hˈæŋ/ /ˈʌp/",
+  "audio": "audio/hang_up.mp3"
+ },
+ {
+  "en": "have/take a hand in",
+  "zh": "参与；插手",
+  "group": "Part 02",
+  "ipa": "/ˈhæv/ /tˈeɪk/ /ˈeɪ/ /hˈænd/ /ˈɪn/",
+  "audio": "audio/have_take_a_hand_in.mp3"
+ },
+ {
+  "en": "have it in mind to do sth.",
+  "zh": "打算做某事",
+  "group": "Part 02",
+  "ipa": "/ˈhæv/ /ˈɪt/ /ˈɪn/ /mˈaɪnd/ /tˈuː/ /ˈdu/",
+  "audio": "audio/have_it_in_mind_to_do_sth.mp3"
+ },
+ {
+  "en": "have one's hands full",
+  "zh": "非常忙；手头工作很满",
+  "group": "Part 02",
+  "ipa": "/ˈhæv/ /wˈɒn/ /ˈɛs/ /hˈændz/ /fˈʊl/",
+  "audio": "audio/have_one_s_hands_full.mp3"
+ },
+ {
+  "en": "fill in",
+  "zh": "填写；填补",
+  "group": "Part 03",
+  "ipa": "/fˈɪl/ /ˈɪn/",
+  "audio": "audio/fill_in.mp3"
+ },
+ {
+  "en": "fill out",
+  "zh": "填写；变丰满",
+  "group": "Part 03",
+  "ipa": "/fˈɪl/ /ˈaʊt/",
+  "audio": "audio/fill_out.mp3"
+ },
+ {
+  "en": "find out",
+  "zh": "查明；发现",
+  "group": "Part 03",
+  "ipa": "/fˈaɪnd/ /ˈaʊt/",
+  "audio": "audio/find_out.mp3"
+ },
+ {
+  "en": "for a while",
+  "zh": "一会儿",
+  "group": "Part 03",
+  "ipa": "/fˈɔː/ /ˈeɪ/ /wˈaɪl/",
+  "audio": "audio/for_a_while.mp3"
+ },
+ {
+  "en": "for all",
+  "zh": "尽管；虽然",
+  "group": "Part 03",
+  "ipa": "/fˈɔː/ /ˈɔːl/",
+  "audio": "audio/for_all.mp3"
+ },
+ {
+  "en": "for example",
+  "zh": "例如",
+  "group": "Part 03",
+  "ipa": "/fˈɔː/ /ɛɡzˈɑːmpəl/",
+  "audio": "audio/for_example.mp3"
+ },
+ {
+  "en": "for fear of/that",
+  "zh": "以免；生怕",
+  "group": "Part 03",
+  "ipa": "/fˈɔː/ /fˈiə/ /ˈɒv/ /ðˈæt/",
+  "audio": "audio/for_fear_of_that.mp3"
+ },
+ {
+  "en": "for one's part",
+  "zh": "就某人而言",
+  "group": "Part 03",
+  "ipa": "/fˈɔː/ /wˈɒn/ /ˈɛs/ /pˈɑːt/",
+  "audio": "audio/for_one_s_part.mp3"
+ },
+ {
+  "en": "for the moment",
+  "zh": "暂时；目前",
+  "group": "Part 03",
+  "ipa": "/fˈɔː/ /ðə/ /mˈəʊmənt/",
+  "audio": "audio/for_the_moment.mp3"
+ },
+ {
+  "en": "from (the bottom of) one's heart",
+  "zh": "从心底里；真诚地",
+  "group": "Part 03",
+  "ipa": "/fɹˈɒm/ /ðə/ /bˈɒtəm/ /ˈɒv/ /wˈɒn/ /ˈɛs/ /hˈɑːt/",
+  "audio": "audio/from_the_bottom_of_one_s_heart.mp3"
+ },
+ {
+  "en": "gain ground",
+  "zh": "取得进展；普及",
+  "group": "Part 03",
+  "ipa": "/ɡˈeɪn/ /ɡɹˈaʊnd/",
+  "audio": "audio/gain_ground.mp3"
+ },
+ {
+  "en": "gain on",
+  "zh": "逼近；赶上",
+  "group": "Part 03",
+  "ipa": "/ɡˈeɪn/ /ˈɒn/",
+  "audio": "audio/gain_on.mp3"
+ },
+ {
+  "en": "get a move on",
+  "zh": "赶快；行动起来",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /ˈeɪ/ /mˈuːv/ /ˈɒn/",
+  "audio": "audio/get_a_move_on.mp3"
+ },
+ {
+  "en": "get about",
+  "zh": "走动；传开",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /əbˈaʊt/",
+  "audio": "audio/get_about.mp3"
+ },
+ {
+  "en": "get across",
+  "zh": "通过；使被理解",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /əkɹˈɒs/",
+  "audio": "audio/get_across.mp3"
+ },
+ {
+  "en": "go back on",
+  "zh": "违背（诺言）；背弃",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /bˈæk/ /ˈɒn/",
+  "audio": "audio/go_back_on.mp3"
+ },
+ {
+  "en": "go by",
+  "zh": "经过；遵守；根据...判断",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /bˈaɪ/",
+  "audio": "audio/go_by.mp3"
+ },
+ {
+  "en": "go down",
+  "zh": "下降；沉没；被接受",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /dˈaʊn/",
+  "audio": "audio/go_down.mp3"
+ },
+ {
+  "en": "go for",
+  "zh": "去找；努力获取；喜欢",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /fˈɔː/",
+  "audio": "audio/go_for.mp3"
+ },
+ {
+  "en": "go in for",
+  "zh": "参加；从事；爱好",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /ˈɪn/ /fˈɔː/",
+  "audio": "audio/go_in_for.mp3"
+ },
+ {
+  "en": "go into",
+  "zh": "进入；调查；从事",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /ˈɪntʊ/",
+  "audio": "audio/go_into.mp3"
+ },
+ {
+  "en": "go off",
+  "zh": "爆炸；响起；变质",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /ˈɒf/",
+  "audio": "audio/go_off.mp3"
+ },
+ {
+  "en": "go on",
+  "zh": "继续；发生",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /ˈɒn/",
+  "audio": "audio/go_on.mp3"
+ },
+ {
+  "en": "go out",
+  "zh": "出去；熄灭；过时",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /ˈaʊt/",
+  "audio": "audio/go_out.mp3"
+ },
+ {
+  "en": "go over",
+  "zh": "复习；检查；越过",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /ˈəʊvə/",
+  "audio": "audio/go_over.mp3"
+ },
+ {
+  "en": "go through",
+  "zh": "经历；仔细检查；通过",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /θɹˈuː/",
+  "audio": "audio/go_through.mp3"
+ },
+ {
+  "en": "go under",
+  "zh": "沉没；失败；破产",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /ˈʌndə/",
+  "audio": "audio/go_under.mp3"
+ },
+ {
+  "en": "go up",
+  "zh": "上升；增长；被建造",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /ˈʌp/",
+  "audio": "audio/go_up.mp3"
+ },
+ {
+  "en": "go with",
+  "zh": "伴随；与...相配",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /wˈɪð/",
+  "audio": "audio/go_with.mp3"
+ },
+ {
+  "en": "get ahead",
+  "zh": "取得进步；领先",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /əhˈɛd/",
+  "audio": "audio/get_ahead.mp3"
+ },
+ {
+  "en": "get along",
+  "zh": "相处；进展",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /əlˈɒŋ/",
+  "audio": "audio/get_along.mp3"
+ },
+ {
+  "en": "get around/round to",
+  "zh": "抽出时间做；开始考虑",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /əɹˈaʊnd/ /ɹˈaʊnd/ /tˈuː/",
+  "audio": "audio/get_around_round_to.mp3"
+ },
+ {
+  "en": "get at",
+  "zh": "到达；意指；查明",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /ˈæt/",
+  "audio": "audio/get_at.mp3"
+ },
+ {
+  "en": "get away",
+  "zh": "离开；逃脱",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /əwˈeɪ/",
+  "audio": "audio/get_away.mp3"
+ },
+ {
+  "en": "get back",
+  "zh": "回来；恢复；取回",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /bˈæk/",
+  "audio": "audio/get_back.mp3"
+ },
+ {
+  "en": "get by",
+  "zh": "勉强过活；通过",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /bˈaɪ/",
+  "audio": "audio/get_by.mp3"
+ },
+ {
+  "en": "get down",
+  "zh": "下来；咽下；使沮丧",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /dˈaʊn/",
+  "audio": "audio/get_down.mp3"
+ },
+ {
+  "en": "get down to sth.",
+  "zh": "开始认真做某事",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /dˈaʊn/ /tˈuː/",
+  "audio": "audio/get_down_to_sth.mp3"
+ },
+ {
+  "en": "get into",
+  "zh": "进入；陷入；养成（习惯）",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /ˈɪntʊ/",
+  "audio": "audio/get_into.mp3"
+ },
+ {
+  "en": "get off",
+  "zh": "下车；离开；逃脱惩罚",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /ˈɒf/",
+  "audio": "audio/get_off.mp3"
+ },
+ {
+  "en": "get on",
+  "zh": "上车；进展；相处",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /ˈɒn/",
+  "audio": "audio/get_on.mp3"
+ },
+ {
+  "en": "in advance",
+  "zh": "提前；预先",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ədvˈæns/",
+  "audio": "audio/in_advance.mp3"
+ },
+ {
+  "en": "in all",
+  "zh": "总共；合计",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ˈɔːl/",
+  "audio": "audio/in_all.mp3"
+ },
+ {
+  "en": "in a moment",
+  "zh": "立刻；马上",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ˈeɪ/ /mˈəʊmənt/",
+  "audio": "audio/in_a_moment.mp3"
+ },
+ {
+  "en": "in a way",
+  "zh": "在某种程度上",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ˈeɪ/ /wˈeɪ/",
+  "audio": "audio/in_a_way.mp3"
+ },
+ {
+  "en": "in between",
+  "zh": "在中间；介于两者之间",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /bɪtwˈiːn/",
+  "audio": "audio/in_between.mp3"
+ },
+ {
+  "en": "in confidence",
+  "zh": "私下地；秘密地",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /kˈɒnfɪdəns/",
+  "audio": "audio/in_confidence.mp3"
+ },
+ {
+  "en": "in hand",
+  "zh": "在掌握中；在进行中",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /hˈænd/",
+  "audio": "audio/in_hand.mp3"
+ },
+ {
+  "en": "in no way",
+  "zh": "决不；一点也不",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ˈnoʊ/ /wˈeɪ/",
+  "audio": "audio/in_no_way.mp3"
+ },
+ {
+  "en": "in one's hands",
+  "zh": "在某人掌控中",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /wˈɒn/ /ˈɛs/ /hˈændz/",
+  "audio": "audio/in_one_s_hands.mp3"
+ },
+ {
+  "en": "in one's heart of hearts",
+  "zh": "在内心深处",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /wˈɒn/ /ˈɛs/ /hˈɑːt/ /ˈɒv/ /hˈɑːts/",
+  "audio": "audio/in_one_s_heart_of_hearts.mp3"
+ },
+ {
+  "en": "in order to",
+  "zh": "为了",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ˈɔːdə/ /tˈuː/",
+  "audio": "audio/in_order_to.mp3"
+ },
+ {
+  "en": "in part",
+  "zh": "部分地",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /pˈɑːt/",
+  "audio": "audio/in_part.mp3"
+ },
+ {
+  "en": "in particular",
+  "zh": "尤其；特别",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /pətˈɪkjʊlə/",
+  "audio": "audio/in_particular.mp3"
+ },
+ {
+  "en": "in place",
+  "zh": "在适当的位置；恰当",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /plˈeɪs/",
+  "audio": "audio/in_place.mp3"
+ },
+ {
+  "en": "in place of",
+  "zh": "代替",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /plˈeɪs/ /ˈɒv/",
+  "audio": "audio/in_place_of.mp3"
+ },
+ {
+  "en": "get out",
+  "zh": "出去；泄露；出版",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /ˈaʊt/",
+  "audio": "audio/get_out.mp3"
+ },
+ {
+  "en": "get over",
+  "zh": "克服；恢复；熬过",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /ˈəʊvə/",
+  "audio": "audio/get_over.mp3"
+ },
+ {
+  "en": "get through",
+  "zh": "通过；接通电话；完成",
+  "group": "Part 03",
+  "ipa": "/ɡˈɛt/ /θɹˈuː/",
+  "audio": "audio/get_through.mp3"
+ },
+ {
+  "en": "give off",
+  "zh": "发出（光、热、气味等）",
+  "group": "Part 03",
+  "ipa": "/ɡˈɪv/ /ˈɒf/",
+  "audio": "audio/give_off.mp3"
+ },
+ {
+  "en": "give up",
+  "zh": "放弃；投降",
+  "group": "Part 03",
+  "ipa": "/ɡˈɪv/ /ˈʌp/",
+  "audio": "audio/give_up.mp3"
+ },
+ {
+  "en": "give way",
+  "zh": "让步；退却；倒塌",
+  "group": "Part 03",
+  "ipa": "/ɡˈɪv/ /wˈeɪ/",
+  "audio": "audio/give_way.mp3"
+ },
+ {
+  "en": "go about",
+  "zh": "着手做；四处走动",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /əbˈaʊt/",
+  "audio": "audio/go_about.mp3"
+ },
+ {
+  "en": "go after",
+  "zh": "追求；追捕",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /ˈɑːftə/",
+  "audio": "audio/go_after.mp3"
+ },
+ {
+  "en": "go against",
+  "zh": "反对；违背；不利于",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /əɡˈɛnst/",
+  "audio": "audio/go_against.mp3"
+ },
+ {
+  "en": "go ahead",
+  "zh": "前进；进行；请便",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /əhˈɛd/",
+  "audio": "audio/go_ahead.mp3"
+ },
+ {
+  "en": "go along",
+  "zh": "前进；赞同；进行",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /əlˈɒŋ/",
+  "audio": "audio/go_along.mp3"
+ },
+ {
+  "en": "go around/round",
+  "zh": "四处走动；流传；足够分配",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /əɹˈaʊnd/ /ɹˈaʊnd/",
+  "audio": "audio/go_around_round.mp3"
+ },
+ {
+  "en": "go at",
+  "zh": "扑向；努力做",
+  "group": "Part 03",
+  "ipa": "/ɡˈəʊ/ /ˈæt/",
+  "audio": "audio/go_at.mp3"
+ },
+ {
+  "en": "hold back",
+  "zh": "阻止；抑制；隐瞒",
+  "group": "Part 03",
+  "ipa": "/hˈəʊld/ /bˈæk/",
+  "audio": "audio/hold_back.mp3"
+ },
+ {
+  "en": "hold down",
+  "zh": "压制；保住（工作）",
+  "group": "Part 03",
+  "ipa": "/hˈəʊld/ /dˈaʊn/",
+  "audio": "audio/hold_down.mp3"
+ },
+ {
+  "en": "hold forth",
+  "zh": "滔滔不绝地讲；提供",
+  "group": "Part 03",
+  "ipa": "/hˈəʊld/ /fˈɔːθ/",
+  "audio": "audio/hold_forth.mp3"
+ },
+ {
+  "en": "hold off",
+  "zh": "推迟；抵挡",
+  "group": "Part 03",
+  "ipa": "/hˈəʊld/ /ˈɒf/",
+  "audio": "audio/hold_off.mp3"
+ },
+ {
+  "en": "hold on",
+  "zh": "坚持；稍等；抓住不放",
+  "group": "Part 03",
+  "ipa": "/hˈəʊld/ /ˈɒn/",
+  "audio": "audio/hold_on.mp3"
+ },
+ {
+  "en": "hold onto/on to",
+  "zh": "紧紧抓住；保持",
+  "group": "Part 03",
+  "ipa": "/hˈəʊld/ /ˈɒntʊ/ /ˈɒn/ /tˈuː/",
+  "audio": "audio/hold_onto_on_to.mp3"
+ },
+ {
+  "en": "hold out",
+  "zh": "伸出；坚持；提供",
+  "group": "Part 03",
+  "ipa": "/hˈəʊld/ /ˈaʊt/",
+  "audio": "audio/hold_out.mp3"
+ },
+ {
+  "en": "hold over",
+  "zh": "推迟；延期",
+  "group": "Part 03",
+  "ipa": "/hˈəʊld/ /ˈəʊvə/",
+  "audio": "audio/hold_over.mp3"
+ },
+ {
+  "en": "hold to",
+  "zh": "坚持；遵守",
+  "group": "Part 03",
+  "ipa": "/hˈəʊld/ /tˈuː/",
+  "audio": "audio/hold_to.mp3"
+ },
+ {
+  "en": "hold up",
+  "zh": "举起；支撑；阻挡",
+  "group": "Part 03",
+  "ipa": "/hˈəʊld/ /ˈʌp/",
+  "audio": "audio/hold_up.mp3"
+ },
+ {
+  "en": "hold with",
+  "zh": "赞同；容忍",
+  "group": "Part 03",
+  "ipa": "/hˈəʊld/ /wˈɪð/",
+  "audio": "audio/hold_with.mp3"
+ },
+ {
+  "en": "how come",
+  "zh": "为什么；怎么会",
+  "group": "Part 03",
+  "ipa": "/hˈaʊ/ /kˈʌm/",
+  "audio": "audio/how_come.mp3"
+ },
+ {
+  "en": "in accord with",
+  "zh": "与...一致；符合",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /əkˈɔːd/ /wˈɪð/",
+  "audio": "audio/in_accord_with.mp3"
+ },
+ {
+  "en": "in so far as",
+  "zh": "就...而言；在...范围内",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /sˈəʊ/ /fˈɑː/ /ˈæz/",
+  "audio": "audio/in_so_far_as.mp3"
+ },
+ {
+  "en": "in the face of",
+  "zh": "面对；不顾",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ðə/ /fˈeɪs/ /ˈɒv/",
+  "audio": "audio/in_the_face_of.mp3"
+ },
+ {
+  "en": "in the first place",
+  "zh": "首先；起初",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ðə/ /fˈɜːst/ /plˈeɪs/",
+  "audio": "audio/in_the_first_place.mp3"
+ },
+ {
+  "en": "in the future",
+  "zh": "在未来",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ðə/ /fjˈuːtʃə/",
+  "audio": "audio/in_the_future.mp3"
+ },
+ {
+  "en": "in the long run",
+  "zh": "从长远来看",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ðə/ /lˈɒŋ/ /ɹˈʌn/",
+  "audio": "audio/in_the_long_run.mp3"
+ },
+ {
+  "en": "in the short run",
+  "zh": "从短期来看",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ðə/ /ʃˈɔːt/ /ɹˈʌn/",
+  "audio": "audio/in_the_short_run.mp3"
+ },
+ {
+  "en": "in the/one's way",
+  "zh": "挡道；妨碍",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /ðə/ /wˈɒn/ /ˈɛs/ /wˈeɪ/",
+  "audio": "audio/in_the_one_s_way.mp3"
+ },
+ {
+  "en": "in turn",
+  "zh": "依次；反过来",
+  "group": "Part 03",
+  "ipa": "/ˈɪn/ /tˈɜːn/",
+  "audio": "audio/in_turn.mp3"
+ },
+ {
+  "en": "instead of",
+  "zh": "代替；而不是",
+  "group": "Part 04",
+  "ipa": "/ɪnstˈɛd/ /ˈɒv/",
+  "audio": "audio/instead_of.mp3"
+ },
+ {
+  "en": "keep at",
+  "zh": "坚持做；继续做",
+  "group": "Part 04",
+  "ipa": "/kˈiːp/ /ˈæt/",
+  "audio": "audio/keep_at.mp3"
+ },
+ {
+  "en": "keep back",
+  "zh": "隐瞒；阻止；留下",
+  "group": "Part 04",
+  "ipa": "/kˈiːp/ /bˈæk/",
+  "audio": "audio/keep_back.mp3"
+ },
+ {
+  "en": "keep down",
+  "zh": "压制；控制；使不升起",
+  "group": "Part 04",
+  "ipa": "/kˈiːp/ /dˈaʊn/",
+  "audio": "audio/keep_down.mp3"
+ },
+ {
+  "en": "keep from",
+  "zh": "阻止；隐瞒；使不做",
+  "group": "Part 04",
+  "ipa": "/kˈiːp/ /fɹˈɒm/",
+  "audio": "audio/keep_from.mp3"
+ },
+ {
+  "en": "keep off",
+  "zh": "远离；避开；不接近",
+  "group": "Part 04",
+  "ipa": "/kˈiːp/ /ˈɒf/",
+  "audio": "audio/keep_off.mp3"
+ },
+ {
+  "en": "keep on",
+  "zh": "继续；穿着...不脱",
+  "group": "Part 04",
+  "ipa": "/kˈiːp/ /ˈɒn/",
+  "audio": "audio/keep_on.mp3"
+ },
+ {
+  "en": "never mind",
+  "zh": "没关系；别担心",
+  "group": "Part 04",
+  "ipa": "/nˈɛvə/ /mˈaɪnd/",
+  "audio": "audio/never_mind.mp3"
+ },
+ {
+  "en": "no matter what",
+  "zh": "无论什么",
+  "group": "Part 04",
+  "ipa": "/ˈnoʊ/ /mˈætə/ /wˈɒt/",
+  "audio": "audio/no_matter_what.mp3"
+ },
+ {
+  "en": "no way",
+  "zh": "决不；没门",
+  "group": "Part 04",
+  "ipa": "/ˈnoʊ/ /wˈeɪ/",
+  "audio": "audio/no_way.mp3"
+ },
+ {
+  "en": "on (the) one hand...on the other hand",
+  "zh": "一方面...另一方面...",
+  "group": "Part 04",
+  "ipa": "/ˈɒn/ /ðə/ /wˈɒn/ /hˈænd/ /ˈɒn/ /ðə/ /ˈʌðə/ /hˈænd/",
+  "audio": "audio/on_the_one_hand_on_the_other_hand.mp3"
+ },
+ {
+  "en": "on average",
+  "zh": "平均而言",
+  "group": "Part 04",
+  "ipa": "/ˈɒn/ /ˈævɹɪdʒ/",
+  "audio": "audio/on_average.mp3"
+ },
+ {
+  "en": "on earth",
+  "zh": "究竟；到底（用于强调）",
+  "group": "Part 04",
+  "ipa": "/ˈɒn/ /ˈɜːθ/",
+  "audio": "audio/on_earth.mp3"
+ },
+ {
+  "en": "on hand",
+  "zh": "在手边；出席；即将发生",
+  "group": "Part 04",
+  "ipa": "/ˈɒn/ /hˈænd/",
+  "audio": "audio/on_hand.mp3"
+ },
+ {
+  "en": "on one's own",
+  "zh": "独自；独立地",
+  "group": "Part 04",
+  "ipa": "/ˈɒn/ /wˈɒn/ /ˈɛs/ /ˈəʊn/",
+  "audio": "audio/on_one_s_own.mp3"
+ },
+ {
+  "en": "on one's way to",
+  "zh": "在去...的路上",
+  "group": "Part 04",
+  "ipa": "/ˈɒn/ /wˈɒn/ /ˈɛs/ /wˈeɪ/ /tˈuː/",
+  "audio": "audio/on_one_s_way_to.mp3"
+ },
+ {
+  "en": "on the move",
+  "zh": "在移动中；在奔波",
+  "group": "Part 04",
+  "ipa": "/ˈɒn/ /ðə/ /mˈuːv/",
+  "audio": "audio/on_the_move.mp3"
+ },
+ {
+  "en": "on the part of",
+  "zh": "就...而言；由...做出的",
+  "group": "Part 04",
+  "ipa": "/ˈɒn/ /ðə/ /pˈɑːt/ /ˈɒv/",
+  "audio": "audio/on_the_part_of.mp3"
+ },
+ {
+  "en": "on the point of",
+  "zh": "正要...的时候",
+  "group": "Part 04",
+  "ipa": "/ˈɒn/ /ðə/ /pˈɔɪnt/ /ˈɒv/",
+  "audio": "audio/on_the_point_of.mp3"
+ },
+ {
+  "en": "on the run",
+  "zh": "在逃；忙碌",
+  "group": "Part 04",
+  "ipa": "/ˈɒn/ /ðə/ /ɹˈʌn/",
+  "audio": "audio/on_the_run.mp3"
+ },
+ {
+  "en": "on time",
+  "zh": "准时",
+  "group": "Part 04",
+  "ipa": "/ˈɒn/ /tˈaɪm/",
+  "audio": "audio/on_time.mp3"
+ },
+ {
+  "en": "keep to",
+  "zh": "遵守；坚持；局限于",
+  "group": "Part 04",
+  "ipa": "/kˈiːp/ /tˈuː/",
+  "audio": "audio/keep_to.mp3"
+ },
+ {
+  "en": "keep up",
+  "zh": "保持；继续；不低落",
+  "group": "Part 04",
+  "ipa": "/kˈiːp/ /ˈʌp/",
+  "audio": "audio/keep_up.mp3"
+ },
+ {
+  "en": "keep up with",
+  "zh": "跟上；保持联系",
+  "group": "Part 04",
+  "ipa": "/kˈiːp/ /ˈʌp/ /wˈɪð/",
+  "audio": "audio/keep_up_with.mp3"
+ },
+ {
+  "en": "kill two birds with one stone",
+  "zh": "一石二鸟；一举两得",
+  "group": "Part 04",
+  "ipa": "/kˈɪl/ /tˈuː/ /bˈɜːdz/ /wˈɪð/ /wˈɒn/ /stˈəʊn/",
+  "audio": "audio/kill_two_birds_with_one_stone.mp3"
+ },
+ {
+  "en": "lay off",
+  "zh": "解雇；停止；休息",
+  "group": "Part 04",
+  "ipa": "/lˈeɪ/ /ˈɒf/",
+  "audio": "audio/lay_off.mp3"
+ },
+ {
+  "en": "lend sb. a hand",
+  "zh": "帮助某人",
+  "group": "Part 04",
+  "ipa": "/lˈɛnd/ /ˈeɪ/ /hˈænd/",
+  "audio": "audio/lend_sb_a_hand.mp3"
+ },
+ {
+  "en": "lie in",
+  "zh": "在于；睡懒觉",
+  "group": "Part 04",
+  "ipa": "/lˈaɪ/ /ˈɪn/",
+  "audio": "audio/lie_in.mp3"
+ },
+ {
+  "en": "live off",
+  "zh": "靠...生活；依赖...生活",
+  "group": "Part 04",
+  "ipa": "/ˈɫaɪv/ /ˈɒf/",
+  "audio": "audio/live_off.mp3"
+ },
+ {
+  "en": "live on",
+  "zh": "以...为食；靠...生活",
+  "group": "Part 04",
+  "ipa": "/ˈɫaɪv/ /ˈɒn/",
+  "audio": "audio/live_on.mp3"
+ },
+ {
+  "en": "live out",
+  "zh": "活过（某段时间）；实践",
+  "group": "Part 04",
+  "ipa": "/ˈɫaɪv/ /ˈaʊt/",
+  "audio": "audio/live_out.mp3"
+ },
+ {
+  "en": "live through",
+  "zh": "度过；经受住",
+  "group": "Part 04",
+  "ipa": "/ˈɫaɪv/ /θɹˈuː/",
+  "audio": "audio/live_through.mp3"
+ },
+ {
+  "en": "live up to",
+  "zh": "不辜负；符合；实践",
+  "group": "Part 04",
+  "ipa": "/ˈɫaɪv/ /ˈʌp/ /tˈuː/",
+  "audio": "audio/live_up_to.mp3"
+ },
+ {
+  "en": "live with",
+  "zh": "忍受；与...同居",
+  "group": "Part 04",
+  "ipa": "/ˈɫaɪv/ /wˈɪð/",
+  "audio": "audio/live_with.mp3"
+ },
+ {
+  "en": "look after",
+  "zh": "照顾；照料",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /ˈɑːftə/",
+  "audio": "audio/look_after.mp3"
+ },
+ {
+  "en": "make up one's mind",
+  "zh": "下定决心",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /ˈʌp/ /wˈɒn/ /ˈɛs/ /mˈaɪnd/",
+  "audio": "audio/make_up_one_s_mind.mp3"
+ },
+ {
+  "en": "make use of",
+  "zh": "利用",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /ˈjus/ /ˈɒv/",
+  "audio": "audio/make_use_of.mp3"
+ },
+ {
+  "en": "map out",
+  "zh": "制定；计划；绘制",
+  "group": "Part 04",
+  "ipa": "/mˈæp/ /ˈaʊt/",
+  "audio": "audio/map_out.mp3"
+ },
+ {
+  "en": "meet with",
+  "zh": "遭遇；会见；符合",
+  "group": "Part 04",
+  "ipa": "/mˈiːt/ /wˈɪð/",
+  "audio": "audio/meet_with.mp3"
+ },
+ {
+  "en": "miss out",
+  "zh": "错过；遗漏",
+  "group": "Part 04",
+  "ipa": "/mˈɪs/ /ˈaʊt/",
+  "audio": "audio/miss_out.mp3"
+ },
+ {
+  "en": "mix up",
+  "zh": "混淆；弄乱",
+  "group": "Part 04",
+  "ipa": "/mˈɪks/ /ˈʌp/",
+  "audio": "audio/mix_up.mp3"
+ },
+ {
+  "en": "more and more",
+  "zh": "越来越多",
+  "group": "Part 04",
+  "ipa": "/mˈɔː/ /ˈænd/ /mˈɔː/",
+  "audio": "audio/more_and_more.mp3"
+ },
+ {
+  "en": "more or less",
+  "zh": "或多或少；大约",
+  "group": "Part 04",
+  "ipa": "/mˈɔː/ /ˈɔː/ /lˈɛs/",
+  "audio": "audio/more_or_less.mp3"
+ },
+ {
+  "en": "more than",
+  "zh": "超过；不只是",
+  "group": "Part 04",
+  "ipa": "/mˈɔː/ /ðˈən/",
+  "audio": "audio/more_than.mp3"
+ },
+ {
+  "en": "move about/around",
+  "zh": "到处走动；经常搬家",
+  "group": "Part 04",
+  "ipa": "/mˈuːv/ /əbˈaʊt/ /əɹˈaʊnd/",
+  "audio": "audio/move_about_around.mp3"
+ },
+ {
+  "en": "move in on",
+  "zh": "逼近；干预；侵吞",
+  "group": "Part 04",
+  "ipa": "/mˈuːv/ /ˈɪn/ /ˈɒn/",
+  "audio": "audio/move_in_on.mp3"
+ },
+ {
+  "en": "move on",
+  "zh": "继续前进；离开；转换话题",
+  "group": "Part 04",
+  "ipa": "/mˈuːv/ /ˈɒn/",
+  "audio": "audio/move_on.mp3"
+ },
+ {
+  "en": "move up",
+  "zh": "提升；上升；提前",
+  "group": "Part 04",
+  "ipa": "/mˈuːv/ /ˈʌp/",
+  "audio": "audio/move_up.mp3"
+ },
+ {
+  "en": "narrow down",
+  "zh": "缩小；减少",
+  "group": "Part 04",
+  "ipa": "/nˈæɹəʊ/ /dˈaʊn/",
+  "audio": "audio/narrow_down.mp3"
+ },
+ {
+  "en": "look ahead",
+  "zh": "向前看；展望未来",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /əhˈɛd/",
+  "audio": "audio/look_ahead.mp3"
+ },
+ {
+  "en": "look at",
+  "zh": "看；考虑；审视",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /ˈæt/",
+  "audio": "audio/look_at.mp3"
+ },
+ {
+  "en": "look back",
+  "zh": "回顾；回头看",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /bˈæk/",
+  "audio": "audio/look_back.mp3"
+ },
+ {
+  "en": "look down on/upon",
+  "zh": "看不起；轻视",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /dˈaʊn/ /ˈɒn/ /əpˈɒn/",
+  "audio": "audio/look_down_on_upon.mp3"
+ },
+ {
+  "en": "look for",
+  "zh": "寻找；期望",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /fˈɔː/",
+  "audio": "audio/look_for.mp3"
+ },
+ {
+  "en": "look forward to",
+  "zh": "期待；盼望",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /fˈɔːwəd/ /tˈuː/",
+  "audio": "audio/look_forward_to.mp3"
+ },
+ {
+  "en": "look in (on) sb.",
+  "zh": "顺便看望某人",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /ˈɪn/ /ˈɒn/",
+  "audio": "audio/look_in_on_sb.mp3"
+ },
+ {
+  "en": "look into",
+  "zh": "调查；研究；向里看",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /ˈɪntʊ/",
+  "audio": "audio/look_into.mp3"
+ },
+ {
+  "en": "look on",
+  "zh": "观看；旁观；看待",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /ˈɒn/",
+  "audio": "audio/look_on.mp3"
+ },
+ {
+  "en": "look out",
+  "zh": "当心；向外看",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /ˈaʊt/",
+  "audio": "audio/look_out.mp3"
+ },
+ {
+  "en": "look over",
+  "zh": "检查；浏览",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /ˈəʊvə/",
+  "audio": "audio/look_over.mp3"
+ },
+ {
+  "en": "look through",
+  "zh": "浏览；看穿；仔细检查",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /θɹˈuː/",
+  "audio": "audio/look_through.mp3"
+ },
+ {
+  "en": "look to sth.",
+  "zh": "注意；指望；面向",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /tˈuː/",
+  "audio": "audio/look_to_sth.mp3"
+ },
+ {
+  "en": "point out",
+  "zh": "指出；指明",
+  "group": "Part 04",
+  "ipa": "/pˈɔɪnt/ /ˈaʊt/",
+  "audio": "audio/point_out.mp3"
+ },
+ {
+  "en": "pull apart",
+  "zh": "拉开；拆开；批评",
+  "group": "Part 04",
+  "ipa": "/pˈʊl/ /əpˈɑːt/",
+  "audio": "audio/pull_apart.mp3"
+ },
+ {
+  "en": "pull away",
+  "zh": "开走；离开；脱身",
+  "group": "Part 04",
+  "ipa": "/pˈʊl/ /əwˈeɪ/",
+  "audio": "audio/pull_away.mp3"
+ },
+ {
+  "en": "pull down",
+  "zh": "拆毁；推翻；拉下",
+  "group": "Part 04",
+  "ipa": "/pˈʊl/ /dˈaʊn/",
+  "audio": "audio/pull_down.mp3"
+ },
+ {
+  "en": "pull in",
+  "zh": "进站；靠边停下；吸引",
+  "group": "Part 04",
+  "ipa": "/pˈʊl/ /ˈɪn/",
+  "audio": "audio/pull_in.mp3"
+ },
+ {
+  "en": "pull off",
+  "zh": "成功完成；脱下；停靠",
+  "group": "Part 04",
+  "ipa": "/pˈʊl/ /ˈɒf/",
+  "audio": "audio/pull_off.mp3"
+ },
+ {
+  "en": "pull out",
+  "zh": "拔出；退出；驶出",
+  "group": "Part 04",
+  "ipa": "/pˈʊl/ /ˈaʊt/",
+  "audio": "audio/pull_out.mp3"
+ },
+ {
+  "en": "pull over",
+  "zh": "靠边停车",
+  "group": "Part 04",
+  "ipa": "/pˈʊl/ /ˈəʊvə/",
+  "audio": "audio/pull_over.mp3"
+ },
+ {
+  "en": "pull through",
+  "zh": "度过难关；恢复健康",
+  "group": "Part 04",
+  "ipa": "/pˈʊl/ /θɹˈuː/",
+  "audio": "audio/pull_through.mp3"
+ },
+ {
+  "en": "pull together",
+  "zh": "齐心协力；振作起来",
+  "group": "Part 04",
+  "ipa": "/pˈʊl/ /təɡˈɛðə/",
+  "audio": "audio/pull_together.mp3"
+ },
+ {
+  "en": "pull up",
+  "zh": "停下；拔起；阻止",
+  "group": "Part 04",
+  "ipa": "/pˈʊl/ /ˈʌp/",
+  "audio": "audio/pull_up.mp3"
+ },
+ {
+  "en": "put across/over",
+  "zh": "解释清楚；使被理解",
+  "group": "Part 04",
+  "ipa": "/ˈpʊt/ /əkɹˈɒs/ /ˈəʊvə/",
+  "audio": "audio/put_across_over.mp3"
+ },
+ {
+  "en": "put aside",
+  "zh": "放在一边；储存；忽视",
+  "group": "Part 04",
+  "ipa": "/ˈpʊt/ /əsˈaɪd/",
+  "audio": "audio/put_aside.mp3"
+ },
+ {
+  "en": "look up",
+  "zh": "查阅；向上看；好转",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /ˈʌp/",
+  "audio": "audio/look_up.mp3"
+ },
+ {
+  "en": "look up to sb.",
+  "zh": "尊敬某人；仰慕",
+  "group": "Part 04",
+  "ipa": "/lˈʊk/ /ˈʌp/ /tˈuː/",
+  "audio": "audio/look_up_to_sb.mp3"
+ },
+ {
+  "en": "lose heart",
+  "zh": "丧失信心；泄气",
+  "group": "Part 04",
+  "ipa": "/lˈuːz/ /hˈɑːt/",
+  "audio": "audio/lose_heart.mp3"
+ },
+ {
+  "en": "make a point of (doing sth.)",
+  "zh": "坚持做某事；重视做某事",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /ˈeɪ/ /pˈɔɪnt/ /ˈɒv/ /dˈuːɪŋ/",
+  "audio": "audio/make_a_point_of_doing_sth.mp3"
+ },
+ {
+  "en": "make believe",
+  "zh": "假装；假扮",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /bɪlˈiːv/",
+  "audio": "audio/make_believe.mp3"
+ },
+ {
+  "en": "make for sth.",
+  "zh": "走向；有助于；导致",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /fˈɔː/",
+  "audio": "audio/make_for_sth.mp3"
+ },
+ {
+  "en": "make it",
+  "zh": "成功；达到；及时赶到",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /ˈɪt/",
+  "audio": "audio/make_it.mp3"
+ },
+ {
+  "en": "make of",
+  "zh": "理解；由...制成（看得出原材料）",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /ˈɒv/",
+  "audio": "audio/make_of.mp3"
+ },
+ {
+  "en": "make off",
+  "zh": "匆忙离开；逃走",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /ˈɒf/",
+  "audio": "audio/make_off.mp3"
+ },
+ {
+  "en": "make one's way",
+  "zh": "前往；行进；成功",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /wˈɒn/ /ˈɛs/ /wˈeɪ/",
+  "audio": "audio/make_one_s_way.mp3"
+ },
+ {
+  "en": "make out",
+  "zh": "辨认出；理解；填写",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /ˈaʊt/",
+  "audio": "audio/make_out.mp3"
+ },
+ {
+  "en": "make up",
+  "zh": "组成；编造；化妆；和解",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /ˈʌp/",
+  "audio": "audio/make_up.mp3"
+ },
+ {
+  "en": "make up for",
+  "zh": "补偿；弥补",
+  "group": "Part 04",
+  "ipa": "/mˈeɪk/ /ˈʌp/ /fˈɔː/",
+  "audio": "audio/make_up_for.mp3"
+ },
+ {
+  "en": "one way or another",
+  "zh": "无论如何；以某种方式",
+  "group": "Part 04",
+  "ipa": "/wˈɒn/ /wˈeɪ/ /ˈɔː/ /ənˈʌðə/",
+  "audio": "audio/one_way_or_another.mp3"
+ },
+ {
+  "en": "out of hand",
+  "zh": "失控；立即；无法控制",
+  "group": "Part 04",
+  "ipa": "/ˈaʊt/ /ˈɒv/ /hˈænd/",
+  "audio": "audio/out_of_hand.mp3"
+ },
+ {
+  "en": "out of place",
+  "zh": "不在适当位置；不合适",
+  "group": "Part 05",
+  "ipa": "/ˈaʊt/ /ˈɒv/ /plˈeɪs/",
+  "audio": "audio/out_of_place.mp3"
+ },
+ {
+  "en": "out of practice",
+  "zh": "荒疏；缺乏练习",
+  "group": "Part 05",
+  "ipa": "/ˈaʊt/ /ˈɒv/ /pɹˈæktɪs/",
+  "audio": "audio/out_of_practice.mp3"
+ },
+ {
+  "en": "out of shape",
+  "zh": "变形；身体不佳",
+  "group": "Part 05",
+  "ipa": "/ˈaʊt/ /ˈɒv/ /ʃˈeɪp/",
+  "audio": "audio/out_of_shape.mp3"
+ },
+ {
+  "en": "out of the way",
+  "zh": "偏僻的；不挡道；得到解决",
+  "group": "Part 05",
+  "ipa": "/ˈaʊt/ /ˈɒv/ /ðə/ /wˈeɪ/",
+  "audio": "audio/out_of_the_way.mp3"
+ },
+ {
+  "en": "out of work",
+  "zh": "失业",
+  "group": "Part 05",
+  "ipa": "/ˈaʊt/ /ˈɒv/ /wˈɜːk/",
+  "audio": "audio/out_of_work.mp3"
+ },
+ {
+  "en": "part of...",
+  "zh": "...的一部分",
+  "group": "Part 05",
+  "ipa": "/pˈɑːt/ /ˈɒv/",
+  "audio": "audio/part_of.mp3"
+ },
+ {
+  "en": "part with",
+  "zh": "放弃；交出；与...分离",
+  "group": "Part 05",
+  "ipa": "/pˈɑːt/ /wˈɪð/",
+  "audio": "audio/part_with.mp3"
+ },
+ {
+  "en": "pay attention to",
+  "zh": "注意；关注",
+  "group": "Part 05",
+  "ipa": "/pˈeɪ/ /ətˈɛnʃən/ /tˈuː/",
+  "audio": "audio/pay_attention_to.mp3"
+ },
+ {
+  "en": "pay off",
+  "zh": "还清；取得成功；得到回报",
+  "group": "Part 05",
+  "ipa": "/pˈeɪ/ /ˈɒf/",
+  "audio": "audio/pay_off.mp3"
+ },
+ {
+  "en": "pick up",
+  "zh": "捡起；接人；学会；好转",
+  "group": "Part 05",
+  "ipa": "/pˈɪk/ /ˈʌp/",
+  "audio": "audio/pick_up.mp3"
+ },
+ {
+  "en": "pile up",
+  "zh": "堆积；积累",
+  "group": "Part 05",
+  "ipa": "/pˈaɪl/ /ˈʌp/",
+  "audio": "audio/pile_up.mp3"
+ },
+ {
+  "en": "play a part",
+  "zh": "起作用；扮演角色",
+  "group": "Part 05",
+  "ipa": "/plˈeɪ/ /ˈeɪ/ /pˈɑːt/",
+  "audio": "audio/play_a_part.mp3"
+ },
+ {
+  "en": "put away",
+  "zh": "收好；储存；放弃",
+  "group": "Part 05",
+  "ipa": "/ˈpʊt/ /əwˈeɪ/",
+  "audio": "audio/put_away.mp3"
+ },
+ {
+  "en": "put down",
+  "zh": "放下；记下；镇压",
+  "group": "Part 05",
+  "ipa": "/ˈpʊt/ /dˈaʊn/",
+  "audio": "audio/put_down.mp3"
+ },
+ {
+  "en": "put forward",
+  "zh": "提出；推举；将...提前",
+  "group": "Part 05",
+  "ipa": "/ˈpʊt/ /fˈɔːwəd/",
+  "audio": "audio/put_forward.mp3"
+ },
+ {
+  "en": "put in",
+  "zh": "提出；提交；插入；花费",
+  "group": "Part 05",
+  "ipa": "/ˈpʊt/ /ˈɪn/",
+  "audio": "audio/put_in.mp3"
+ },
+ {
+  "en": "put...into practice",
+  "zh": "将...付诸实践",
+  "group": "Part 05",
+  "ipa": "/ˈpʊt/ /ˈɪntʊ/ /pɹˈæktɪs/",
+  "audio": "audio/put_into_practice.mp3"
+ },
+ {
+  "en": "put off",
+  "zh": "推迟；搪塞；脱掉",
+  "group": "Part 05",
+  "ipa": "/ˈpʊt/ /ˈɒf/",
+  "audio": "audio/put_off.mp3"
+ },
+ {
+  "en": "put on",
+  "zh": "穿上；上演；增加（体重）",
+  "group": "Part 05",
+  "ipa": "/ˈpʊt/ /ˈɒn/",
+  "audio": "audio/put_on.mp3"
+ },
+ {
+  "en": "put out",
+  "zh": "熄灭；伸出；出版；使不便",
+  "group": "Part 05",
+  "ipa": "/ˈpʊt/ /ˈaʊt/",
+  "audio": "audio/put_out.mp3"
+ },
+ {
+  "en": "put through",
+  "zh": "接通电话；完成；使经历",
+  "group": "Part 05",
+  "ipa": "/ˈpʊt/ /θɹˈuː/",
+  "audio": "audio/put_through.mp3"
+ },
+ {
+  "en": "put up",
+  "zh": "举起；建造；张贴；提供住宿",
+  "group": "Part 05",
+  "ipa": "/ˈpʊt/ /ˈʌp/",
+  "audio": "audio/put_up.mp3"
+ },
+ {
+  "en": "put up with",
+  "zh": "忍受；容忍",
+  "group": "Part 05",
+  "ipa": "/ˈpʊt/ /ˈʌp/ /wˈɪð/",
+  "audio": "audio/put_up_with.mp3"
+ },
+ {
+  "en": "quite a bit of",
+  "zh": "相当多的",
+  "group": "Part 05",
+  "ipa": "/ˈkwaɪt/ /ˈeɪ/ /bˈɪt/ /ˈɒv/",
+  "audio": "audio/quite_a_bit_of.mp3"
+ },
+ {
+  "en": "rather than",
+  "zh": "而不是；宁可...也不愿",
+  "group": "Part 05",
+  "ipa": "/ɹˈɑːðə/ /ðˈən/",
+  "audio": "audio/rather_than.mp3"
+ },
+ {
+  "en": "such as",
+  "zh": "例如；诸如",
+  "group": "Part 05",
+  "ipa": "/sˈʌtʃ/ /ˈæz/",
+  "audio": "audio/such_as.mp3"
+ },
+ {
+  "en": "take sb. aback",
+  "zh": "使某人吃惊",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /əbˈæk/",
+  "audio": "audio/take_sb_aback.mp3"
+ },
+ {
+  "en": "take after",
+  "zh": "长得像；性格类似于（长辈）",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /ˈɑːftə/",
+  "audio": "audio/take_after.mp3"
+ },
+ {
+  "en": "take apart",
+  "zh": "拆开；严厉批评",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /əpˈɑːt/",
+  "audio": "audio/take_apart.mp3"
+ },
+ {
+  "en": "take away",
+  "zh": "拿走；带走；减去",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /əwˈeɪ/",
+  "audio": "audio/take_away.mp3"
+ },
+ {
+  "en": "take back",
+  "zh": "收回；退回；使回忆起",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /bˈæk/",
+  "audio": "audio/take_back.mp3"
+ },
+ {
+  "en": "take care of",
+  "zh": "照顾；处理；负责",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /kˈeə/ /ˈɒv/",
+  "audio": "audio/take_care_of.mp3"
+ },
+ {
+  "en": "take down",
+  "zh": "记下；拆卸；降低",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /dˈaʊn/",
+  "audio": "audio/take_down.mp3"
+ },
+ {
+  "en": "take heart",
+  "zh": "振作起来；鼓起勇气",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /hˈɑːt/",
+  "audio": "audio/take_heart.mp3"
+ },
+ {
+  "en": "take in",
+  "zh": "吸收；理解；欺骗；收留",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /ˈɪn/",
+  "audio": "audio/take_in.mp3"
+ },
+ {
+  "en": "take off",
+  "zh": "起飞；脱下；成功；请假",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /ˈɒf/",
+  "audio": "audio/take_off.mp3"
+ },
+ {
+  "en": "take on",
+  "zh": "承担；呈现；雇佣；接受挑战",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /ˈɒn/",
+  "audio": "audio/take_on.mp3"
+ },
+ {
+  "en": "take one's breath away",
+  "zh": "使某人惊叹/窒息",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /wˈɒn/ /ˈɛs/ /bɹˈɛθ/ /əwˈeɪ/",
+  "audio": "audio/take_one_s_breath_away.mp3"
+ },
+ {
+  "en": "take one's mind off sth.",
+  "zh": "转移某人对某事的注意力",
+  "group": "Part 05",
+  "ipa": "/tˈeɪk/ /wˈɒn/ /ˈɛs/ /mˈaɪnd/ /ˈɒf/",
+  "audio": "audio/take_one_s_mind_off_sth.mp3"
+ },
+ {
+  "en": "regard...as",
+  "zh": "把...视为...",
+  "group": "Part 05",
+  "ipa": "/ɹɪɡˈɑːd/ /ˈæz/",
+  "audio": "audio/regard_as.mp3"
+ },
+ {
+  "en": "result from",
+  "zh": "由...引起；起因于",
+  "group": "Part 05",
+  "ipa": "/ɹɪzˈʌlt/ /fɹˈɒm/",
+  "audio": "audio/result_from.mp3"
+ },
+ {
+  "en": "rule out",
+  "zh": "排除；取消；划去",
+  "group": "Part 05",
+  "ipa": "/ɹˈuːl/ /ˈaʊt/",
+  "audio": "audio/rule_out.mp3"
+ },
+ {
+  "en": "run across",
+  "zh": "偶然遇到；跑着穿过",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /əkɹˈɒs/",
+  "audio": "audio/run_across.mp3"
+ },
+ {
+  "en": "run away with sb.",
+  "zh": "与某人私奔；轻易获胜",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /əwˈeɪ/ /wˈɪð/",
+  "audio": "audio/run_away_with_sb.mp3"
+ },
+ {
+  "en": "run down",
+  "zh": "撞倒；耗尽；诋毁；停止",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /dˈaʊn/",
+  "audio": "audio/run_down.mp3"
+ },
+ {
+  "en": "run for",
+  "zh": "竞选；跑向",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /fˈɔː/",
+  "audio": "audio/run_for.mp3"
+ },
+ {
+  "en": "run into",
+  "zh": "撞上；偶遇；陷入（困境）",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /ˈɪntʊ/",
+  "audio": "audio/run_into.mp3"
+ },
+ {
+  "en": "run off",
+  "zh": "逃跑；复印；流掉",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /ˈɒf/",
+  "audio": "audio/run_off.mp3"
+ },
+ {
+  "en": "run out (of)",
+  "zh": "用完；耗尽",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /ˈaʊt/ /ˈɒv/",
+  "audio": "audio/run_out_of.mp3"
+ },
+ {
+  "en": "run over",
+  "zh": "碾过；溢出；快速浏览",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /ˈəʊvə/",
+  "audio": "audio/run_over.mp3"
+ },
+ {
+  "en": "run through",
+  "zh": "贯穿；浏览；排练",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /θɹˈuː/",
+  "audio": "audio/run_through.mp3"
+ },
+ {
+  "en": "run to",
+  "zh": "跑到；达到；趋向",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /tˈuː/",
+  "audio": "audio/run_to.mp3"
+ },
+ {
+  "en": "run up against",
+  "zh": "遇到（困难）；偶然碰见",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /ˈʌp/ /əɡˈɛnst/",
+  "audio": "audio/run_up_against.mp3"
+ },
+ {
+  "en": "spread out",
+  "zh": "散开；蔓延；展开",
+  "group": "Part 05",
+  "ipa": "/spɹˈɛd/ /ˈaʊt/",
+  "audio": "audio/spread_out.mp3"
+ },
+ {
+  "en": "spring up",
+  "zh": "涌现；迅速生长",
+  "group": "Part 05",
+  "ipa": "/spɹˈɪŋ/ /ˈʌp/",
+  "audio": "audio/spring_up.mp3"
+ },
+ {
+  "en": "stand by",
+  "zh": "支持；袖手旁观；准备着",
+  "group": "Part 05",
+  "ipa": "/stˈænd/ /bˈaɪ/",
+  "audio": "audio/stand_by.mp3"
+ },
+ {
+  "en": "stand down",
+  "zh": "退出；退下；解除戒备",
+  "group": "Part 05",
+  "ipa": "/stˈænd/ /dˈaʊn/",
+  "audio": "audio/stand_down.mp3"
+ },
+ {
+  "en": "stand for",
+  "zh": "代表；象征；主张；容忍",
+  "group": "Part 05",
+  "ipa": "/stˈænd/ /fˈɔː/",
+  "audio": "audio/stand_for.mp3"
+ },
+ {
+  "en": "stand in for sb.",
+  "zh": "代替某人；临时替代",
+  "group": "Part 05",
+  "ipa": "/stˈænd/ /ˈɪn/ /fˈɔː/",
+  "audio": "audio/stand_in_for_sb.mp3"
+ },
+ {
+  "en": "stand out",
+  "zh": "突出；显眼；坚持",
+  "group": "Part 05",
+  "ipa": "/stˈænd/ /ˈaʊt/",
+  "audio": "audio/stand_out.mp3"
+ },
+ {
+  "en": "stand up",
+  "zh": "站起来；站得住脚；经得起",
+  "group": "Part 05",
+  "ipa": "/stˈænd/ /ˈʌp/",
+  "audio": "audio/stand_up.mp3"
+ },
+ {
+  "en": "stand up for",
+  "zh": "支持；捍卫；维护",
+  "group": "Part 05",
+  "ipa": "/stˈænd/ /ˈʌp/ /fˈɔː/",
+  "audio": "audio/stand_up_for.mp3"
+ },
+ {
+  "en": "stand up to",
+  "zh": "勇敢面对；经得起；抵抗",
+  "group": "Part 05",
+  "ipa": "/stˈænd/ /ˈʌp/ /tˈuː/",
+  "audio": "audio/stand_up_to.mp3"
+ },
+ {
+  "en": "stay away from",
+  "zh": "远离；避开",
+  "group": "Part 05",
+  "ipa": "/stˈeɪ/ /əwˈeɪ/ /fɹˈɒm/",
+  "audio": "audio/stay_away_from.mp3"
+ },
+ {
+  "en": "strike off",
+  "zh": "除去；删去；砍掉",
+  "group": "Part 05",
+  "ipa": "/stɹˈaɪk/ /ˈɒf/",
+  "audio": "audio/strike_off.mp3"
+ },
+ {
+  "en": "strike out",
+  "zh": "用力打；删去；开辟新路",
+  "group": "Part 05",
+  "ipa": "/stɹˈaɪk/ /ˈaʊt/",
+  "audio": "audio/strike_out.mp3"
+ },
+ {
+  "en": "run up",
+  "zh": "升起；积累；快速缝制",
+  "group": "Part 05",
+  "ipa": "/ɹˈʌn/ /ˈʌp/",
+  "audio": "audio/run_up.mp3"
+ },
+ {
+  "en": "see about sth.",
+  "zh": "处理；安排；考虑",
+  "group": "Part 05",
+  "ipa": "/sˈiː/ /əbˈaʊt/",
+  "audio": "audio/see_about_sth.mp3"
+ },
+ {
+  "en": "see...off",
+  "zh": "为...送行；击退",
+  "group": "Part 05",
+  "ipa": "/sˈiː/ /ˈɒf/",
+  "audio": "audio/see_off.mp3"
+ },
+ {
+  "en": "see out",
+  "zh": "送...出门；持续到...结束",
+  "group": "Part 05",
+  "ipa": "/sˈiː/ /ˈaʊt/",
+  "audio": "audio/see_out.mp3"
+ },
+ {
+  "en": "see through",
+  "zh": "看穿；识破；帮助度过难关",
+  "group": "Part 05",
+  "ipa": "/sˈiː/ /θɹˈuː/",
+  "audio": "audio/see_through.mp3"
+ },
+ {
+  "en": "see to sth.",
+  "zh": "处理；照顾；负责",
+  "group": "Part 05",
+  "ipa": "/sˈiː/ /tˈuː/",
+  "audio": "audio/see_to_sth.mp3"
+ },
+ {
+  "en": "see to it that",
+  "zh": "务必；确保",
+  "group": "Part 05",
+  "ipa": "/sˈiː/ /tˈuː/ /ˈɪt/ /ðˈæt/",
+  "audio": "audio/see_to_it_that.mp3"
+ },
+ {
+  "en": "seeing that",
+  "zh": "鉴于；由于；既然",
+  "group": "Part 05",
+  "ipa": "/sˈiːɪŋ/ /ðˈæt/",
+  "audio": "audio/seeing_that.mp3"
+ },
+ {
+  "en": "seem like",
+  "zh": "看起来像；似乎",
+  "group": "Part 05",
+  "ipa": "/sˈiːm/ /lˈaɪk/",
+  "audio": "audio/seem_like.mp3"
+ },
+ {
+  "en": "send in",
+  "zh": "提交；递送；呈报",
+  "group": "Part 05",
+  "ipa": "/sˈɛnd/ /ˈɪn/",
+  "audio": "audio/send_in.mp3"
+ },
+ {
+  "en": "send out",
+  "zh": "发出；派遣；长出",
+  "group": "Part 05",
+  "ipa": "/sˈɛnd/ /ˈaʊt/",
+  "audio": "audio/send_out.mp3"
+ },
+ {
+  "en": "set about",
+  "zh": "着手做；开始做",
+  "group": "Part 05",
+  "ipa": "/sˈɛt/ /əbˈaʊt/",
+  "audio": "audio/set_about.mp3"
+ },
+ {
+  "en": "set against",
+  "zh": "使反对；使对立；使抵消",
+  "group": "Part 05",
+  "ipa": "/sˈɛt/ /əɡˈɛnst/",
+  "audio": "audio/set_against.mp3"
+ },
+ {
+  "en": "set apart",
+  "zh": "区分开；留下；使突出",
+  "group": "Part 05",
+  "ipa": "/sˈɛt/ /əpˈɑːt/",
+  "audio": "audio/set_apart.mp3"
+ },
+ {
+  "en": "set aside",
+  "zh": "留出；放置一边；驳回",
+  "group": "Part 05",
+  "ipa": "/sˈɛt/ /əsˈaɪd/",
+  "audio": "audio/set_aside.mp3"
+ },
+ {
+  "en": "that is to say",
+  "zh": "也就是说；即",
+  "group": "Part 05",
+  "ipa": "/ðˈæt/ /ˈɪz/ /tˈuː/ /sˈeɪ/",
+  "audio": "audio/that_is_to_say.mp3"
+ },
+ {
+  "en": "the moment (that)",
+  "zh": "一...就...",
+  "group": "Part 05",
+  "ipa": "/ðə/ /mˈəʊmənt/ /ðˈæt/",
+  "audio": "audio/the_moment_that.mp3"
+ },
+ {
+  "en": "throw off",
+  "zh": "摆脱；扔掉；轻易击败",
+  "group": "Part 05",
+  "ipa": "/θɹˈəʊ/ /ˈɒf/",
+  "audio": "audio/throw_off.mp3"
+ },
+ {
+  "en": "to my mind",
+  "zh": "在我看来；我认为",
+  "group": "Part 05",
+  "ipa": "/tˈuː/ /mˈaɪ/ /mˈaɪnd/",
+  "audio": "audio/to_my_mind.mp3"
+ },
+ {
+  "en": "to one's heart's content",
+  "zh": "尽情地；心满意足地",
+  "group": "Part 05",
+  "ipa": "/tˈuː/ /wˈɒn/ /ˈɛs/ /hˈɑːt/ /ˈɛs/ /ˈkɑntɛnt/",
+  "audio": "audio/to_one_s_heart_s_content.mp3"
+ },
+ {
+  "en": "to the point",
+  "zh": "切中要害；中肯",
+  "group": "Part 05",
+  "ipa": "/tˈuː/ /ðə/ /pˈɔɪnt/",
+  "audio": "audio/to_the_point.mp3"
+ },
+ {
+  "en": "trip up",
+  "zh": "绊倒；使出错",
+  "group": "Part 05",
+  "ipa": "/tɹˈɪp/ /ˈʌp/",
+  "audio": "audio/trip_up.mp3"
+ },
+ {
+  "en": "turn around/round",
+  "zh": "转变；好转；转身",
+  "group": "Part 05",
+  "ipa": "/tˈɜːn/ /əɹˈaʊnd/ /ɹˈaʊnd/",
+  "audio": "audio/turn_around_round.mp3"
+ },
+ {
+  "en": "turn away",
+  "zh": "拒绝；走开；转过脸去",
+  "group": "Part 05",
+  "ipa": "/tˈɜːn/ /əwˈeɪ/",
+  "audio": "audio/turn_away.mp3"
+ },
+ {
+  "en": "turn back",
+  "zh": "返回；翻回；阻止",
+  "group": "Part 06",
+  "ipa": "/tˈɜːn/ /bˈæk/",
+  "audio": "audio/turn_back.mp3"
+ },
+ {
+  "en": "turn down",
+  "zh": "拒绝；调低；关小",
+  "group": "Part 06",
+  "ipa": "/tˈɜːn/ /dˈaʊn/",
+  "audio": "audio/turn_down.mp3"
+ },
+ {
+  "en": "turn in",
+  "zh": "上交；归还；上床睡觉",
+  "group": "Part 06",
+  "ipa": "/tˈɜːn/ /ˈɪn/",
+  "audio": "audio/turn_in.mp3"
+ },
+ {
+  "en": "turn off",
+  "zh": "关闭；拐弯；使失去兴趣",
+  "group": "Part 06",
+  "ipa": "/tˈɜːn/ /ˈɒf/",
+  "audio": "audio/turn_off.mp3"
+ },
+ {
+  "en": "turn on",
+  "zh": "打开；接通；取决于",
+  "group": "Part 06",
+  "ipa": "/tˈɜːn/ /ˈɒn/",
+  "audio": "audio/turn_on.mp3"
+ },
+ {
+  "en": "set back",
+  "zh": "推迟；使倒退；花费",
+  "group": "Part 06",
+  "ipa": "/sˈɛt/ /bˈæk/",
+  "audio": "audio/set_back.mp3"
+ },
+ {
+  "en": "set down",
+  "zh": "记下；放下；制定",
+  "group": "Part 06",
+  "ipa": "/sˈɛt/ /dˈaʊn/",
+  "audio": "audio/set_down.mp3"
+ },
+ {
+  "en": "set forth",
+  "zh": "提出；阐明；出发",
+  "group": "Part 06",
+  "ipa": "/sˈɛt/ /fˈɔːθ/",
+  "audio": "audio/set_forth.mp3"
+ },
+ {
+  "en": "set in",
+  "zh": "开始；来临；嵌入",
+  "group": "Part 06",
+  "ipa": "/sˈɛt/ /ˈɪn/",
+  "audio": "audio/set_in.mp3"
+ },
+ {
+  "en": "set off",
+  "zh": "出发；激起；引爆",
+  "group": "Part 06",
+  "ipa": "/sˈɛt/ /ˈɒf/",
+  "audio": "audio/set_off.mp3"
+ },
+ {
+  "en": "set on",
+  "zh": "攻击；使开始；决心",
+  "group": "Part 06",
+  "ipa": "/sˈɛt/ /ˈɒn/",
+  "audio": "audio/set_on.mp3"
+ },
+ {
+  "en": "set one's heart on",
+  "zh": "决心要；一心想要",
+  "group": "Part 06",
+  "ipa": "/sˈɛt/ /wˈɒn/ /ˈɛs/ /hˈɑːt/ /ˈɒn/",
+  "audio": "audio/set_one_s_heart_on.mp3"
+ },
+ {
+  "en": "set out",
+  "zh": "出发；开始；陈述；布置",
+  "group": "Part 06",
+  "ipa": "/sˈɛt/ /ˈaʊt/",
+  "audio": "audio/set_out.mp3"
+ },
+ {
+  "en": "set up",
+  "zh": "建立；装配；开业；安排",
+  "group": "Part 06",
+  "ipa": "/sˈɛt/ /ˈʌp/",
+  "audio": "audio/set_up.mp3"
+ },
+ {
+  "en": "show off",
+  "zh": "炫耀；卖弄",
+  "group": "Part 06",
+  "ipa": "/ʃˈəʊ/ /ˈɒf/",
+  "audio": "audio/show_off.mp3"
+ },
+ {
+  "en": "show up",
+  "zh": "露面；出现；使显现",
+  "group": "Part 06",
+  "ipa": "/ʃˈəʊ/ /ˈʌp/",
+  "audio": "audio/show_up.mp3"
+ },
+ {
+  "en": "sign up (for...)",
+  "zh": "报名参加；签约",
+  "group": "Part 06",
+  "ipa": "/sˈaɪn/ /ˈʌp/ /fˈɔː/",
+  "audio": "audio/sign_up_for.mp3"
+ },
+ {
+  "en": "so far",
+  "zh": "到目前为止",
+  "group": "Part 06",
+  "ipa": "/sˈəʊ/ /fˈɑː/",
+  "audio": "audio/so_far.mp3"
+ },
+ {
+  "en": "sooner or later",
+  "zh": "迟早；早晚",
+  "group": "Part 06",
+  "ipa": "/sˈuːnə/ /ˈɔː/ /lˈeɪtə/",
+  "audio": "audio/sooner_or_later.mp3"
+ },
+ {
+  "en": "space out",
+  "zh": "使昏昏沉沉；间隔开",
+  "group": "Part 06",
+  "ipa": "/spˈeɪs/ /ˈaʊt/",
+  "audio": "audio/space_out.mp3"
+ },
+ {
+  "en": "take out",
+  "zh": "取出；扣除；取得",
+  "group": "Part 06",
+  "ipa": "/tˈeɪk/ /ˈaʊt/",
+  "audio": "audio/take_out.mp3"
+ },
+ {
+  "en": "take out on",
+  "zh": "向...发泄",
+  "group": "Part 06",
+  "ipa": "/tˈeɪk/ /ˈaʊt/ /ˈɒn/",
+  "audio": "audio/take_out_on.mp3"
+ },
+ {
+  "en": "take over",
+  "zh": "接管；接收；盛行",
+  "group": "Part 06",
+  "ipa": "/tˈeɪk/ /ˈəʊvə/",
+  "audio": "audio/take_over.mp3"
+ },
+ {
+  "en": "take part (in)",
+  "zh": "参加；参与",
+  "group": "Part 06",
+  "ipa": "/tˈeɪk/ /pˈɑːt/ /ˈɪn/",
+  "audio": "audio/take_part_in.mp3"
+ },
+ {
+  "en": "take place",
+  "zh": "发生；举行",
+  "group": "Part 06",
+  "ipa": "/tˈeɪk/ /plˈeɪs/",
+  "audio": "audio/take_place.mp3"
+ },
+ {
+  "en": "take the place of",
+  "zh": "代替；取代",
+  "group": "Part 06",
+  "ipa": "/tˈeɪk/ /ðə/ /plˈeɪs/ /ˈɒv/",
+  "audio": "audio/take_the_place_of.mp3"
+ },
+ {
+  "en": "take to (doing)",
+  "zh": "喜欢上；开始从事；养成习惯",
+  "group": "Part 06",
+  "ipa": "/tˈeɪk/ /tˈuː/ /dˈuːɪŋ/",
+  "audio": "audio/take_to_doing.mp3"
+ },
+ {
+  "en": "take...to heart",
+  "zh": "对...耿耿于怀；牢记在心",
+  "group": "Part 06",
+  "ipa": "/tˈeɪk/ /tˈuː/ /hˈɑːt/",
+  "audio": "audio/take_to_heart.mp3"
+ },
+ {
+  "en": "take up",
+  "zh": "占据；开始从事；接受",
+  "group": "Part 06",
+  "ipa": "/tˈeɪk/ /ˈʌp/",
+  "audio": "audio/take_up.mp3"
+ },
+ {
+  "en": "take up on",
+  "zh": "接受...的邀请；向...问",
+  "group": "Part 06",
+  "ipa": "/tˈeɪk/ /ˈʌp/ /ˈɒn/",
+  "audio": "audio/take_up_on.mp3"
+ },
+ {
+  "en": "take up with",
+  "zh": "开始与...交往；致力于",
+  "group": "Part 06",
+  "ipa": "/tˈeɪk/ /ˈʌp/ /wˈɪð/",
+  "audio": "audio/take_up_with.mp3"
+ },
+ {
+  "en": "tend to do sth.",
+  "zh": "倾向于做某事",
+  "group": "Part 06",
+  "ipa": "/tˈɛnd/ /tˈuː/ /ˈdu/",
+  "audio": "audio/tend_to_do_sth.mp3"
+ },
+ {
+  "en": "tend to sb./sth.",
+  "zh": "照料/护理某人/某物",
+  "group": "Part 06",
+  "ipa": "/tˈɛnd/ /tˈuː/",
+  "audio": "audio/tend_to_sb_sth.mp3"
+ },
+ {
+  "en": "turn out",
+  "zh": "结果是；生产；关掉；出席",
+  "group": "Part 06",
+  "ipa": "/tˈɜːn/ /ˈaʊt/",
+  "audio": "audio/turn_out.mp3"
+ },
+ {
+  "en": "turn over",
+  "zh": "移交；翻阅；翻转；周转",
+  "group": "Part 06",
+  "ipa": "/tˈɜːn/ /ˈəʊvə/",
+  "audio": "audio/turn_over.mp3"
+ },
+ {
+  "en": "turn to",
+  "zh": "求助于；转向；变成",
+  "group": "Part 06",
+  "ipa": "/tˈɜːn/ /tˈuː/",
+  "audio": "audio/turn_to.mp3"
+ },
+ {
+  "en": "turn up",
+  "zh": "出现；调高；发生",
+  "group": "Part 06",
+  "ipa": "/tˈɜːn/ /ˈʌp/",
+  "audio": "audio/turn_up.mp3"
+ },
+ {
+  "en": "under one's breath",
+  "zh": "低声细语；压低嗓音",
+  "group": "Part 06",
+  "ipa": "/ˈʌndə/ /wˈɒn/ /ˈɛs/ /bɹˈɛθ/",
+  "audio": "audio/under_one_s_breath.mp3"
+ },
+ {
+  "en": "under way",
+  "zh": "在进行中；在航行中",
+  "group": "Part 06",
+  "ipa": "/ˈʌndə/ /wˈeɪ/",
+  "audio": "audio/under_way.mp3"
+ },
+ {
+  "en": "up to",
+  "zh": "多达；取决于；胜任；正在做",
+  "group": "Part 06",
+  "ipa": "/ˈʌp/ /tˈuː/",
+  "audio": "audio/up_to.mp3"
+ },
+ {
+  "en": "wake up",
+  "zh": "醒来；唤醒；引起注意",
+  "group": "Part 06",
+  "ipa": "/wˈeɪk/ /ˈʌp/",
+  "audio": "audio/wake_up.mp3"
+ },
+ {
+  "en": "walk away/off with",
+  "zh": "轻易获胜；顺手拿走",
+  "group": "Part 06",
+  "ipa": "/wˈɔːk/ /əwˈeɪ/ /ˈɒf/ /wˈɪð/",
+  "audio": "audio/walk_away_off_with.mp3"
+ },
+ {
+  "en": "walk out",
+  "zh": "罢工；退席；走出",
+  "group": "Part 06",
+  "ipa": "/wˈɔːk/ /ˈaʊt/",
+  "audio": "audio/walk_out.mp3"
+ },
+ {
+  "en": "walk up",
+  "zh": "走上；走近；沿...走",
+  "group": "Part 06",
+  "ipa": "/wˈɔːk/ /ˈʌp/",
+  "audio": "audio/walk_up.mp3"
+ },
+ {
+  "en": "wash one's hands of",
+  "zh": "洗手不干；不再参与",
+  "group": "Part 06",
+  "ipa": "/wˈɒʃ/ /wˈɒn/ /ˈɛs/ /hˈændz/ /ˈɒv/",
+  "audio": "audio/wash_one_s_hands_of.mp3"
+ },
+ {
+  "en": "weave into",
+  "zh": "把...织入；把...编进",
+  "group": "Part 06",
+  "ipa": "/wˈiːv/ /ˈɪntʊ/",
+  "audio": "audio/weave_into.mp3"
+ },
+ {
+  "en": "gentle wind/rain",
+  "zh": "微风/细雨",
+  "group": "Part 06",
+  "ipa": "/dʒˈɛntəl/ /ˈwaɪnd/ /ɹˈeɪn/",
+  "audio": "audio/gentle_wind_rain.mp3"
+ },
+ {
+  "en": "gentle heart",
+  "zh": "温柔的心",
+  "group": "Part 06",
+  "ipa": "/dʒˈɛntəl/ /hˈɑːt/",
+  "audio": "audio/gentle_heart.mp3"
+ },
+ {
+  "en": "gentle slope",
+  "zh": "缓坡",
+  "group": "Part 06",
+  "ipa": "/dʒˈɛntəl/ /slˈəʊp/",
+  "audio": "audio/gentle_slope.mp3"
+ },
+ {
+  "en": "glow with pride",
+  "zh": "得意洋洋；自豪",
+  "group": "Part 06",
+  "ipa": "/ɡlˈəʊ/ /wˈɪð/ /pɹˈaɪd/",
+  "audio": "audio/glow_with_pride.mp3"
+ },
+ {
+  "en": "come to grief",
+  "zh": "遭受不幸；失败",
+  "group": "Part 06",
+  "ipa": "/kˈʌm/ /tˈuː/ /ɡɹˈiːf/",
+  "audio": "audio/come_to_grief.mp3"
+ },
+ {
+  "en": "bring sb. to grief",
+  "zh": "使某人遭受不幸",
+  "group": "Part 06",
+  "ipa": "/bɹˈɪŋ/ /tˈuː/ /ɡɹˈiːf/",
+  "audio": "audio/bring_sb_to_grief.mp3"
+ },
+ {
+  "en": "off (one's) guard",
+  "zh": "不提防；丧失警惕",
+  "group": "Part 06",
+  "ipa": "/ˈɒf/ /wˈɒn/ /ˈɛs/ /ɡˈɑːd/",
+  "audio": "audio/off_one_s_guard.mp3"
+ },
+ {
+  "en": "on (one's) guard",
+  "zh": "警惕；提防",
+  "group": "Part 06",
+  "ipa": "/ˈɒn/ /wˈɒn/ /ˈɛs/ /ɡˈɑːd/",
+  "audio": "audio/on_one_s_guard.mp3"
+ },
+ {
+  "en": "be immune to the disease",
+  "zh": "对该疾病免疫",
+  "group": "Part 06",
+  "ipa": "/bˈiː/ /ɪmjˈuːn/ /tˈuː/ /ðə/ /dɪzˈiːz/",
+  "audio": "audio/be_immune_to_the_disease.mp3"
+ },
+ {
+  "en": "be immune from taxation",
+  "zh": "免税",
+  "group": "Part 06",
+  "ipa": "/bˈiː/ /ɪmjˈuːn/ /fɹˈɒm/ /tæksˈeɪʃən/",
+  "audio": "audio/be_immune_from_taxation.mp3"
+ },
+ {
+  "en": "inform sb. of sth.",
+  "zh": "通知某人某事",
+  "group": "Part 06",
+  "ipa": "/ɪnfˈɔːm/ /ˈɒv/",
+  "audio": "audio/inform_sb_of_sth.mp3"
+ },
+ {
+  "en": "inform against/on sb.",
+  "zh": "告发某人；举报",
+  "group": "Part 06",
+  "ipa": "/ɪnfˈɔːm/ /əɡˈɛnst/ /ˈɒn/",
+  "audio": "audio/inform_against_on_sb.mp3"
+ },
+ {
+  "en": "keep...informed",
+  "zh": "随时向...报告情况",
+  "group": "Part 06",
+  "ipa": "/kˈiːp/ /ɪnfˈɔːmd/",
+  "audio": "audio/keep_informed.mp3"
+ },
+ {
+  "en": "the inner feelings",
+  "zh": "内心情感",
+  "group": "Part 06",
+  "ipa": "/ðə/ /ˈɪnə/ /fˈiːlɪŋz/",
+  "audio": "audio/the_inner_feelings.mp3"
+ },
+ {
+  "en": "the inner life",
+  "zh": "内心世界；精神生活",
+  "group": "Part 06",
+  "ipa": "/ðə/ /ˈɪnə/ /lˈaɪf/",
+  "audio": "audio/the_inner_life.mp3"
+ },
+ {
+  "en": "what is more",
+  "zh": "而且；更重要的是",
+  "group": "Part 06",
+  "ipa": "/wˈɒt/ /ˈɪz/ /mˈɔː/",
+  "audio": "audio/what_is_more.mp3"
+ },
+ {
+  "en": "wind up",
+  "zh": "结束；上发条；使紧张",
+  "group": "Part 06",
+  "ipa": "/ˈwaɪnd/ /ˈʌp/",
+  "audio": "audio/wind_up.mp3"
+ },
+ {
+  "en": "work at/on",
+  "zh": "致力于；从事；钻研",
+  "group": "Part 06",
+  "ipa": "/wˈɜːk/ /ˈæt/ /ˈɒn/",
+  "audio": "audio/work_at_on.mp3"
+ },
+ {
+  "en": "work off",
+  "zh": "消除；发泄；偿清",
+  "group": "Part 06",
+  "ipa": "/wˈɜːk/ /ˈɒf/",
+  "audio": "audio/work_off.mp3"
+ },
+ {
+  "en": "work out",
+  "zh": "解决；算出；锻炼；结果良好",
+  "group": "Part 06",
+  "ipa": "/wˈɜːk/ /ˈaʊt/",
+  "audio": "audio/work_out.mp3"
+ },
+ {
+  "en": "work up",
+  "zh": "逐步建立；激发；整理",
+  "group": "Part 06",
+  "ipa": "/wˈɜːk/ /ˈʌp/",
+  "audio": "audio/work_up.mp3"
+ },
+ {
+  "en": "write down",
+  "zh": "写下；记下",
+  "group": "Part 06",
+  "ipa": "/ɹˈaɪt/ /dˈaʊn/",
+  "audio": "audio/write_down.mp3"
+ },
+ {
+  "en": "out of context",
+  "zh": "脱离上下文；断章取义",
+  "group": "Part 06",
+  "ipa": "/ˈaʊt/ /ˈɒv/ /kˈɒntɛkst/",
+  "audio": "audio/out_of_context.mp3"
+ },
+ {
+  "en": "in the context of",
+  "zh": "在...背景下；在...语境中",
+  "group": "Part 06",
+  "ipa": "/ˈɪn/ /ðə/ /kˈɒntɛkst/ /ˈɒv/",
+  "audio": "audio/in_the_context_of.mp3"
+ },
+ {
+  "en": "defend...against/from",
+  "zh": "保护...免受",
+  "group": "Part 06",
+  "ipa": "/dɪfˈɛnd/ /əɡˈɛnst/ /fɹˈɒm/",
+  "audio": "audio/defend_against_from.mp3"
+ },
+ {
+  "en": "a blood donation",
+  "zh": "献血",
+  "group": "Part 06",
+  "ipa": "/ˈeɪ/ /blˈʌd/ /dəʊnˈeɪʃən/",
+  "audio": "audio/a_blood_donation.mp3"
+ },
+ {
+  "en": "make/give a donation",
+  "zh": "捐款；捐赠",
+  "group": "Part 06",
+  "ipa": "/mˈeɪk/ /ɡˈɪv/ /ˈeɪ/ /dəʊnˈeɪʃən/",
+  "audio": "audio/make_give_a_donation.mp3"
+ },
+ {
+  "en": "the drift of opinion",
+  "zh": "舆论动向",
+  "group": "Part 06",
+  "ipa": "/ðə/ /dɹˈɪft/ /ˈɒv/ /əpˈɪniən/",
+  "audio": "audio/the_drift_of_opinion.mp3"
+ },
+ {
+  "en": "catch the drift of an argument",
+  "zh": "理解论点的要旨",
+  "group": "Part 06",
+  "ipa": "/kˈætʃ/ /ðə/ /dɹˈɪft/ /ˈɒv/ /ˈən/ /ˈɑːɡjuːmənt/",
+  "audio": "audio/catch_the_drift_of_an_argument.mp3"
+ },
+ {
+  "en": "on edge",
+  "zh": "紧张不安；烦躁",
+  "group": "Part 06",
+  "ipa": "/ˈɒn/ /ˈɛdʒ/",
+  "audio": "audio/on_edge.mp3"
+ },
+ {
+  "en": "interfere in sb.'s private affairs",
+  "zh": "干涉某人的私事",
+  "group": "Part 06",
+  "ipa": "/ˌɪntəfˈiə/ /ˈɪn/ /ˈɛs/ /pɹˈaɪvət/ /əfˈeəz/",
+  "audio": "audio/interfere_in_sb_s_private_affairs.mp3"
+ },
+ {
+  "en": "lag behind",
+  "zh": "落后；滞后",
+  "group": "Part 06",
+  "ipa": "/lˈæɡ/ /bɪhˈaɪnd/",
+  "audio": "audio/lag_behind.mp3"
+ },
+ {
+  "en": "jet lag",
+  "zh": "时差反应",
+  "group": "Part 06",
+  "ipa": "/dʒˈɛt/ /lˈæɡ/",
+  "audio": "audio/jet_lag.mp3"
+ },
+ {
+  "en": "by tradition",
+  "zh": "按照传统",
+  "group": "Part 06",
+  "ipa": "/bˈaɪ/ /tɹədˈɪʃən/",
+  "audio": "audio/by_tradition.mp3"
+ },
+ {
+  "en": "true to tradition",
+  "zh": "忠实于传统",
+  "group": "Part 06",
+  "ipa": "/tɹˈuː/ /tˈuː/ /tɹədˈɪʃən/",
+  "audio": "audio/true_to_tradition.mp3"
+ },
+ {
+  "en": "observe sb. do sth.",
+  "zh": "观察某人做某事（全过程）",
+  "group": "Part 06",
+  "ipa": "/ɒbzˈɜːv/ /ˈdu/",
+  "audio": "audio/observe_sb_do_sth.mp3"
+ },
+ {
+  "en": "observe sb. doing sth.",
+  "zh": "观察某人正在做某事",
+  "group": "Part 06",
+  "ipa": "/ɒbzˈɜːv/ /dˈuːɪŋ/",
+  "audio": "audio/observe_sb_doing_sth.mp3"
+ },
+ {
+  "en": "pattern oneself after",
+  "zh": "模仿；效仿",
+  "group": "Part 06",
+  "ipa": "/pˈætən/ /wɒnsˈɛlf/ /ˈɑːftə/",
+  "audio": "audio/pattern_oneself_after.mp3"
+ },
+ {
+  "en": "penalty kick",
+  "zh": "点球；罚球",
+  "group": "Part 06",
+  "ipa": "/pˈɛnəlti/ /kˈɪk/",
+  "audio": "audio/penalty_kick.mp3"
+ },
+ {
+  "en": "penalty area",
+  "zh": "罚球区；禁区",
+  "group": "Part 06",
+  "ipa": "/pˈɛnəlti/ /ˈeəɹiə/",
+  "audio": "audio/penalty_area.mp3"
+ },
+ {
+  "en": "pension sb. off",
+  "zh": "发给某人养老金使其退休；解雇",
+  "group": "Part 06",
+  "ipa": "/ˈpɛnʃən/ /ˈɒf/",
+  "audio": "audio/pension_sb_off.mp3"
+ },
+ {
+  "en": "draw a pension",
+  "zh": "领取养老金",
+  "group": "Part 06",
+  "ipa": "/dɹˈɔː/ /ˈeɪ/ /ˈpɛnʃən/",
+  "audio": "audio/draw_a_pension.mp3"
+ },
+ {
+  "en": "win popularity",
+  "zh": "赢得人心；受欢迎",
+  "group": "Part 06",
+  "ipa": "/wˈɪn/ /pˌɒpjʊlˈæɹɪti/",
+  "audio": "audio/win_popularity.mp3"
+ },
+ {
+  "en": "lose popularity",
+  "zh": "失去人心；失宠",
+  "group": "Part 06",
+  "ipa": "/lˈuːz/ /pˌɒpjʊlˈæɹɪti/",
+  "audio": "audio/lose_popularity.mp3"
+ },
+ {
+  "en": "on the edge of",
+  "zh": "在...边缘；濒临",
+  "group": "Part 07",
+  "ipa": "/ˈɒn/ /ðə/ /ˈɛdʒ/ /ˈɒv/",
+  "audio": "audio/on_the_edge_of.mp3"
+ },
+ {
+  "en": "encourage sb. to do sth.",
+  "zh": "鼓励某人做某事",
+  "group": "Part 07",
+  "ipa": "/ɛnkˈʌɹɪdʒ/ /tˈuː/ /ˈdu/",
+  "audio": "audio/encourage_sb_to_do_sth.mp3"
+ },
+ {
+  "en": "discourage sb. from doing sth.",
+  "zh": "劝阻某人做某事",
+  "group": "Part 07",
+  "ipa": "/dɪskˈʌɹɪdʒ/ /fɹˈɒm/ /dˈuːɪŋ/",
+  "audio": "audio/discourage_sb_from_doing_sth.mp3"
+ },
+ {
+  "en": "at fault",
+  "zh": "有责任；有错",
+  "group": "Part 07",
+  "ipa": "/ˈæt/ /fˈɒlt/",
+  "audio": "audio/at_fault.mp3"
+ },
+ {
+  "en": "find fault with",
+  "zh": "挑剔；找茬；抱怨",
+  "group": "Part 07",
+  "ipa": "/fˈaɪnd/ /fˈɒlt/ /wˈɪð/",
+  "audio": "audio/find_fault_with.mp3"
+ },
+ {
+  "en": "merits and faults",
+  "zh": "优缺点",
+  "group": "Part 07",
+  "ipa": "/mˈɛɹɪts/ /ˈænd/ /fˈɒlts/",
+  "audio": "audio/merits_and_faults.mp3"
+ },
+ {
+  "en": "on file",
+  "zh": "存档；归档",
+  "group": "Part 07",
+  "ipa": "/ˈɒn/ /ˈfaɪɫ/",
+  "audio": "audio/on_file.mp3"
+ },
+ {
+  "en": "in file",
+  "zh": "排成纵队",
+  "group": "Part 07",
+  "ipa": "/ˈɪn/ /ˈfaɪɫ/",
+  "audio": "audio/in_file.mp3"
+ },
+ {
+  "en": "file in",
+  "zh": "鱼贯而入",
+  "group": "Part 07",
+  "ipa": "/ˈfaɪɫ/ /ˈɪn/",
+  "audio": "audio/file_in.mp3"
+ },
+ {
+  "en": "file out",
+  "zh": "鱼贯而出",
+  "group": "Part 07",
+  "ipa": "/ˈfaɪɫ/ /ˈaʊt/",
+  "audio": "audio/file_out.mp3"
+ },
+ {
+  "en": "try one's fortune",
+  "zh": "碰运气",
+  "group": "Part 07",
+  "ipa": "/tɹˈaɪ/ /wˈɒn/ /ˈɛs/ /fˈɔːtʃuːn/",
+  "audio": "audio/try_one_s_fortune.mp3"
+ },
+ {
+  "en": "make a fortune",
+  "zh": "发财；致富",
+  "group": "Part 07",
+  "ipa": "/mˈeɪk/ /ˈeɪ/ /fˈɔːtʃuːn/",
+  "audio": "audio/make_a_fortune.mp3"
+ },
+ {
+  "en": "a man of fortune",
+  "zh": "富人；有财产的人",
+  "group": "Part 07",
+  "ipa": "/ˈeɪ/ /mˈæn/ /ˈɒv/ /fˈɔːtʃuːn/",
+  "audio": "audio/a_man_of_fortune.mp3"
+ },
+ {
+  "en": "at a glance",
+  "zh": "一瞥；看一眼",
+  "group": "Part 07",
+  "ipa": "/ˈæt/ /ˈeɪ/ /ɡlˈɑːns/",
+  "audio": "audio/at_a_glance.mp3"
+ },
+ {
+  "en": "at first glance",
+  "zh": "乍一看；初看时",
+  "group": "Part 07",
+  "ipa": "/ˈæt/ /fˈɜːst/ /ɡlˈɑːns/",
+  "audio": "audio/at_first_glance.mp3"
+ },
+ {
+  "en": "push around",
+  "zh": "摆布；欺负；使唤",
+  "group": "Part 07",
+  "ipa": "/pˈʊʃ/ /əɹˈaʊnd/",
+  "audio": "audio/push_around.mp3"
+ },
+ {
+  "en": "push on",
+  "zh": "继续前进；推进",
+  "group": "Part 07",
+  "ipa": "/pˈʊʃ/ /ˈɒn/",
+  "audio": "audio/push_on.mp3"
+ },
+ {
+  "en": "when push comes to shove",
+  "zh": "紧要关头；迫不得已时",
+  "group": "Part 07",
+  "ipa": "/wˈɛn/ /pˈʊʃ/ /kˈʌmz/ /tˈuː/ /ʃˈʌv/",
+  "audio": "audio/when_push_comes_to_shove.mp3"
+ },
+ {
+  "en": "in the raw",
+  "zh": "处于自然状态；未加工的",
+  "group": "Part 07",
+  "ipa": "/ˈɪn/ /ðə/ /ɹˈɔː/",
+  "audio": "audio/in_the_raw.mp3"
+ },
+ {
+  "en": "a raw soldier",
+  "zh": "新兵；无经验的士兵",
+  "group": "Part 07",
+  "ipa": "/ˈeɪ/ /ɹˈɔː/ /sˈəʊldʒə/",
+  "audio": "audio/a_raw_soldier.mp3"
+ },
+ {
+  "en": "a raw wound",
+  "zh": "裸露的伤口",
+  "group": "Part 07",
+  "ipa": "/ˈeɪ/ /ɹˈɔː/ /ˈwaʊnd/",
+  "audio": "audio/a_raw_wound.mp3"
+ },
+ {
+  "en": "launch into",
+  "zh": "投入；开始做；进入",
+  "group": "Part 07",
+  "ipa": "/lˈɔːntʃ/ /ˈɪntʊ/",
+  "audio": "audio/launch_into.mp3"
+ },
+ {
+  "en": "launch an artificial satellite",
+  "zh": "发射人造卫星",
+  "group": "Part 07",
+  "ipa": "/lˈɔːntʃ/ /ˈən/ /ˌɑːtɪfˈɪʃəl/ /sˈætəlˌaɪt/",
+  "audio": "audio/launch_an_artificial_satellite.mp3"
+ },
+ {
+  "en": "launch a new enterprise",
+  "zh": "创办新企业",
+  "group": "Part 07",
+  "ipa": "/lˈɔːntʃ/ /ˈeɪ/ /njˈuː/ /ˈɛntəpɹˌaɪz/",
+  "audio": "audio/launch_a_new_enterprise.mp3"
+ },
+ {
+  "en": "launch an attack",
+  "zh": "发动攻击",
+  "group": "Part 07",
+  "ipa": "/lˈɔːntʃ/ /ˈən/ /ətˈæk/",
+  "audio": "audio/launch_an_attack.mp3"
+ },
+ {
+  "en": "lease sth. from sb.",
+  "zh": "从某人处租借某物",
+  "group": "Part 07",
+  "ipa": "/lˈiːs/ /fɹˈɒm/",
+  "audio": "audio/lease_sth_from_sb.mp3"
+ },
+ {
+  "en": "lease sth. to sb.",
+  "zh": "把某物出租给某人",
+  "group": "Part 07",
+  "ipa": "/lˈiːs/ /tˈuː/",
+  "audio": "audio/lease_sth_to_sb.mp3"
+ },
+ {
+  "en": "in a mess",
+  "zh": "乱七八糟；陷入困境",
+  "group": "Part 07",
+  "ipa": "/ˈɪn/ /ˈeɪ/ /mˈɛs/",
+  "audio": "audio/in_a_mess.mp3"
+ },
+ {
+  "en": "mess about/around",
+  "zh": "胡闹；瞎混；闲荡",
+  "group": "Part 07",
+  "ipa": "/mˈɛs/ /əbˈaʊt/ /əɹˈaʊnd/",
+  "audio": "audio/mess_about_around.mp3"
+ },
+ {
+  "en": "mess up",
+  "zh": "弄乱；搞糟；破坏",
+  "group": "Part 07",
+  "ipa": "/mˈɛs/ /ˈʌp/",
+  "audio": "audio/mess_up.mp3"
+ },
+ {
+  "en": "in gear",
+  "zh": "处于正常状态；挂上挡",
+  "group": "Part 07",
+  "ipa": "/ˈɪn/ /ɡˈiə/",
+  "audio": "audio/in_gear.mp3"
+ },
+ {
+  "en": "gear up",
+  "zh": "准备好；加速；促进",
+  "group": "Part 07",
+  "ipa": "/ɡˈiə/ /ˈʌp/",
+  "audio": "audio/gear_up.mp3"
+ },
+ {
+  "en": "be geared to",
+  "zh": "适合于；适应于",
+  "group": "Part 07",
+  "ipa": "/bˈiː/ /ɡˈiəd/ /tˈuː/",
+  "audio": "audio/be_geared_to.mp3"
+ },
+ {
+  "en": "on receipt of",
+  "zh": "一收到...就...",
+  "group": "Part 07",
+  "ipa": "/ˈɒn/ /ɹɪsˈiːt/ /ˈɒv/",
+  "audio": "audio/on_receipt_of.mp3"
+ },
+ {
+  "en": "be in receipt of",
+  "zh": "已收到...",
+  "group": "Part 07",
+  "ipa": "/bˈiː/ /ˈɪn/ /ɹɪsˈiːt/ /ˈɒv/",
+  "audio": "audio/be_in_receipt_of.mp3"
+ },
+ {
+  "en": "make inquiries of sb. about sth.",
+  "zh": "向某人询问某事",
+  "group": "Part 07",
+  "ipa": "/mˈeɪk/ /ɪnkwˈaɪəɹɪz/ /ˈɒv/ /əbˈaʊt/",
+  "audio": "audio/make_inquiries_of_sb_about_sth.mp3"
+ },
+ {
+  "en": "inquiry into...",
+  "zh": "对...的调查",
+  "group": "Part 07",
+  "ipa": "/ɪnkwˈaɪəɹi/ /ˈɪntʊ/",
+  "audio": "audio/inquiry_into.mp3"
+ },
+ {
+  "en": "inside out",
+  "zh": "里外翻转；彻底地",
+  "group": "Part 07",
+  "ipa": "/ˈɪnˌsaɪd/ /ˈaʊt/",
+  "audio": "audio/inside_out.mp3"
+ },
+ {
+  "en": "inside facts",
+  "zh": "内幕；内部事实",
+  "group": "Part 07",
+  "ipa": "/ˈɪnˌsaɪd/ /fˈækts/",
+  "audio": "audio/inside_facts.mp3"
+ },
+ {
+  "en": "labor intensity",
+  "zh": "劳动强度",
+  "group": "Part 07",
+  "ipa": "/lˈeɪbə/ /ɪntˈɛnsɪti/",
+  "audio": "audio/labor_intensity.mp3"
+ },
+ {
+  "en": "the intensity of the situation",
+  "zh": "局势的紧张程度",
+  "group": "Part 07",
+  "ipa": "/ðə/ /ɪntˈɛnsɪti/ /ˈɒv/ /ðə/ /sˌɪtʃuːˈeɪʃən/",
+  "audio": "audio/the_intensity_of_the_situation.mp3"
+ },
+ {
+  "en": "in the interest(s) of",
+  "zh": "为了...的利益；为了...起见",
+  "group": "Part 07",
+  "ipa": "/ˈɪn/ /ðə/ /ˈɪntɹəst/ /ˈɛs/ /ˈɒv/",
+  "audio": "audio/in_the_interest_s_of.mp3"
+ },
+ {
+  "en": "have no/an interest in",
+  "zh": "对...不感兴趣/感兴趣",
+  "group": "Part 07",
+  "ipa": "/ˈhæv/ /ˈnoʊ/ /ˈən/ /ˈɪntɹəst/ /ˈɪn/",
+  "audio": "audio/have_no_an_interest_in.mp3"
+ },
+ {
+  "en": "interfere in",
+  "zh": "干涉；干预",
+  "group": "Part 07",
+  "ipa": "/ˌɪntəfˈiə/ /ˈɪn/",
+  "audio": "audio/interfere_in.mp3"
+ },
+ {
+  "en": "interfere with",
+  "zh": "妨碍；干扰；乱动",
+  "group": "Part 07",
+  "ipa": "/ˌɪntəfˈiə/ /wˈɪð/",
+  "audio": "audio/interfere_with.mp3"
+ },
+ {
+  "en": "be engaged to sb.",
+  "zh": "与某人订婚",
+  "group": "Part 07",
+  "ipa": "/bˈiː/ /ɛnɡˈeɪdʒd/ /tˈuː/",
+  "audio": "audio/be_engaged_to_sb.mp3"
+ },
+ {
+  "en": "engage in sth.",
+  "zh": "从事；参加；忙于",
+  "group": "Part 07",
+  "ipa": "/ɛnɡˈeɪdʒ/ /ˈɪn/",
+  "audio": "audio/engage_in_sth.mp3"
+ },
+ {
+  "en": "a wedding reception",
+  "zh": "婚宴；结婚喜宴",
+  "group": "Part 07",
+  "ipa": "/ˈeɪ/ /wˈɛdɪŋ/ /ɹɪsˈɛpʃən/",
+  "audio": "audio/a_wedding_reception.mp3"
+ },
+ {
+  "en": "in faith",
+  "zh": "确实；毫无疑问",
+  "group": "Part 07",
+  "ipa": "/ˈɪn/ /fˈeɪθ/",
+  "audio": "audio/in_faith.mp3"
+ },
+ {
+  "en": "in good faith",
+  "zh": "真诚地；善意地",
+  "group": "Part 07",
+  "ipa": "/ˈɪn/ /ɡˈʊd/ /fˈeɪθ/",
+  "audio": "audio/in_good_faith.mp3"
+ },
+ {
+  "en": "have faith in",
+  "zh": "信任；对...有信心",
+  "group": "Part 07",
+  "ipa": "/ˈhæv/ /fˈeɪθ/ /ˈɪn/",
+  "audio": "audio/have_faith_in.mp3"
+ },
+ {
+  "en": "plug in",
+  "zh": "插入插头；接通电源",
+  "group": "Part 07",
+  "ipa": "/plˈʌɡ/ /ˈɪn/",
+  "audio": "audio/plug_in.mp3"
+ },
+ {
+  "en": "plug away (at)",
+  "zh": "埋头苦干；坚持不懈地做",
+  "group": "Part 07",
+  "ipa": "/plˈʌɡ/ /əwˈeɪ/ /ˈæt/",
+  "audio": "audio/plug_away_at.mp3"
+ },
+ {
+  "en": "a preliminary trial",
+  "zh": "初审；预审",
+  "group": "Part 07",
+  "ipa": "/ˈeɪ/ /pɹɪlˈɪmɪnəɹi/ /tɹˈaɪəl/",
+  "audio": "audio/a_preliminary_trial.mp3"
+ },
+ {
+  "en": "a preliminary exam",
+  "zh": "初试；预考",
+  "group": "Part 07",
+  "ipa": "/ˈeɪ/ /pɹɪlˈɪmɪnəɹi/ /ɛɡzˈæm/",
+  "audio": "audio/a_preliminary_exam.mp3"
+ },
+ {
+  "en": "preliminary remarks",
+  "zh": "开场白；前言",
+  "group": "Part 07",
+  "ipa": "/pɹɪlˈɪmɪnəɹi/ /ɹiˈmɑɹks/",
+  "audio": "audio/preliminary_remarks.mp3"
+ },
+ {
+  "en": "press on",
+  "zh": "继续前进；加紧进行",
+  "group": "Part 07",
+  "ipa": "/pɹˈɛs/ /ˈɒn/",
+  "audio": "audio/press_on.mp3"
+ },
+ {
+  "en": "press sth. on sb.",
+  "zh": "把...强加于某人；硬给",
+  "group": "Part 07",
+  "ipa": "/pɹˈɛs/ /ˈɒn/",
+  "audio": "audio/press_sth_on_sb.mp3"
+ },
+ {
+  "en": "press sb.'s hand",
+  "zh": "紧握某人的手",
+  "group": "Part 07",
+  "ipa": "/pɹˈɛs/ /ˈɛs/ /hˈænd/",
+  "audio": "audio/press_sb_s_hand.mp3"
+ },
+ {
+  "en": "prevail on/upon",
+  "zh": "说服；劝说",
+  "group": "Part 07",
+  "ipa": "/pɹɪvˈeɪl/ /ˈɒn/ /əpˈɒn/",
+  "audio": "audio/prevail_on_upon.mp3"
+ },
+ {
+  "en": "mess with",
+  "zh": "乱动；干预；与...捣乱",
+  "group": "Part 07",
+  "ipa": "/mˈɛs/ /wˈɪð/",
+  "audio": "audio/mess_with.mp3"
+ },
+ {
+  "en": "neglect one's meals and sleep",
+  "zh": "废寝忘食",
+  "group": "Part 07",
+  "ipa": "/nɪɡlˈɛkt/ /wˈɒn/ /ˈɛs/ /mˈiːlz/ /ˈænd/ /slˈiːp/",
+  "audio": "audio/neglect_one_s_meals_and_sleep.mp3"
+ },
+ {
+  "en": "neglect one's duties",
+  "zh": "玩忽职守",
+  "group": "Part 07",
+  "ipa": "/nɪɡlˈɛkt/ /wˈɒn/ /ˈɛs/ /djˈuːtɪz/",
+  "audio": "audio/neglect_one_s_duties.mp3"
+ },
+ {
+  "en": "keep...under (close) observation",
+  "zh": "对...进行（严密）监视/观察",
+  "group": "Part 07",
+  "ipa": "/kˈiːp/ /ˈʌndə/ /ˈkɫoʊs/ /ɒbzəvˈeɪʃən/",
+  "audio": "audio/keep_under_close_observation.mp3"
+ },
+ {
+  "en": "fall under sb.'s observation",
+  "zh": "被某人看到；引起某人注意",
+  "group": "Part 07",
+  "ipa": "/fˈɔːl/ /ˈʌndə/ /ˈɛs/ /ɒbzəvˈeɪʃən/",
+  "audio": "audio/fall_under_sb_s_observation.mp3"
+ },
+ {
+  "en": "escape observation",
+  "zh": "未被察觉；避开注意",
+  "group": "Part 07",
+  "ipa": "/ɛskˈeɪp/ /ɒbzəvˈeɪʃən/",
+  "audio": "audio/escape_observation.mp3"
+ },
+ {
+  "en": "mass observation",
+  "zh": "民意调查；大量观察",
+  "group": "Part 07",
+  "ipa": "/mˈæs/ /ɒbzəvˈeɪʃən/",
+  "audio": "audio/mass_observation.mp3"
+ },
+ {
+  "en": "refresh oneself with a cup of tea",
+  "zh": "喝杯茶提神",
+  "group": "Part 07",
+  "ipa": "/ɹɪˈfɹɛʃ/ /wɒnsˈɛlf/ /wˈɪð/ /ˈeɪ/ /kˈʌp/ /ˈɒv/ /tˈiː/",
+  "audio": "audio/refresh_oneself_with_a_cup_of_tea.mp3"
+ },
+ {
+  "en": "refresh sb.'s memory",
+  "zh": "唤起某人的记忆；提醒",
+  "group": "Part 07",
+  "ipa": "/ɹɪˈfɹɛʃ/ /ˈɛs/ /mˈɛməɹˌi/",
+  "audio": "audio/refresh_sb_s_memory.mp3"
+ },
+ {
+  "en": "adhere to = cling to = stick to",
+  "zh": "坚持；遵守；粘附",
+  "group": "Part 07",
+  "ipa": "/ədhˈiə/ /tˈuː/ /klˈɪŋ/ /tˈuː/ /stˈɪk/ /tˈuː/",
+  "audio": "audio/adhere_to_cling_to_stick_to.mp3"
+ },
+ {
+  "en": "restrain sb. from doing",
+  "zh": "阻止某人做某事",
+  "group": "Part 07",
+  "ipa": "/ɹɪstɹˈeɪn/ /fɹˈɒm/ /dˈuːɪŋ/",
+  "audio": "audio/restrain_sb_from_doing.mp3"
+ },
+ {
+  "en": "restrain oneself",
+  "zh": "克制自己",
+  "group": "Part 07",
+  "ipa": "/ɹɪstɹˈeɪn/ /wɒnsˈɛlf/",
+  "audio": "audio/restrain_oneself.mp3"
+ },
+ {
+  "en": "restrain sb. of sb.'s/one's liberty",
+  "zh": "束缚某人的自由",
+  "group": "Part 07",
+  "ipa": "/ɹɪstɹˈeɪn/ /ˈɒv/ /ˈɛs/ /wˈɒn/ /ˈɛs/ /lˈɪbəti/",
+  "audio": "audio/restrain_sb_of_sb_s_one_s_liberty.mp3"
+ },
+ {
+  "en": "be beyond restraint",
+  "zh": "无法控制；不能抑制",
+  "group": "Part 07",
+  "ipa": "/bˈiː/ /bɪjˈɒnd/ /ɹɪstɹˈeɪnt/",
+  "audio": "audio/be_beyond_restraint.mp3"
+ },
+ {
+  "en": "be the ruin of sb.",
+  "zh": "成为某人毁灭/破产的原因",
+  "group": "Part 07",
+  "ipa": "/bˈiː/ /ðə/ /ɹˈuːɪn/ /ˈɒv/",
+  "audio": "audio/be_the_ruin_of_sb.mp3"
+ },
+ {
+  "en": "fall into ruin",
+  "zh": "毁灭；崩溃；破败",
+  "group": "Part 07",
+  "ipa": "/fˈɔːl/ /ˈɪntʊ/ /ɹˈuːɪn/",
+  "audio": "audio/fall_into_ruin.mp3"
+ },
+ {
+  "en": "for the sake of",
+  "zh": "为了...的缘故；为了...的利益",
+  "group": "Part 07",
+  "ipa": "/fˈɔː/ /ðə/ /ˈseɪk/ /ˈɒv/",
+  "audio": "audio/for_the_sake_of.mp3"
+ },
+ {
+  "en": "for any sake",
+  "zh": "无论如何；千万",
+  "group": "Part 07",
+  "ipa": "/fˈɔː/ /ˈɛni/ /ˈseɪk/",
+  "audio": "audio/for_any_sake.mp3"
+ },
+ {
+  "en": "without sake",
+  "zh": "无缘无故；毫无理由",
+  "group": "Part 07",
+  "ipa": "/wɪðˈaʊt/ /ˈseɪk/",
+  "audio": "audio/without_sake.mp3"
+ },
+ {
+  "en": "in sequence",
+  "zh": "依次；按顺序",
+  "group": "Part 07",
+  "ipa": "/ˈɪn/ /sˈiːkwəns/",
+  "audio": "audio/in_sequence.mp3"
+ },
+ {
+  "en": "a sequence of",
+  "zh": "一系列；一连串",
+  "group": "Part 07",
+  "ipa": "/ˈeɪ/ /sˈiːkwəns/ /ˈɒv/",
+  "audio": "audio/a_sequence_of.mp3"
+ },
+ {
+  "en": "in sequence of",
+  "zh": "按...的顺序",
+  "group": "Part 07",
+  "ipa": "/ˈɪn/ /sˈiːkwəns/ /ˈɒv/",
+  "audio": "audio/in_sequence_of.mp3"
+ },
+ {
+  "en": "steer clear of",
+  "zh": "避开；绕开",
+  "group": "Part 07",
+  "ipa": "/stˈiə/ /klˈiə/ /ˈɒv/",
+  "audio": "audio/steer_clear_of.mp3"
+ },
+ {
+  "en": "steer a course",
+  "zh": "驾驶船只；确定路线",
+  "group": "Part 07",
+  "ipa": "/stˈiə/ /ˈeɪ/ /kˈɔːs/",
+  "audio": "audio/steer_a_course.mp3"
+ },
+ {
+  "en": "have a stroke",
+  "zh": "中风",
+  "group": "Part 07",
+  "ipa": "/ˈhæv/ /ˈeɪ/ /stɹˈəʊk/",
+  "audio": "audio/have_a_stroke.mp3"
+ },
+ {
+  "en": "at a/one stroke",
+  "zh": "一举；一下子",
+  "group": "Part 07",
+  "ipa": "/ˈæt/ /ˈeɪ/ /wˈɒn/ /stɹˈəʊk/",
+  "audio": "audio/at_a_one_stroke.mp3"
+ },
+ {
+  "en": "fling oneself into",
+  "zh": "投身于；扑倒在",
+  "group": "Part 07",
+  "ipa": "/flˈɪŋ/ /wɒnsˈɛlf/ /ˈɪntʊ/",
+  "audio": "audio/fling_oneself_into.mp3"
+ },
+ {
+  "en": "fling out",
+  "zh": "冲出；愤然离开；抛出",
+  "group": "Part 07",
+  "ipa": "/flˈɪŋ/ /ˈaʊt/",
+  "audio": "audio/fling_out.mp3"
+ },
+ {
+  "en": "have a fling",
+  "zh": "尽情放纵；尝试",
+  "group": "Part 07",
+  "ipa": "/ˈhæv/ /ˈeɪ/ /flˈɪŋ/",
+  "audio": "audio/have_a_fling.mp3"
+ },
+ {
+  "en": "in restraint of",
+  "zh": "为了抑制/约束...",
+  "group": "Part 07",
+  "ipa": "/ˈɪn/ /ɹɪstɹˈeɪnt/ /ˈɒv/",
+  "audio": "audio/in_restraint_of.mp3"
+ },
+ {
+  "en": "with restraint",
+  "zh": "有节制地；克制地",
+  "group": "Part 08",
+  "ipa": "/wˈɪð/ /ɹɪstɹˈeɪnt/",
+  "audio": "audio/with_restraint.mp3"
+ },
+ {
+  "en": "without restraint",
+  "zh": "无拘无束地；毫无节制地",
+  "group": "Part 08",
+  "ipa": "/wɪðˈaʊt/ /ɹɪstɹˈeɪnt/",
+  "audio": "audio/without_restraint.mp3"
+ },
+ {
+  "en": "rival sb.",
+  "zh": "与某人竞争；与某人匹敌",
+  "group": "Part 08",
+  "ipa": "/ɹˈaɪvəl/",
+  "audio": "audio/rival_sb.mp3"
+ },
+ {
+  "en": "without a rival",
+  "zh": "无可匹敌；无敌",
+  "group": "Part 08",
+  "ipa": "/wɪðˈaʊt/ /ˈeɪ/ /ɹˈaɪvəl/",
+  "audio": "audio/without_a_rival.mp3"
+ },
+ {
+  "en": "a succession of",
+  "zh": "一连串的；一系列的",
+  "group": "Part 08",
+  "ipa": "/ˈeɪ/ /səksˈɛʃən/ /ˈɒv/",
+  "audio": "audio/a_succession_of.mp3"
+ },
+ {
+  "en": "in succession",
+  "zh": "接连地；连续地",
+  "group": "Part 08",
+  "ipa": "/ˈɪn/ /səksˈɛʃən/",
+  "audio": "audio/in_succession.mp3"
+ },
+ {
+  "en": "suck knowledge into one's mind",
+  "zh": "吸收知识",
+  "group": "Part 08",
+  "ipa": "/sˈʌk/ /nˈɒlɪdʒ/ /ˈɪntʊ/ /wˈɒn/ /ˈɛs/ /mˈaɪnd/",
+  "audio": "audio/suck_knowledge_into_one_s_mind.mp3"
+ },
+ {
+  "en": "suck up",
+  "zh": "吸收；奉承；拍马屁",
+  "group": "Part 08",
+  "ipa": "/sˈʌk/ /ˈʌp/",
+  "audio": "audio/suck_up.mp3"
+ },
+ {
+  "en": "surplus population",
+  "zh": "过剩人口",
+  "group": "Part 08",
+  "ipa": "/sˈɜːpləs/ /pˌɒpjʊlˈeɪʃən/",
+  "audio": "audio/surplus_population.mp3"
+ },
+ {
+  "en": "surplus value",
+  "zh": "剩余价值",
+  "group": "Part 08",
+  "ipa": "/sˈɜːpləs/ /vˈæljuː/",
+  "audio": "audio/surplus_value.mp3"
+ },
+ {
+  "en": "in view of",
+  "zh": "鉴于；考虑到",
+  "group": "Part 08",
+  "ipa": "/ˈɪn/ /vjˈuː/ /ˈɒv/",
+  "audio": "audio/in_view_of.mp3"
+ },
+ {
+  "en": "with a view to doing sth.",
+  "zh": "为了做某事；以...为目的",
+  "group": "Part 08",
+  "ipa": "/wˈɪð/ /ˈeɪ/ /vjˈuː/ /tˈuː/ /dˈuːɪŋ/",
+  "audio": "audio/with_a_view_to_doing_sth.mp3"
+ },
+ {
+  "en": "view...as",
+  "zh": "把...看作...",
+  "group": "Part 08",
+  "ipa": "/vjˈuː/ /ˈæz/",
+  "audio": "audio/view_as.mp3"
+ },
+ {
+  "en": "an abundance of...",
+  "zh": "大量的...；丰富的...",
+  "group": "Part 08",
+  "ipa": "/ˈən/ /əbˈʌndəns/ /ˈɒv/",
+  "audio": "audio/an_abundance_of.mp3"
+ },
+ {
+  "en": "bias against",
+  "zh": "对...的偏见",
+  "group": "Part 08",
+  "ipa": "/bˈaɪəs/ /əɡˈɛnst/",
+  "audio": "audio/bias_against.mp3"
+ },
+ {
+  "en": "bias toward",
+  "zh": "对...的偏向/偏爱",
+  "group": "Part 08",
+  "ipa": "/bˈaɪəs/ /tʊwˈɔːd/",
+  "audio": "audio/bias_toward.mp3"
+ },
+ {
+  "en": "in a blaze",
+  "zh": "熊熊燃烧；闪耀",
+  "group": "Part 08",
+  "ipa": "/ˈɪn/ /ˈeɪ/ /blˈeɪz/",
+  "audio": "audio/in_a_blaze.mp3"
+ },
+ {
+  "en": "blaze a trail",
+  "zh": "开辟道路；带头",
+  "group": "Part 08",
+  "ipa": "/blˈeɪz/ /ˈeɪ/ /tɹˈeɪl/",
+  "audio": "audio/blaze_a_trail.mp3"
+ },
+ {
+  "en": "take a bribe",
+  "zh": "受贿",
+  "group": "Part 08",
+  "ipa": "/tˈeɪk/ /ˈeɪ/ /bɹˈaɪb/",
+  "audio": "audio/take_a_bribe.mp3"
+ },
+ {
+  "en": "offer a bribe",
+  "zh": "行贿",
+  "group": "Part 08",
+  "ipa": "/ˈɒfə/ /ˈeɪ/ /bɹˈaɪb/",
+  "audio": "audio/offer_a_bribe.mp3"
+ },
+ {
+  "en": "in bud",
+  "zh": "发芽；含苞待放",
+  "group": "Part 08",
+  "ipa": "/ˈɪn/ /bˈʌd/",
+  "audio": "audio/in_bud.mp3"
+ },
+ {
+  "en": "government bulletin",
+  "zh": "政府公报",
+  "group": "Part 08",
+  "ipa": "/ɡˈʌvənmənt/ /bˈʊlɪtˌɪn/",
+  "audio": "audio/government_bulletin.mp3"
+ },
+ {
+  "en": "news bulletin",
+  "zh": "新闻简报",
+  "group": "Part 08",
+  "ipa": "/njˈuːz/ /bˈʊlɪtˌɪn/",
+  "audio": "audio/news_bulletin.mp3"
+ },
+ {
+  "en": "trade bulletin",
+  "zh": "贸易公报",
+  "group": "Part 08",
+  "ipa": "/tɹˈeɪd/ /bˈʊlɪtˌɪn/",
+  "audio": "audio/trade_bulletin.mp3"
+ },
+ {
+  "en": "carve...out of/from",
+  "zh": "从...中开辟出；用...雕刻出",
+  "group": "Part 08",
+  "ipa": "/kˈɑːv/ /ˈaʊt/ /ˈɒv/ /fɹˈɒm/",
+  "audio": "audio/carve_out_of_from.mp3"
+ },
+ {
+  "en": "carve...into",
+  "zh": "把...雕刻成",
+  "group": "Part 08",
+  "ipa": "/kˈɑːv/ /ˈɪntʊ/",
+  "audio": "audio/carve_into.mp3"
+ },
+ {
+  "en": "rope in",
+  "zh": "说服...参加；用绳围起",
+  "group": "Part 08",
+  "ipa": "/ɹˈəʊp/ /ˈɪn/",
+  "audio": "audio/rope_in.mp3"
+ },
+ {
+  "en": "be on the ropes",
+  "zh": "濒临失败；处于困境",
+  "group": "Part 08",
+  "ipa": "/bˈiː/ /ˈɒn/ /ðə/ /ɹˈəʊps/",
+  "audio": "audio/be_on_the_ropes.mp3"
+ },
+ {
+  "en": "be at the end of (one's) rope",
+  "zh": "智穷力竭；山穷水尽",
+  "group": "Part 08",
+  "ipa": "/bˈiː/ /ˈæt/ /ðə/ /ˈɛnd/ /ˈɒv/ /wˈɒn/ /ˈɛs/ /ɹˈəʊp/",
+  "audio": "audio/be_at_the_end_of_one_s_rope.mp3"
+ },
+ {
+  "en": "in abundance",
+  "zh": "大量地；充裕地",
+  "group": "Part 08",
+  "ipa": "/ˈɪn/ /əbˈʌndəns/",
+  "audio": "audio/in_abundance.mp3"
+ },
+ {
+  "en": "take caution against",
+  "zh": "提防；警惕",
+  "group": "Part 08",
+  "ipa": "/tˈeɪk/ /kˈɔːʃən/ /əɡˈɛnst/",
+  "audio": "audio/take_caution_against.mp3"
+ },
+ {
+  "en": "with caution",
+  "zh": "谨慎地；小心地",
+  "group": "Part 08",
+  "ipa": "/wˈɪð/ /kˈɔːʃən/",
+  "audio": "audio/with_caution.mp3"
+ },
+ {
+  "en": "caution sb. against doing sth.",
+  "zh": "警告某人不要做某事",
+  "group": "Part 08",
+  "ipa": "/kˈɔːʃən/ /əɡˈɛnst/ /dˈuːɪŋ/",
+  "audio": "audio/caution_sb_against_doing_sth.mp3"
+ },
+ {
+  "en": "clasp hands",
+  "zh": "紧紧握手",
+  "group": "Part 08",
+  "ipa": "/klˈɑːsp/ /hˈændz/",
+  "audio": "audio/clasp_hands.mp3"
+ },
+ {
+  "en": "clasp one's hands",
+  "zh": "双手合十；紧握双手",
+  "group": "Part 08",
+  "ipa": "/klˈɑːsp/ /wˈɒn/ /ˈɛs/ /hˈændz/",
+  "audio": "audio/clasp_one_s_hands.mp3"
+ },
+ {
+  "en": "come to/reach the climax",
+  "zh": "达到高潮",
+  "group": "Part 08",
+  "ipa": "/kˈʌm/ /tˈuː/ /ɹˈiːtʃ/ /ðə/ /klˈaɪmæks/",
+  "audio": "audio/come_to_reach_the_climax.mp3"
+ },
+ {
+  "en": "at the climax of",
+  "zh": "处于...的高潮",
+  "group": "Part 08",
+  "ipa": "/ˈæt/ /ðə/ /klˈaɪmæks/ /ˈɒv/",
+  "audio": "audio/at_the_climax_of.mp3"
+ },
+ {
+  "en": "confer sth. on sb.",
+  "zh": "授予某人某物（荣誉、学位等）",
+  "group": "Part 08",
+  "ipa": "/kənfˈɜː/ /ˈɒn/",
+  "audio": "audio/confer_sth_on_sb.mp3"
+ },
+ {
+  "en": "confer with sb. on/about sth.",
+  "zh": "与某人商议某事",
+  "group": "Part 08",
+  "ipa": "/kənfˈɜː/ /wˈɪð/ /ˈɒn/ /əbˈaʊt/",
+  "audio": "audio/confer_with_sb_on_about_sth.mp3"
+ },
+ {
+  "en": "cold closet",
+  "zh": "冷藏柜；冷气橱",
+  "group": "Part 08",
+  "ipa": "/kˈəʊld/ /klˈɒzɪt/",
+  "audio": "audio/cold_closet.mp3"
+ },
+ {
+  "en": "water closet",
+  "zh": "厕所；抽水马桶",
+  "group": "Part 08",
+  "ipa": "/wˈɔːtə/ /klˈɒzɪt/",
+  "audio": "audio/water_closet.mp3"
+ },
+ {
+  "en": "engine clutch",
+  "zh": "发动机离合器",
+  "group": "Part 08",
+  "ipa": "/ˈɛndʒɪn/ /klˈʌtʃ/",
+  "audio": "audio/engine_clutch.mp3"
+ },
+ {
+  "en": "in sb.'s clutches",
+  "zh": "在某人掌控之中",
+  "group": "Part 08",
+  "ipa": "/ˈɪn/ /ˈɛs/ /klˈʌtʃɪz/",
+  "audio": "audio/in_sb_s_clutches.mp3"
+ },
+ {
+  "en": "clutch at sth.",
+  "zh": "试图抓住某物",
+  "group": "Part 08",
+  "ipa": "/klˈʌtʃ/ /ˈæt/",
+  "audio": "audio/clutch_at_sth.mp3"
+ },
+ {
+  "en": "be detached from",
+  "zh": "与...分离；超脱于",
+  "group": "Part 08",
+  "ipa": "/bˈiː/ /dɪtˈætʃt/ /fɹˈɒm/",
+  "audio": "audio/be_detached_from.mp3"
+ },
+ {
+  "en": "be attached to",
+  "zh": "附属于；喜爱；依恋",
+  "group": "Part 08",
+  "ipa": "/bˈiː/ /ətˈætʃt/ /tˈuː/",
+  "audio": "audio/be_attached_to.mp3"
+ },
+ {
+  "en": "differentiate...from...",
+  "zh": "区分...与...",
+  "group": "Part 08",
+  "ipa": "/dˌɪfəɹˈɛnʃɪˌeɪt/ /fɹˈɒm/",
+  "audio": "audio/differentiate_from.mp3"
+ },
+ {
+  "en": "differentiate between...and...",
+  "zh": "区分...与...",
+  "group": "Part 08",
+  "ipa": "/dˌɪfəɹˈɛnʃɪˌeɪt/ /bɪtwˈiːn/ /ˈænd/",
+  "audio": "audio/differentiate_between_and.mp3"
+ },
+ {
+  "en": "stand on one's dignity",
+  "zh": "保持尊严；要求受到尊重",
+  "group": "Part 08",
+  "ipa": "/stˈænd/ /ˈɒn/ /wˈɒn/ /ˈɛs/ /dˈɪɡnɪti/",
+  "audio": "audio/stand_on_one_s_dignity.mp3"
+ },
+ {
+  "en": "beneath one's dignity",
+  "zh": "有失身份；有损尊严",
+  "group": "Part 08",
+  "ipa": "/bɪnˈiːθ/ /wˈɒn/ /ˈɛs/ /dˈɪɡnɪti/",
+  "audio": "audio/beneath_one_s_dignity.mp3"
+ },
+ {
+  "en": "discriminate against",
+  "zh": "歧视；排斥",
+  "group": "Part 08",
+  "ipa": "/dɪskɹˈɪmɪnˌeɪt/ /əɡˈɛnst/",
+  "audio": "audio/discriminate_against.mp3"
+ },
+ {
+  "en": "discriminate between...and...",
+  "zh": "区分...与...",
+  "group": "Part 08",
+  "ipa": "/dɪskɹˈɪmɪnˌeɪt/ /bɪtwˈiːn/ /ˈænd/",
+  "audio": "audio/discriminate_between_and.mp3"
+ },
+ {
+  "en": "discriminate...from...",
+  "zh": "把...与...区别开",
+  "group": "Part 08",
+  "ipa": "/dɪskɹˈɪmɪnˌeɪt/ /fɹˈɒm/",
+  "audio": "audio/discriminate_from.mp3"
+ },
+ {
+  "en": "make a mock of sb.",
+  "zh": "嘲弄某人；模仿取笑",
+  "group": "Part 08",
+  "ipa": "/mˈeɪk/ /ˈeɪ/ /mˈɒk/ /ˈɒv/",
+  "audio": "audio/make_a_mock_of_sb.mp3"
+ },
+ {
+  "en": "mock up",
+  "zh": "制作模型；仿制",
+  "group": "Part 08",
+  "ipa": "/mˈɒk/ /ˈʌp/",
+  "audio": "audio/mock_up.mp3"
+ },
+ {
+  "en": "monopoly bureau",
+  "zh": "专卖局",
+  "group": "Part 08",
+  "ipa": "/mənˈɒpəli/ /bjˈɔːɹəʊ/",
+  "audio": "audio/monopoly_bureau.mp3"
+ },
+ {
+  "en": "monopoly right",
+  "zh": "专卖权；垄断权",
+  "group": "Part 08",
+  "ipa": "/mənˈɒpəli/ /ɹˈaɪt/",
+  "audio": "audio/monopoly_right.mp3"
+ },
+ {
+  "en": "monopoly of sales",
+  "zh": "销售垄断",
+  "group": "Part 08",
+  "ipa": "/mənˈɒpəli/ /ˈɒv/ /sˈeɪlz/",
+  "audio": "audio/monopoly_of_sales.mp3"
+ },
+ {
+  "en": "in mortgage",
+  "zh": "在抵押中",
+  "group": "Part 08",
+  "ipa": "/ˈɪn/ /mˈɔːɡɪdʒ/",
+  "audio": "audio/in_mortgage.mp3"
+ },
+ {
+  "en": "send by dispatch",
+  "zh": "快件发送；发送急件",
+  "group": "Part 08",
+  "ipa": "/sˈɛnd/ /bˈaɪ/ /dɪspˈætʃ/",
+  "audio": "audio/send_by_dispatch.mp3"
+ },
+ {
+  "en": "with dispatch",
+  "zh": "迅速；尽快",
+  "group": "Part 08",
+  "ipa": "/wˈɪð/ /dɪspˈætʃ/",
+  "audio": "audio/with_dispatch.mp3"
+ },
+ {
+  "en": "take drastic measures",
+  "zh": "采取果断措施；采取激烈手段",
+  "group": "Part 08",
+  "ipa": "/tˈeɪk/ /dɹˈɑːstɪk/ /mˈɛʒəz/",
+  "audio": "audio/take_drastic_measures.mp3"
+ },
+ {
+  "en": "a drastic debate",
+  "zh": "激烈的辩论",
+  "group": "Part 08",
+  "ipa": "/ˈeɪ/ /dɹˈɑːstɪk/ /dɪbˈeɪt/",
+  "audio": "audio/a_drastic_debate.mp3"
+ },
+ {
+  "en": "make drastic change",
+  "zh": "做出重大改变",
+  "group": "Part 08",
+  "ipa": "/mˈeɪk/ /dɹˈɑːstɪk/ /tʃˈeɪndʒ/",
+  "audio": "audio/make_drastic_change.mp3"
+ },
+ {
+  "en": "escort sb. back",
+  "zh": "护送某人返回",
+  "group": "Part 08",
+  "ipa": "/ˈɛskɔɹt/ /bˈæk/",
+  "audio": "audio/escort_sb_back.mp3"
+ },
+ {
+  "en": "under escort",
+  "zh": "在护送下；在押送下",
+  "group": "Part 08",
+  "ipa": "/ˈʌndə/ /ˈɛskɔɹt/",
+  "audio": "audio/under_escort.mp3"
+ },
+ {
+  "en": "live in exile",
+  "zh": "流亡生活",
+  "group": "Part 08",
+  "ipa": "/ˈɫaɪv/ /ˈɪn/ /ˈɛɡzaɪl/",
+  "audio": "audio/live_in_exile.mp3"
+ },
+ {
+  "en": "exile sb. to sth.",
+  "zh": "把某人流放到某地",
+  "group": "Part 08",
+  "ipa": "/ˈɛɡzaɪl/ /tˈuː/",
+  "audio": "audio/exile_sb_to_sth.mp3"
+ },
+ {
+  "en": "flare out",
+  "zh": "突然发怒；闪耀",
+  "group": "Part 08",
+  "ipa": "/flˈeə/ /ˈaʊt/",
+  "audio": "audio/flare_out.mp3"
+ },
+ {
+  "en": "flare up",
+  "zh": "突然爆发；加剧；突然发怒",
+  "group": "Part 08",
+  "ipa": "/flˈeə/ /ˈʌp/",
+  "audio": "audio/flare_up.mp3"
+ },
+ {
+  "en": "flatter sb. on/about sth.",
+  "zh": "就某事奉承某人",
+  "group": "Part 08",
+  "ipa": "/flˈætə/ /ˈɒn/ /əbˈaʊt/",
+  "audio": "audio/flatter_sb_on_about_sth.mp3"
+ },
+ {
+  "en": "flatter oneself",
+  "zh": "自鸣得意；自以为是",
+  "group": "Part 08",
+  "ipa": "/flˈætə/ /wɒnsˈɛlf/",
+  "audio": "audio/flatter_oneself.mp3"
+ },
+ {
+  "en": "a batch of",
+  "zh": "一批；一炉",
+  "group": "Part 08",
+  "ipa": "/ˈeɪ/ /bˈætʃ/ /ˈɒv/",
+  "audio": "audio/a_batch_of.mp3"
+ },
+ {
+  "en": "batch production",
+  "zh": "批量生产",
+  "group": "Part 08",
+  "ipa": "/bˈætʃ/ /pɹədˈʌkʃən/",
+  "audio": "audio/batch_production.mp3"
+ },
+ {
+  "en": "fall into a flutter",
+  "zh": "心慌意乱；忐忑不安",
+  "group": "Part 08",
+  "ipa": "/fˈɔːl/ /ˈɪntʊ/ /ˈeɪ/ /flˈʌtə/",
+  "audio": "audio/fall_into_a_flutter.mp3"
+ },
+ {
+  "en": "in a flutter",
+  "zh": "忐忑不安；激动",
+  "group": "Part 08",
+  "ipa": "/ˈɪn/ /ˈeɪ/ /flˈʌtə/",
+  "audio": "audio/in_a_flutter.mp3"
+ },
+ {
+  "en": "foster father/mother",
+  "zh": "养父/养母",
+  "group": "Part 08",
+  "ipa": "/fˈɒstə/ /fˈɑːðə/ /ˈməðɝ/",
+  "audio": "audio/foster_father_mother.mp3"
+ },
+ {
+  "en": "foster son/daughter",
+  "zh": "养子/养女",
+  "group": "Part 08",
+  "ipa": "/fˈɒstə/ /sˈʌn/ /dˈɔːtə/",
+  "audio": "audio/foster_son_daughter.mp3"
+ },
+ {
+  "en": "gasp at",
+  "zh": "对...感到惊讶/震惊",
+  "group": "Part 08",
+  "ipa": "/ɡˈɑːsp/ /ˈæt/",
+  "audio": "audio/gasp_at.mp3"
+ },
+ {
+  "en": "incorporate...with",
+  "zh": "把...与...合并",
+  "group": "Part 08",
+  "ipa": "/ˌɪnˈkɔɹpɝˌeɪt/ /wˈɪð/",
+  "audio": "audio/incorporate_with.mp3"
+ },
+ {
+  "en": "incorporate...in/into",
+  "zh": "把...并入/纳入...",
+  "group": "Part 08",
+  "ipa": "/ˌɪnˈkɔɹpɝˌeɪt/ /ˈɪn/ /ˈɪntʊ/",
+  "audio": "audio/incorporate_in_into.mp3"
+ },
+ {
+  "en": "inject...into sb.",
+  "zh": "给某人注射...；向某人灌输...",
+  "group": "Part 08",
+  "ipa": "/ɪndʒˈɛkt/ /ˈɪntʊ/",
+  "audio": "audio/inject_into_sb.mp3"
+ },
+ {
+  "en": "inject sb. with",
+  "zh": "给某人注射...",
+  "group": "Part 08",
+  "ipa": "/ɪndʒˈɛkt/ /wˈɪð/",
+  "audio": "audio/inject_sb_with.mp3"
+ },
+ {
+  "en": "contend for",
+  "zh": "争夺；争取",
+  "group": "Part 08",
+  "ipa": "/kəntˈɛnd/ /fˈɔː/",
+  "audio": "audio/contend_for.mp3"
+ },
+ {
+  "en": "contend with",
+  "zh": "对付；与...竞争/搏斗",
+  "group": "Part 08",
+  "ipa": "/kəntˈɛnd/ /wˈɪð/",
+  "audio": "audio/contend_with.mp3"
+ },
+ {
+  "en": "couch potato",
+  "zh": "沙发土豆；成天看电视的人",
+  "group": "Part 08",
+  "ipa": "/kˈaʊtʃ/ /pətˈeɪtəʊ/",
+  "audio": "audio/couch_potato.mp3"
+ },
+ {
+  "en": "couch sth. (in sth.)",
+  "zh": "用...表达；隐含",
+  "group": "Part 08",
+  "ipa": "/kˈaʊtʃ/ /ˈɪn/",
+  "audio": "audio/couch_sth_in_sth.mp3"
+ },
+ {
+  "en": "from the cradle to the grave",
+  "zh": "从生到死；一辈子",
+  "group": "Part 08",
+  "ipa": "/fɹˈɒm/ /ðə/ /kɹˈeɪdəl/ /tˈuː/ /ðə/ /ˈɡɹeɪv/",
+  "audio": "audio/from_the_cradle_to_the_grave.mp3"
+ },
+ {
+  "en": "in the cradle",
+  "zh": "在摇篮里；在幼年时期",
+  "group": "Part 08",
+  "ipa": "/ˈɪn/ /ðə/ /kɹˈeɪdəl/",
+  "audio": "audio/in_the_cradle.mp3"
+ }
+]
