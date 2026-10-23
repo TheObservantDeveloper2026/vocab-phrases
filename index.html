@@ -449,6 +449,8 @@
   #remindBanner button { border: none; border-radius: 8px; padding: 6px 12px; font-size: 12px; cursor: pointer; }
   #remindGo { background: var(--amber); color: #fff; font-weight: 600; }
   #remindClose { background: transparent; color: #9a3412; }
+  /* display:flex 会覆盖 hidden 属性的 UA 样式，需显式隐藏 */
+  #modal[hidden], #remindBanner[hidden], #rateBar[hidden], #tabbar[hidden] { display: none !important; }
 
   @media (max-width: 480px) {
     .card { height: 280px; }
