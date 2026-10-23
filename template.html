@@ -11,6 +11,7 @@
     --primary-dark: #3b55d9;
     --green: #22a06b;
     --red: #e5484d;
+    --amber: #d97706;
     --bg: #f4f6fb;
     --card-bg: #ffffff;
     --text: #1c2333;
@@ -28,6 +29,7 @@
     flex-direction: column;
     min-height: 100dvh;
   }
+  body.learn { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
   header {
     padding: 14px 16px 8px;
     max-width: 860px;
@@ -54,9 +56,21 @@
     outline: none;
     cursor: pointer;
   }
-  select { min-width: 130px; }
+  select { min-width: 130px; max-width: 230px; }
+  input[type=search], input[type=text], input[type=number], input[type=time], textarea {
+    border: 1px solid #dfe3ee; background: #fff; border-radius: 10px;
+    padding: 8px 12px; font-size: 14px; color: var(--text); outline: none;
+    font-family: inherit;
+  }
+  input:focus, textarea:focus { border-color: var(--primary); }
   .btn-ghost:hover { border-color: var(--primary); color: var(--primary); }
   .btn-ghost.active { border-color: var(--red); color: var(--red); background: #fef0f0; }
+  .btn-primary {
+    border: none; background: var(--primary); color: #fff; border-radius: 10px;
+    padding: 9px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .btn-primary:active { transform: scale(.97); }
+  .btn-primary[disabled] { opacity: .5; cursor: default; }
   .badge {
     display: inline-block;
     min-width: 18px;
@@ -72,6 +86,7 @@
   .stats { margin-left: auto; font-size: 13px; color: var(--text-sub); white-space: nowrap; }
   .stats b { color: var(--green); }
   .stats b.red { color: var(--red); }
+  .stats b.blu { color: var(--primary); }
 
   main {
     flex: 1;
@@ -84,6 +99,13 @@
     max-width: 860px;
     margin: 0 auto;
   }
+  body.learn main { justify-content: flex-start; }
+  main section { width: 100%; }
+  #viewStudy {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1;
+  }
+  #viewList, #viewQuiz, #viewStats, #viewMe { max-width: 640px; margin: 0 auto; }
+
   .progress-wrap { width: 100%; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
   .progress-bar { flex: 1; height: 6px; background: #e4e8f4; border-radius: 3px; overflow: hidden; }
   .progress-bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--primary), #7c9bff); border-radius: 3px; transition: width .25s; }
@@ -185,6 +207,9 @@
     background: #e8f7f0;
     color: var(--green);
   }
+  .known-dot.st0 { background: #f1f2f6; color: #8a93a8; }
+  .known-dot.st1 { background: #eef1fb; color: var(--primary); }
+  .known-dot.st3 { background: #fdebec; color: var(--red); }
   .wrong-dot {
     position: absolute;
     top: 40px;
@@ -196,6 +221,7 @@
     color: var(--red);
   }
   .pos { position: absolute; bottom: 12px; right: 16px; font-size: 11px; color: #b6bccb; }
+  .pos.left { left: 16px; right: auto; color: #8a93a8; }
 
   .actions {
     display: flex;
@@ -221,9 +247,21 @@
   #btnFlip { background: var(--primary); width: 100%; max-width: 560px; flex: none; }
   .actions button[disabled] { opacity: .45; cursor: default; }
 
-  .done-panel { text-align: center; max-width: 480px; }
+  /* 学习模式三档评分 */
+  #rateBar { display: flex; gap: 12px; margin-top: 20px; width: 100%; max-width: 560px; }
+  #rateBar button {
+    flex: 1; border: none; border-radius: 14px; padding: 12px 0 10px;
+    font-size: 16px; font-weight: 600; cursor: pointer; color: #fff; line-height: 1.3;
+  }
+  #rateBar button:active { transform: scale(.97); }
+  #rateBar small { display: block; font-size: 11px; font-weight: 400; opacity: .9; margin-top: 2px; }
+  #btnAgain { background: var(--red); }
+  #btnHard { background: var(--amber); }
+  #btnGood { background: var(--green); }
+
+  .done-panel { text-align: center; max-width: 480px; margin: 0 auto; }
   .done-panel h2 { font-size: 26px; margin-bottom: 10px; }
-  .done-panel p { color: var(--text-sub); font-size: 14px; line-height: 1.8; margin-bottom: 22px; }
+  .done-panel p { color: var(--text-sub); font-size: 14px; line-height: 1.8; margin-bottom: 22px; white-space: pre-line; }
   .done-panel button {
     display: block; width: 100%; margin-bottom: 10px;
     border: none; border-radius: 14px; padding: 13px 0;
@@ -238,14 +276,185 @@
     color: #b0b6c4;
     padding: 10px 0 calc(12px + env(safe-area-inset-bottom));
   }
+  body.learn footer { padding-bottom: 10px; }
   kbd {
     background:#fff;border:1px solid #dfe3ee;border-bottom-width:2px;border-radius:5px;
     padding:1px 5px;font-size:11px;color:#5b6272;
   }
+
+  /* ---------- 底部标签栏（学习模式） ---------- */
+  #tabbar {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+    background: rgba(255,255,255,.96); backdrop-filter: blur(8px);
+    border-top: 1px solid #e5e8f2;
+    display: flex; padding-bottom: env(safe-area-inset-bottom);
+  }
+  #tabbar .tab {
+    flex: 1; border: none; background: none; padding: 7px 0 5px;
+    font-size: 11px; color: #8a93a8; cursor: pointer;
+    display: flex; flex-direction: column; align-items: center; gap: 2px;
+  }
+  #tabbar .tab svg { width: 21px; height: 21px; }
+  #tabbar .tab.active { color: var(--primary); font-weight: 600; }
+
+  /* ---------- 词表视图 ---------- */
+  .list-tools { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .list-tools input[type=search] { flex: 1; min-width: 150px; }
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .chip {
+    border: 1px solid #dfe3ee; background: #fff; border-radius: 999px;
+    padding: 6px 13px; font-size: 13px; cursor: pointer; color: var(--text-sub);
+  }
+  .chip.active { border-color: var(--primary); color: var(--primary); background: #eef1fb; font-weight: 600; }
+  .lrow {
+    display: flex; align-items: center; gap: 10px;
+    background: #fff; border-radius: 12px; padding: 10px 12px; margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(28,35,51,.05);
+  }
+  .lrow .lw { font-weight: 600; font-size: 15px; max-width: 42%; word-break: break-word; }
+  .lrow .lz {
+    flex: 1; min-width: 0; font-size: 12px; color: var(--text-sub);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .lrow .lmeta { font-size: 10px; color: #b6bccb; white-space: nowrap; }
+  .stbadge { font-size: 11px; border-radius: 999px; padding: 2px 8px; white-space: nowrap; }
+  .st0 { background: #f1f2f6; color: #8a93a8; }
+  .st1 { background: #eef1fb; color: var(--primary); }
+  .st2 { background: #e8f7f0; color: var(--green); }
+  .st3 { background: #fdebec; color: var(--red); }
+  .icon-btn {
+    border: none; background: #f1f2f6; border-radius: 8px; min-width: 28px; height: 28px;
+    font-size: 13px; cursor: pointer; color: #5b6272; padding: 0 6px;
+  }
+  .icon-btn:hover { background: #e4e8f4; }
+  #btnMoreRows { width: 100%; margin: 6px 0 16px; }
+
+  /* ---------- 测试视图 ---------- */
+  .quiz-card {
+    background: #fff; border-radius: 14px; padding: 16px; margin-bottom: 12px;
+    box-shadow: 0 4px 14px rgba(28,35,51,.06); cursor: pointer;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .quiz-card:hover { box-shadow: var(--shadow); }
+  .quiz-card .qc-icon {
+    width: 42px; height: 42px; border-radius: 12px; flex: none;
+    display: flex; align-items: center; justify-content: center;
+    background: #eef1fb; color: var(--primary);
+  }
+  .quiz-card .qc-icon svg { width: 22px; height: 22px; }
+  .quiz-card h3 { font-size: 15px; }
+  .quiz-card small { color: var(--text-sub); font-size: 12px; }
+  .quiz-card .qc-go { margin-left: auto; color: var(--primary); font-weight: 700; }
+  .quiz-card.disabled { opacity: .5; cursor: default; }
+  .quiz-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .quiz-qbox {
+    background: #fff; border-radius: var(--radius); box-shadow: var(--shadow);
+    padding: 26px 20px; text-align: center; margin-bottom: 14px;
+  }
+  .quiz-qbox .word { font-size: clamp(24px, 6vw, 38px); }
+  .quiz-opt {
+    display: block; width: 100%; text-align: left; margin-bottom: 10px;
+    padding: 12px 14px; border: 1px solid #dfe3ee; border-radius: 12px;
+    background: #fff; font-size: 14px; cursor: pointer; color: var(--text); line-height: 1.5;
+  }
+  .quiz-opt:not(:disabled):hover { border-color: var(--primary); }
+  .quiz-opt.ok { border-color: var(--green); background: #e8f7f0; }
+  .quiz-opt.bad { border-color: var(--red); background: #fdebec; }
+  .quiz-opt:disabled { cursor: default; }
+  .quiz-result { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; text-align: center; }
+  .quiz-result .score { font-size: 40px; font-weight: 700; color: var(--primary); }
+  .quiz-result .wrong-item { text-align: left; font-size: 13px; padding: 8px 0; border-bottom: 1px solid #f0f2f8; }
+  .quiz-result .wrong-item b { font-size: 14px; }
+  .quiz-result .wrong-item span { color: var(--text-sub); }
+
+  /* ---------- 统计视图 ---------- */
+  .sec-title { font-size: 14px; font-weight: 600; margin: 16px 0 8px; }
+  .panel { background: #fff; border-radius: 14px; padding: 12px; box-shadow: 0 2px 10px rgba(28,35,51,.05); overflow-x: auto; }
+  .scards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .scard { background: #fff; border-radius: 12px; padding: 10px 6px; text-align: center; box-shadow: 0 2px 10px rgba(28,35,51,.05); }
+  .scard b { display: block; font-size: 19px; color: var(--primary-dark); }
+  .scard span { font-size: 11px; color: var(--text-sub); }
+  .heatmap {
+    display: grid; grid-template-rows: repeat(7, 10px); grid-auto-flow: column;
+    grid-auto-columns: 10px; gap: 3px; padding: 4px 2px; width: max-content;
+  }
+  .hcell { width: 10px; height: 10px; border-radius: 2px; background: #e9ecf5; }
+  .hcell.h1 { background: #c7d2fe; } .hcell.h2 { background: #818cf8; } .hcell.h3 { background: #4f6ef7; }
+  .bars { display: flex; align-items: stretch; gap: 4px; height: 120px; }
+  .bcol { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  .bgroup { flex: 1; width: 100%; display: flex; align-items: flex-end; justify-content: center; gap: 2px; }
+  .bbar { display: block; width: 45%; max-width: 13px; min-height: 2px; border-radius: 3px 3px 0 0; background: #c9cfdd; }
+  .bbar.blu { background: var(--primary); } .bbar.grn { background: var(--green); } .bbar.red { background: var(--red); }
+  .blab { font-size: 10px; color: #9aa1b2; white-space: nowrap; }
+  .btop { font-size: 10px; color: #5b6272; }
+  .mstack { display: flex; height: 16px; border-radius: 8px; overflow: hidden; background: #eef0f6; }
+  .mstack i { display: block; height: 100%; }
+  .mlegend { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; font-size: 12px; color: var(--text-sub); }
+  .mlegend i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 4px; }
+  .weak-row { display: flex; align-items: center; gap: 10px; padding: 8px 2px; border-bottom: 1px solid #f0f2f8; font-size: 13px; cursor: pointer; }
+  .weak-row:last-child { border-bottom: none; }
+  .weak-row b { min-width: 0; }
+  .weak-row .lz { flex: 1; min-width: 0; font-size: 12px; color: var(--text-sub); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .weak-row .wn { color: var(--red); font-size: 12px; white-space: nowrap; }
+  .export-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 20px; }
+
+  /* ---------- 我的/设置视图 ---------- */
+  .set-row {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    background: #fff; border-radius: 12px; padding: 12px 14px; margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(28,35,51,.05); font-size: 14px;
+  }
+  .set-row label { color: var(--text); }
+  .set-row .sub { font-size: 12px; color: var(--text-sub); width: 100%; }
+  .set-row input[type=number] { width: 80px; }
+  .switch { position: relative; width: 44px; height: 24px; flex: none; }
+  .switch input { opacity: 0; width: 100%; height: 100%; position: absolute; cursor: pointer; z-index: 2; margin: 0; }
+  .switch i { position: absolute; inset: 0; background: #d5dae6; border-radius: 999px; transition: background .2s; }
+  .switch i::after {
+    content: ''; position: absolute; top: 2px; left: 2px; width: 20px; height: 20px;
+    background: #fff; border-radius: 50%; transition: left .2s; box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  }
+  .switch input:checked + i { background: var(--green); }
+  .switch input:checked + i::after { left: 22px; }
+  .ach { display: flex; flex-wrap: wrap; gap: 8px; }
+  .ach .a {
+    flex: 1 1 42%; background: #fff; border-radius: 12px; padding: 12px 8px;
+    font-size: 12px; text-align: center; border: 1px solid #eef0f6; color: var(--text-sub);
+  }
+  .ach .a b { display: block; font-size: 13px; color: var(--text); margin-bottom: 3px; }
+  .ach .a.done { border-color: #b8e6d0; background: #f2fbf7; }
+  .ach .a.done b { color: var(--green); }
+  .danger-btn { background: var(--red); color: #fff; border: none; border-radius: 10px; padding: 10px 16px; font-size: 14px; cursor: pointer; }
+  .note { font-size: 12px; color: #9aa1b2; line-height: 1.7; margin: 12px 2px 20px; }
+
+  /* ---------- 弹窗 / 提醒横幅 ---------- */
+  #modal {
+    position: fixed; inset: 0; background: rgba(20,25,40,.45); z-index: 100;
+    display: flex; align-items: center; justify-content: center; padding: 20px;
+  }
+  .modal-box {
+    background: #fff; border-radius: 16px; padding: 20px; width: 100%; max-width: 440px;
+    max-height: 82vh; overflow-y: auto;
+  }
+  .modal-box h3 { font-size: 16px; margin-bottom: 12px; }
+  .modal-box .mrow { margin-bottom: 10px; }
+  .modal-box input[type=text], .modal-box textarea, .modal-box select { width: 100%; }
+  .modal-box textarea { min-height: 120px; resize: vertical; font-size: 13px; }
+  .modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; }
+  #remindBanner {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+    background: #fff7ed; border-bottom: 1px solid #fdba74; color: #9a3412;
+    padding: 10px 14px; display: flex; gap: 10px; align-items: center; font-size: 13px;
+  }
+  #remindBanner button { border: none; border-radius: 8px; padding: 6px 12px; font-size: 12px; cursor: pointer; }
+  #remindGo { background: var(--amber); color: #fff; font-weight: 600; }
+  #remindClose { background: transparent; color: #9a3412; }
+
   @media (max-width: 480px) {
     .card { height: 280px; }
     .face-inner { padding: 22px 18px; }
     .stats { font-size: 12px; }
+    .scards { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
 </head>
@@ -262,54 +471,211 @@
 </header>
 
 <main>
-  <div class="progress-wrap">
-    <div class="progress-bar"><i id="progressFill"></i></div>
-    <span class="progress-num" id="progressNum">0 / 0</span>
-  </div>
+  <section id="viewStudy">
+    <div class="progress-wrap">
+      <div class="progress-bar"><i id="progressFill"></i></div>
+      <span class="progress-num" id="progressNum">0 / 0</span>
+    </div>
 
-  <div class="scene" id="study">
-    <div class="card" id="card">
-      <div class="face front">
-        <div class="face-inner">
-          <span class="tag" id="tagFront"></span>
-          <span class="known-dot" id="knownDot" hidden>已掌握</span>
-          <span class="wrong-dot" id="wrongDot" hidden>错题</span>
-          <div class="word" id="wordFront"></div>
-          <div class="ipa" id="ipaFront" hidden>
-            <button class="speak-btn" id="speakFront" title="朗读" aria-label="朗读英语">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
-            </button>
-            <span id="ipaText"></span>
+    <div class="scene" id="study">
+      <div class="card" id="card">
+        <div class="face front">
+          <div class="face-inner">
+            <span class="tag" id="tagFront"></span>
+            <span class="known-dot" id="knownDot" hidden>已掌握</span>
+            <span class="wrong-dot" id="wrongDot" hidden>错题</span>
+            <div class="word" id="wordFront"></div>
+            <div class="ipa" id="ipaFront" hidden>
+              <button class="speak-btn" id="speakFront" title="朗读" aria-label="朗读英语">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+              </button>
+              <span id="ipaText"></span>
+            </div>
+            <div class="hint">想一想中文意思，点击卡片查看</div>
+            <span class="pos" id="posFront"></span>
+            <span class="pos left" id="cardMeta"></span>
           </div>
-          <div class="hint">想一想中文意思，点击卡片查看</div>
-          <span class="pos" id="posFront"></span>
         </div>
-      </div>
-      <div class="face back">
-        <div class="face-inner">
-          <span class="tag" id="tagBack"></span>
-          <div class="word zh" id="wordBack"></div>
-          <div class="hint" id="enBack"></div>
+        <div class="face back">
+          <div class="face-inner">
+            <span class="tag" id="tagBack"></span>
+            <div class="word zh" id="wordBack"></div>
+            <div class="hint" id="enBack"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="done-panel" id="done" hidden>
-    <h2 id="doneTitle">本组完成 🎉</h2>
-    <p id="doneText"></p>
-    <button id="btnAgainUnknown">只复习未掌握的卡片</button>
-    <button id="btnRestart">重新开始本组</button>
-  </div>
+    <div class="done-panel" id="done" hidden>
+      <h2 id="doneTitle">本组完成 🎉</h2>
+      <p id="doneText"></p>
+      <button id="btnAgainUnknown">只复习未掌握的卡片</button>
+      <button id="btnRestart">重新开始本组</button>
+    </div>
 
-  <div class="actions" id="actions">
-    <button id="btnFlip">翻转卡片（空格）</button>
-    <button id="btnUnknown" hidden>不认识 ←</button>
-    <button id="btnKnown" hidden>认识 →</button>
-  </div>
+    <div class="actions" id="actions">
+      <button id="btnFlip">翻转卡片（空格）</button>
+      <button id="btnUnknown" hidden>不认识 ←</button>
+      <button id="btnKnown" hidden>认识 →</button>
+    </div>
+
+    <div id="rateBar" hidden>
+      <button id="btnAgain">不认识<small>稍后重学</small></button>
+      <button id="btnHard">模糊<small>有印象但不牢</small></button>
+      <button id="btnGood">认识<small>明天复习</small></button>
+    </div>
+  </section>
+
+  <section id="viewList" hidden>
+    <div class="list-tools">
+      <input type="search" id="listSearch" placeholder="搜索单词或释义…">
+      <select id="listSel"></select>
+      <button class="icon-btn" id="btnDelList" title="删除当前词表" hidden>✕</button>
+      <button class="btn-ghost" id="btnAddWord">+ 收藏生词</button>
+      <button class="btn-ghost" id="btnImport">导入词表</button>
+    </div>
+    <div class="chips" id="stateChips">
+      <button class="chip active" data-f="all">全部</button>
+      <button class="chip" data-f="s0">未学</button>
+      <button class="chip" data-f="s1">学习中</button>
+      <button class="chip" data-f="s2">已掌握</button>
+      <button class="chip" data-f="s3">易忘</button>
+      <button class="chip" data-f="wrong">错题本</button>
+    </div>
+    <div id="listRows"></div>
+    <button class="btn-ghost" id="btnMoreRows" hidden>加载更多</button>
+  </section>
+
+  <section id="viewQuiz" hidden>
+    <div id="quizMenu">
+      <div class="quiz-card" id="qDaily">
+        <span class="qc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+        <div><h3>每日小测</h3><small id="qDailyInfo">10 题 · 已学内容为主</small></div>
+        <span class="qc-go">›</span>
+      </div>
+      <div class="quiz-card" id="qStage">
+        <span class="qc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+        <div style="flex:1">
+          <h3>阶段测试</h3>
+          <small>20 题 · 按分组范围抽题</small>
+          <div style="margin-top:8px"><select id="qStageSel" style="min-width:160px"></select></div>
+        </div>
+        <span class="qc-go">›</span>
+      </div>
+      <div class="quiz-card" id="qWrong">
+        <span class="qc-icon" style="background:#fdebec;color:var(--red)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+        <div><h3>错题重测</h3><small id="qWrongInfo">错题本 0 词</small></div>
+        <span class="qc-go">›</span>
+      </div>
+    </div>
+    <div id="quizRun" hidden>
+      <div class="quiz-head">
+        <button class="btn-ghost" id="btnQuizQuit">退出</button>
+        <div class="progress-bar" style="flex:1"><i id="qProgFill"></i></div>
+        <span class="progress-num" id="qProgNum">0/0</span>
+      </div>
+      <div class="quiz-qbox">
+        <div class="word" id="quizWord"></div>
+        <div class="ipa" id="quizIpa" hidden>
+          <button class="speak-btn" id="quizSpeak" title="朗读" aria-label="朗读英语">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+          </button>
+          <span id="quizIpaText"></span>
+        </div>
+      </div>
+      <div id="quizOpts"></div>
+    </div>
+    <div id="quizResult" hidden></div>
+  </section>
+
+  <section id="viewStats" hidden>
+    <div class="scards" id="statCards"></div>
+    <div class="sec-title">学习热力图（近半年）</div>
+    <div class="panel"><div class="heatmap" id="heatmap"></div></div>
+    <div class="sec-title">近 14 天 · 新词 / 复习</div>
+    <div class="panel"><div class="bars" id="barsDaily"></div></div>
+    <div class="sec-title">记忆保持率（按复习间隔）</div>
+    <div class="panel"><div class="bars" id="barsRet"></div></div>
+    <div class="sec-title">掌握度分布</div>
+    <div class="panel" id="masteryDist"></div>
+    <div class="sec-title">近 14 天错词趋势</div>
+    <div class="panel"><div class="bars" id="barsWrong"></div></div>
+    <div class="sec-title">薄弱词榜（错得最多）</div>
+    <div class="panel" id="weakList"></div>
+    <div class="sec-title">数据</div>
+    <div class="export-row">
+      <button class="btn-ghost" id="btnExportJson">导出备份 JSON</button>
+      <button class="btn-ghost" id="btnExportCsv">导出词表 CSV</button>
+      <button class="btn-ghost" id="btnImportBackup">导入备份</button>
+      <input type="file" id="fileBackup" accept=".json,application/json" hidden>
+    </div>
+  </section>
+
+  <section id="viewMe" hidden>
+    <div class="set-row">
+      <label>每日新词数</label>
+      <input type="number" id="cfgNew" min="1" max="100" step="1">
+      <span class="sub">每天自动加入学习队列的新词数量</span>
+    </div>
+    <div class="set-row">
+      <label>每日目标（张）</label>
+      <input type="number" id="cfgGoal" min="1" max="500" step="1">
+      <span class="sub">新词 + 复习的总张数目标，用于打卡与提醒判断</span>
+    </div>
+    <div class="set-row">
+      <label>学习提醒</label>
+      <input type="time" id="cfgRemindTime">
+      <span class="switch"><input type="checkbox" id="cfgRemindOn"><i></i></span>
+      <span class="sub" id="remindStatus">打开本页面时检查；到点未完成目标则横幅 + 系统通知提醒</span>
+    </div>
+    <div class="set-row">
+      <label>日历集成</label>
+      <button class="btn-ghost" id="btnIcs">导出每日提醒事件（.ics）</button>
+      <span class="sub">导入手机/电脑日历后，每天自动出现背单词日程</span>
+    </div>
+    <div class="sec-title">成就</div>
+    <div class="ach" id="achGrid"></div>
+    <div class="sec-title">数据管理</div>
+    <div class="set-row">
+      <button class="danger-btn" id="btnResetAll">清空全部学习数据</button>
+      <span class="sub">删除本套卡片的所有学习记录、自定义词表与统计，不可恢复（可先在统计页导出备份）</span>
+    </div>
+    <p class="note">所有数据仅保存在当前浏览器的 localStorage 中，换设备或清浏览器缓存会丢失，请定期在「统计」页导出备份。排行榜/组队等社交功能需要服务器支持，纯静态版本暂不提供。</p>
+  </section>
 </main>
 
-<footer>答错自动收录错题本 · 在错题本答对后消除 · 数据保存在本地浏览器</footer>
+<nav id="tabbar" hidden>
+  <button class="tab active" data-v="viewStudy">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+    <span>学习</span>
+  </button>
+  <button class="tab" data-v="viewList">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+    <span>词表</span>
+  </button>
+  <button class="tab" data-v="viewQuiz">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+    <span>测试</span>
+  </button>
+  <button class="tab" data-v="viewStats">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+    <span>统计</span>
+  </button>
+  <button class="tab" data-v="viewMe">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>我的</span>
+  </button>
+</nav>
+
+<footer id="footText">答错自动收录错题本 · 在错题本答对后消除 · 数据保存在本地浏览器</footer>
+
+<div id="remindBanner" hidden>
+  <span id="remindText">该背单词啦！</span>
+  <button id="remindGo">开始学习</button>
+  <button id="remindClose">知道了</button>
+</div>
+
+<div id="modal" hidden><div class="modal-box" id="modalBox"></div></div>
 
 <script id="data" type="application/json">__DATA__</script>
 <script>
@@ -317,6 +683,52 @@ const DATA = JSON.parse(document.getElementById('data').textContent);
 const $ = id => document.getElementById(id);
 const KNOWN_KEY = 'vc_known';
 const WRONG_KEY = 'vc_wrong';
+const LEARN_MODE = false;
+
+// ================= 公共工具 =================
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const stripTags = s => String(s).replace(/<br\s*\/?>/gi, '；').replace(/<[^>]+>/g, '');
+function dstr(dt) { const d = dt || new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+function addDays(s, n) { const d = new Date(s + 'T00:00:00'); d.setDate(d.getDate() + n); return dstr(d); }
+const jget = (k, f) => { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? f : v; } catch (e) { return f; } };
+const jset = (k, v) => localStorage.setItem(k, JSON.stringify(v));
+function download(name, text, mime) {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([text], { type: mime || 'text/plain;charset=utf-8' }));
+  a.download = name;
+  document.body.appendChild(a); a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 400);
+}
+
+// ---------- 音频播放（两种模式共用） ----------
+let _audioCache = {};
+const _audioRev = String(Date.now());
+function audioUrl(rel) {
+  if (!rel) return '';
+  const p = location.pathname.replace(/index\.html$/, '').replace(/\/$/, '');
+  const segs = p.split('/').filter(Boolean);
+  const up = '../'.repeat(Math.max(0, segs.length - 1));
+  return new URL(up + rel, document.baseURI).href;
+}
+function playAudio(url, btn) {
+  if (!url) return;
+  const prev = _audioCache['_current'];
+  if (prev && prev !== _audioCache[url]) { try { prev.pause(); prev.currentTime = 0; } catch (e) {} }
+  let a = _audioCache[url];
+  if (!a || a.error) {
+    a = new Audio(); a.preload = 'none';
+    a.src = url + (url.includes('?') ? '&' : '?') + 'v=' + _audioRev;
+    _audioCache[url] = a;
+  }
+  _audioCache['_current'] = a;
+  if (btn) btn.classList.add('playing');
+  const cleanup = () => { if (btn) btn.classList.remove('playing'); };
+  a.onended = cleanup; a.onerror = cleanup;
+  try { a.play().catch(e => { console.warn('audio play failed:', e); cleanup(); }); } catch (e) { cleanup(); }
+}
+
+if (!LEARN_MODE) {
+// ================= 经典模式（原有逻辑，未改动） =================
 const store = {
   get known() { try { return new Set(JSON.parse(localStorage.getItem(KNOWN_KEY) || '[]')); } catch { return new Set(); } },
   set known(set) { localStorage.setItem(KNOWN_KEY, JSON.stringify([...set])); },
@@ -451,42 +863,6 @@ function renderDone() {
   updateHeader();
 }
 
-// ---------- audio playback (MP3 files, desktop + mobile) ----------
-let _audioCache = {};          // rel(url) -> Audio element
-const _audioRev = String(Date.now());  // 会话固定版本号，绕过 HTTP 缓存的旧 404
-
-function audioUrl(rel) {
-  if (!rel) return '';
-  const p = location.pathname.replace(/index\.html$/, '').replace(/\/$/, '');
-  const segs = p.split('/').filter(Boolean);
-  const up = '../'.repeat(Math.max(0, segs.length - 1));
-  return new URL(up + rel, document.baseURI).href;
-}
-
-function playAudio(url, btn) {
-  if (!url) return;
-  // 停掉上一条不同音频
-  const prev = _audioCache['_current'];
-  if (prev && prev !== _audioCache[url]) {
-    try { prev.pause(); prev.currentTime = 0; } catch(e) {}
-  }
-  let a = _audioCache[url];
-  // 首次创建 或 之前 error 过 → 重建（Chrome 可能记住 error 状态）
-  if (!a || a.error) {
-    a = new Audio();
-    a.preload = 'none';
-    // 首次 src 带会话版本号，绕过 HTTP 缓存的旧 404 响应
-    a.src = url + (url.includes('?') ? '&' : '?') + 'v=' + _audioRev;
-    _audioCache[url] = a;
-  }
-  _audioCache['_current'] = a;
-  // 注意：不再每次都 a.src = url，避免触发 abort 正在加载的请求
-  if (btn) { btn.classList.add('playing'); }
-  const cleanup = () => { if (btn) btn.classList.remove('playing'); };
-  a.onended = cleanup; a.onerror = cleanup;
-  try { a.play().catch(e => { console.warn('audio play failed:', e); cleanup(); }); } catch(e) { cleanup(); }
-}
-
 $('speakFront').addEventListener('click', e => {
   e.stopPropagation(); e.preventDefault();
   const d = DATA[queue[cur]];
@@ -560,6 +936,847 @@ document.onkeydown = e => {
 };
 
 buildQueue();
+
+} else {
+// ================= 学习模式：间隔复习系统 =================
+const P = KNOWN_KEY.replace(/_(known|wrong)$/, '');
+const K = {
+  srs: P + '_srs', log: P + '_log', cfg: P + '_cfg', custom: P + '_custom',
+  lists: P + '_lists', wrong: P + '_wrong2', revlog: P + '_revlog',
+  remind: P + '_lastremind', mig: P + '_mig1', seq: P + '_cseq',
+  perfect: P + '_perfect', everWrong: P + '_everwrong'
+};
+const STATE_NAMES = ['未学', '学习中', '已掌握', '易忘'];
+
+let custom = jget(K.custom, []);          // [{cid:'u1', en, zh, ipa?, audio?}]
+let ALL = DATA.concat(custom);
+let S = jget(K.srs, {});                  // id -> {s,due,iv,ef,reps,lap,last,w,r}
+let log = jget(K.log, {});                // 'YYYY-MM-DD' -> {n,r,ok,bad,q}
+let revlog = jget(K.revlog, []);          // [{d,iv,g}]
+let wrongSet = new Set(jget(K.wrong, []));
+let lists = jget(K.lists, []);            // [{name, ids:[]}]
+let cfg = Object.assign({ newPerDay: 20, goal: 30, remindOn: false, remindTime: '20:00' }, jget(K.cfg, {}));
+
+const DEF = () => ({ s: 0, due: '', iv: 0, ef: 2.5, reps: 0, lap: 0, last: '', w: 0, r: 0 });
+const getC = id => Object.assign(DEF(), S[id]);
+function saveAll() { jset(K.srs, S); jset(K.log, log); jset(K.revlog, revlog); jset(K.wrong, [...wrongSet]); jset(K.cfg, cfg); jset(K.custom, custom); jset(K.lists, lists); }
+function rebuildAll() { ALL = DATA.concat(custom); }
+function idOf(i) { return i < DATA.length ? i : ALL[i].cid; }
+function indexOfId(id) { if (typeof id === 'number') return id; return DATA.length + custom.findIndex(c => c.cid === id); }
+function record(kind) {
+  const t = dstr();
+  const e = log[t] || (log[t] = { n: 0, r: 0, ok: 0, bad: 0, q: 0 });
+  if (kind === 'new') e.n++; else if (kind === 'rev') e.r++;
+  else if (kind === 'ok') e.ok++; else if (kind === 'bad') e.bad++;
+  else if (kind === 'q') e.q++;
+}
+function hasActivity(d) { const t = log[d]; return !!t && ((t.n || 0) + (t.r || 0) + (t.q || 0) > 0); }
+function streak() {
+  let s = 0, d = dstr();
+  if (!hasActivity(d)) d = addDays(d, -1);
+  while (hasActivity(d)) { s++; d = addDays(d, -1); }
+  return s;
+}
+function shuffleArr(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+// ---------- 旧数据迁移（已知/错题） ----------
+if (!localStorage.getItem(K.mig)) {
+  const oldKnown = jget(KNOWN_KEY, []), oldWrong = jget(WRONG_KEY, []);
+  const byEn = {}; DATA.forEach((d, i) => { if (!(d.en in byEn)) byEn[d.en] = i; });
+  const today = dstr();
+  oldKnown.forEach(en => { const i = byEn[en]; if (i != null && !S[i]) S[i] = Object.assign(DEF(), { s: 2, iv: 7, reps: 3, due: addDays(today, 7), last: today }); });
+  oldWrong.forEach(en => {
+    const i = byEn[en]; if (i == null) return;
+    if (!S[i]) S[i] = Object.assign(DEF(), { s: 1, due: today });
+    wrongSet.add(i);
+  });
+  if (wrongSet.size) localStorage.setItem(K.everWrong, '1');
+  localStorage.setItem(K.mig, '1');
+  saveAll();
+}
+
+// ---------- 分组选择 ----------
+const groupSel = $('groupSel');
+const groups = [...new Set(DATA.map(d => d.group))];
+groupSel.innerHTML = '<option value="">全部（' + DATA.length + (custom.length ? ' + 自定义 ' + custom.length : '') + '）</option>' +
+  groups.map(g => `<option value="${g}">${g}（${DATA.filter(d => d.group === g).length}）</option>`).join('') +
+  (custom.length ? `<option value="自定义">自定义（${custom.length}）</option>` : '');
+
+// ---------- 布局切换 ----------
+document.body.classList.add('learn');
+$('btnShuffle').style.display = 'none';
+$('btnWrongBook').style.display = 'none';
+$('btnReset').style.display = 'none';
+$('tabbar').hidden = false;
+$('footText').textContent = '科学间隔复习 · 认识/模糊/不认识三档评分 · 数据保存在本地浏览器';
+const VIEWS = ['viewStudy', 'viewList', 'viewQuiz', 'viewStats', 'viewMe'];
+function showView(v) {
+  VIEWS.forEach(id => $(id).hidden = id !== v);
+  document.querySelectorAll('#tabbar .tab').forEach(t => t.classList.toggle('active', t.dataset.v === v));
+  if (v === 'viewList') renderList();
+  if (v === 'viewQuiz') renderQuizMenu();
+  if (v === 'viewStats') renderStats();
+  if (v === 'viewMe') renderMe();
+  window.scrollTo(0, 0);
+}
+document.querySelectorAll('#tabbar .tab').forEach(t => t.onclick = () => showView(t.dataset.v));
+
+// ---------- SM-2 变体调度 ----------
+function previewIv(c, g) {
+  if (g === 0) return 0;
+  if (c.reps === 0) return 1;
+  if (c.reps === 1) return g === 1 ? 3 : 6;
+  return Math.min(365, Math.max(c.iv + 1, Math.round(c.iv * (g === 1 ? 1.2 : c.ef))));
+}
+function grade(id, g) {
+  const today = dstr();
+  const c = getC(id);
+  const prevIv = c.iv, wasNew = c.s === 0;
+  if (g === 0) {
+    c.lap++; c.ef = Math.max(1.3, c.ef - 0.2); c.reps = 0; c.iv = 0; c.due = today;
+    c.s = c.lap >= 2 ? 3 : 1;
+    c.w++;
+    wrongSet.add(id); localStorage.setItem(K.everWrong, '1');
+    record('bad');
+    if ((session.againCount[id] || 0) < 3) { session.queue.push(id); session.againCount[id] = (session.againCount[id] || 0) + 1; }
+  } else {
+    c.ef = g === 1 ? Math.max(1.3, c.ef - 0.15) : Math.min(3.0, c.ef + 0.1);
+    c.iv = previewIv(c, g);
+    c.reps++; c.due = addDays(today, c.iv); c.r++;
+    if (c.s === 0) c.s = 1;
+    if ((c.s === 1 || c.s === 3) && c.reps >= 3 && c.iv >= 7) { c.s = 2; wrongSet.delete(id); }
+    record('ok');
+  }
+  record(wasNew ? 'new' : 'rev');
+  c.last = today;
+  revlog.push({ d: today, iv: prevIv, g });
+  if (revlog.length > 3000) revlog.splice(0, revlog.length - 3000);
+  S[id] = c;
+  saveAll();
+}
+
+// ---------- 今日队列 ----------
+const session = { queue: [], cur: 0, againCount: {}, ok: 0, bad: 0, newSeen: 0, revSeen: 0 };
+function newTodayCount() { const t = log[dstr()]; return t ? (t.n || 0) : 0; }
+function dueReviewCount(scope) {
+  const today = dstr(); let n = 0;
+  for (let i = 0; i < ALL.length; i++) {
+    const c = S[idOf(i)]; if (!c || c.s === 0) continue;
+    if (scope && ALL[i].group !== scope) continue;
+    if (c.due && c.due <= today) n++;
+  }
+  return n;
+}
+function buildLearnQueue() {
+  const today = dstr(), scope = groupSel.value;
+  const reviews = [], news = [];
+  for (let i = 0; i < ALL.length; i++) {
+    if (scope && ALL[i].group !== scope) continue;
+    const id = idOf(i), c = S[id];
+    if (!c || c.s === 0) { news.push(id); continue; }
+    if (c.due && c.due <= today) reviews.push(id);
+  }
+  reviews.sort((a, b) => (S[a].due < S[b].due ? -1 : S[a].due > S[b].due ? 1 : (S[b].iv - S[a].iv)));
+  const newLeft = Math.max(0, cfg.newPerDay - newTodayCount());
+  session.queue = reviews.concat(news.slice(0, newLeft));
+  session.cur = 0; session.againCount = {};
+  session.ok = 0; session.bad = 0; session.newSeen = 0; session.revSeen = 0;
+  $('done').hidden = true;
+  $('study').style.display = '';
+  renderLearnCard();
+}
+groupSel.onchange = buildLearnQueue;
+
+// ---------- 学习卡片渲染 ----------
+let flipped = false, backFillTimer = null;
+function currentId() { return session.queue[session.cur]; }
+function updateLearnHeader() {
+  const t = log[dstr()] || {};
+  $('statsLine').innerHTML =
+    `今日 新 <b class="blu">${t.n || 0}</b>/${cfg.newPerDay} · 复习 <b>${t.r || 0}</b> · 连续 <b>${streak()}</b> 天`;
+}
+function renderLearnCard() {
+  updateLearnHeader();
+  if (session.cur >= session.queue.length) { renderLearnDone(); return; }
+  const id = currentId(), d = ALL[indexOfId(id)], c = getC(id);
+  const wasFlipped = flipped;
+  if (backFillTimer) { clearTimeout(backFillTimer); backFillTimer = null; }
+  flipped = false;
+  $('card').classList.remove('flipped');
+  $('btnFlip').hidden = false;
+  $('rateBar').hidden = true;
+  $('wordFront').innerHTML = esc(d.en);
+  $('ipaText').textContent = d.ipa || '';
+  $('ipaFront').hidden = !d.ipa;
+  $('speakFront').hidden = !d.audio;
+  $('tagFront').textContent = d.group || '自定义';
+  // 状态角标
+  const dot = $('knownDot');
+  dot.hidden = c.s === 0;
+  dot.className = 'known-dot st' + c.s;
+  dot.textContent = STATE_NAMES[c.s];
+  $('wrongDot').hidden = !wrongSet.has(id);
+  $('cardMeta').textContent = c.s === 0 ? '新词' : (c.last ? `复习 · 距上次 ${Math.max(0, Math.round((new Date(dstr()) - new Date(c.last)) / 86400000))} 天` : '复习');
+  $('posFront').textContent = `${session.cur + 1} / ${session.queue.length}`;
+  $('progressFill').style.width = (session.cur / session.queue.length * 100) + '%';
+  $('progressNum').textContent = `${session.cur} / ${session.queue.length}`;
+  // 评分按钮上的下次间隔预览
+  $('btnAgain').querySelector('small').textContent = '稍后重学';
+  $('btnHard').querySelector('small').textContent = previewIv(c, 1) + ' 天后复习';
+  $('btnGood').querySelector('small').textContent = previewIv(c, 2) + ' 天后复习';
+  if (wasFlipped) {
+    $('wordBack').innerHTML = ''; $('enBack').textContent = ''; $('tagBack').textContent = '';
+    backFillTimer = setTimeout(() => {
+      $('wordBack').innerHTML = d.zh;
+      $('tagBack').textContent = d.group || '自定义';
+      $('enBack').textContent = d.en + (d.ipa ? '  ' + d.ipa : '');
+      backFillTimer = null;
+    }, 250);
+  } else {
+    $('wordBack').innerHTML = d.zh;
+    $('tagBack').textContent = d.group || '自定义';
+    $('enBack').textContent = d.en + (d.ipa ? '  ' + d.ipa : '');
+  }
+}
+function renderLearnDone() {
+  $('study').style.display = 'none';
+  $('rateBar').hidden = true;
+  $('btnFlip').hidden = true;
+  $('done').hidden = false;
+  const t = log[dstr()] || {};
+  const total = session.ok + session.bad;
+  const acc = total ? Math.round(session.ok / total * 100) : 100;
+  const dueTomorrow = (() => { const tm = addDays(dstr(), 1); let n = 0; for (const id in S) if (S[id].s > 0 && S[id].due === tm) n++; return n; })();
+  const remainDue = dueReviewCount(groupSel.value);
+  $('doneTitle').textContent = remainDue > 0 ? '本批完成' : '今日任务完成 🎉';
+  $('doneText').textContent =
+    `本次正确率 ${acc}%（对 ${session.ok} / 错 ${session.bad}）\n` +
+    `今日累计：新词 ${t.n || 0} 张 · 复习 ${t.r || 0} 张 · 连续打卡 ${streak()} 天` +
+    (dueTomorrow ? `\n明日预计到期 ${dueTomorrow} 张` : '') +
+    (remainDue > 0 ? `\n当前范围还有 ${remainDue} 张到期复习，点击下方按钮继续` : '');
+  const againBtn = $('btnAgainUnknown'), restartBtn = $('btnRestart');
+  if (remainDue > 0) {
+    againBtn.hidden = false; againBtn.textContent = '继续复习到期卡片';
+    restartBtn.textContent = '查看学习统计';
+  } else {
+    againBtn.hidden = wrongSet.size < 4;
+    againBtn.textContent = `错题重测（${wrongSet.size} 词）`;
+    restartBtn.textContent = '查看学习统计';
+  }
+  againBtn.onclick = () => {
+    if (remainDue > 0) { buildLearnQueue(); return; }
+    showView('viewQuiz'); startQuiz('wrong');
+  };
+  restartBtn.onclick = () => showView('viewStats');
+  $('progressFill').style.width = '100%';
+  $('progressNum').textContent = `${session.queue.length} / ${session.queue.length}`;
+  updateLearnHeader();
+}
+function flip() {
+  if (!$('done').hidden) return;
+  flipped = !flipped;
+  $('card').classList.toggle('flipped', flipped);
+  $('btnFlip').hidden = flipped;
+  $('rateBar').hidden = !flipped;
+}
+function answer(g) {
+  if (session.cur >= session.queue.length) return;
+  const id = currentId(), wasNew = getC(id).s === 0;
+  if (g === 0) session.bad++; else session.ok++;
+  if (wasNew) session.newSeen++; else session.revSeen++;
+  grade(id, g);
+  session.cur++;
+  renderLearnCard();
+}
+$('card').onclick = flip;
+$('btnFlip').onclick = flip;
+$('btnAgain').onclick = () => answer(0);
+$('btnHard').onclick = () => answer(1);
+$('btnGood').onclick = () => answer(2);
+$('speakFront').addEventListener('click', e => {
+  e.stopPropagation(); e.preventDefault();
+  if (session.cur >= session.queue.length) return;
+  const d = ALL[indexOfId(currentId())];
+  if (d.audio) playAudio(audioUrl(d.audio), $('speakFront'));
+});
+document.onkeydown = e => {
+  if (e.target && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
+  if (e.code === 'Space') { e.preventDefault(); if (!$('viewStudy').hidden) flip(); }
+  else if (!$('viewStudy').hidden && !$('rateBar').hidden) {
+    if (e.code === 'Digit1' || e.code === 'ArrowLeft') answer(0);
+    else if (e.code === 'Digit2' || e.code === 'ArrowDown') answer(1);
+    else if (e.code === 'Digit3' || e.code === 'ArrowRight') answer(2);
+  }
+};
+
+// ---------- 弹窗 ----------
+function openModal(html) { $('modalBox').innerHTML = html; $('modal').hidden = false; }
+function closeModal() { $('modal').hidden = true; $('modalBox').innerHTML = ''; }
+$('modal').addEventListener('click', e => { if (e.target === $('modal')) closeModal(); });
+
+// ---------- 词表视图 ----------
+const listState = { f: 'all', list: '', search: '', shown: 150 };
+function renderListSel() {
+  const sel = $('listSel');
+  sel.innerHTML = '<option value="">全部单词</option>' +
+    '<option value="__custom">我收藏的生词</option>' +
+    lists.map((l, i) => `<option value="L${i}">${esc(l.name)}（${l.ids.length}）</option>`).join('');
+  sel.value = listState.list;
+  $('btnDelList').hidden = !/^L\d+$/.test(listState.list);
+}
+function rowMatches(i) {
+  const id = idOf(i), d = ALL[i], c = getC(id);
+  if (listState.list === '__custom' && i < DATA.length) return false;
+  if (/^L\d+$/.test(listState.list)) {
+    const l = lists[+listState.list.slice(1)];
+    if (!l || !l.ids.includes(id)) return false;
+  }
+  if (listState.f === 'wrong') { if (!wrongSet.has(id)) return false; }
+  else if (listState.f !== 'all' && c.s !== +listState.f.slice(1)) return false;
+  if (listState.search) {
+    const q = listState.search.toLowerCase();
+    if (!String(d.en).toLowerCase().includes(q) && !stripTags(d.zh).toLowerCase().includes(q)) return false;
+  }
+  return true;
+}
+function renderList(reset) {
+  if (reset) listState.shown = 150;
+  renderListSel();
+  document.querySelectorAll('#stateChips .chip').forEach(ch => ch.classList.toggle('active', ch.dataset.f === listState.f));
+  const idxs = [];
+  for (let i = 0; i < ALL.length && idxs.length < listState.shown; i++) if (rowMatches(i)) idxs.push(i);
+  const rows = $('listRows');
+  if (!idxs.length) { rows.innerHTML = '<p class="note">没有符合条件的卡片</p>'; $('btnMoreRows').hidden = true; return; }
+  rows.innerHTML = idxs.map(i => {
+    const id = idOf(i), d = ALL[i], c = getC(id);
+    const dueTxt = c.s > 0 && c.due ? (c.due <= dstr() ? '待复习' : c.due.slice(5) + ' 到期') : '';
+    return `<div class="lrow">
+      <button class="speak-btn" data-say="${i}" ${d.audio ? '' : 'hidden'} title="朗读">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+      </button>
+      <span class="lw">${esc(d.en)}</span>
+      <span class="lz" title="${esc(stripTags(d.zh))}">${esc(stripTags(d.zh))}</span>
+      <span class="lmeta">${dueTxt}</span>
+      <span class="stbadge st${c.s}">${STATE_NAMES[c.s]}</span>
+      ${wrongSet.has(id) ? '<button class="icon-btn" data-unwrong="' + esc(String(id)) + '" title="移出错题本">✓</button>' : ''}
+      <button class="icon-btn" data-tolist="${i}" title="加入词表">＋</button>
+      ${i >= DATA.length ? `<button class="icon-btn" data-edit="${i}" title="编辑">✎</button><button class="icon-btn" data-del="${i}" title="删除">🗑</button>` : ''}
+    </div>`;
+  }).join('');
+  let total = 0; for (let i = 0; i < ALL.length; i++) if (rowMatches(i)) total++;
+  $('btnMoreRows').hidden = idxs.length >= total;
+  $('btnMoreRows').textContent = `加载更多（已显示 ${idxs.length} / ${total}）`;
+}
+$('listRows').addEventListener('click', e => {
+  const say = e.target.closest('[data-say]');
+  if (say) { const d = ALL[+say.dataset.say]; if (d.audio) playAudio(audioUrl(d.audio), say); return; }
+  const uw = e.target.closest('[data-unwrong]');
+  if (uw) { const id = isNaN(+uw.dataset.unwrong) ? uw.dataset.unwrong : +uw.dataset.unwrong; wrongSet.delete(id); saveAll(); renderList(); return; }
+  const tl = e.target.closest('[data-tolist]');
+  if (tl) { openAddToList(+tl.dataset.tolist); return; }
+  const ed = e.target.closest('[data-edit]');
+  if (ed) { openAddWord(+ed.dataset.edit); return; }
+  const del = e.target.closest('[data-del]');
+  if (del) { deleteCustom(+del.dataset.del); return; }
+});
+$('btnMoreRows').onclick = () => { listState.shown += 150; renderList(); };
+$('listSearch').oninput = e => { listState.search = e.target.value.trim(); renderList(true); };
+$('listSel').onchange = e => { listState.list = e.target.value; renderList(true); };
+document.querySelectorAll('#stateChips .chip').forEach(ch => ch.onclick = () => { listState.f = ch.dataset.f; renderList(true); });
+$('btnDelList').onclick = () => {
+  if (!/^L\d+$/.test(listState.list)) return;
+  const i = +listState.list.slice(1);
+  if (!confirm(`删除词表「${lists[i].name}」？（不会删除单词本身）`)) return;
+  lists.splice(i, 1); listState.list = ''; saveAll(); renderList(true);
+};
+
+function deleteCustom(i) {
+  const c = custom[i - DATA.length];
+  if (!c || !confirm(`删除生词「${c.en}」及其学习记录？`)) return;
+  const id = c.cid;
+  custom.splice(i - DATA.length, 1);
+  delete S[id]; wrongSet.delete(id);
+  lists.forEach(l => { l.ids = l.ids.filter(x => x !== id); });
+  rebuildAll(); saveAll(); renderList(true); renderGroupSelLearn();
+}
+function renderGroupSelLearn() {
+  const v = groupSel.value;
+  groupSel.innerHTML = '<option value="">全部（' + DATA.length + (custom.length ? ' + 自定义 ' + custom.length : '') + '）</option>' +
+    groups.map(g => `<option value="${g}">${g}（${DATA.filter(d => d.group === g).length}）</option>`).join('') +
+    (custom.length ? `<option value="自定义">自定义（${custom.length}）</option>` : '');
+  groupSel.value = v;
+}
+
+// 收藏生词 / 编辑生词
+async function lookupIpa(word) {
+  try {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 4000);
+    const r = await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word), { signal: ctrl.signal });
+    clearTimeout(timer);
+    if (!r.ok) return '';
+    const j = await r.json();
+    const ph = j && j[0] && j[0].phonetics;
+    if (ph) for (const p of ph) if (p.text) return p.text;
+  } catch (e) {}
+  return '';
+}
+function openAddWord(editIdx) {
+  const editing = editIdx != null;
+  const old = editing ? ALL[editIdx] : { en: '', zh: '' };
+  openModal(`<h3>${editing ? '编辑生词' : '收藏生词'}</h3>
+    <div class="mrow"><input type="text" id="mwEn" placeholder="英文单词/短语（必填）" value="${esc(old.en)}" ${editing ? 'disabled' : ''}></div>
+    <div class="mrow"><input type="text" id="mwZh" placeholder="中文释义（可留空）" value="${esc(stripTags(old.zh))}"></div>
+    ${editing ? '' : '<div class="mrow"><label style="font-size:13px;color:var(--text-sub)"><input type="checkbox" id="mwIpa" checked> 自动查询音标（需联网）</label></div>'}
+    <div class="modal-actions">
+      <button class="btn-ghost" id="mwCancel">取消</button>
+      <button class="btn-primary" id="mwSave">保存</button>
+    </div>`);
+  $('mwCancel').onclick = closeModal;
+  $('mwSave').onclick = async () => {
+    const en = $('mwEn').value.trim(), zh = $('mwZh').value.trim();
+    if (!en) { alert('请填写英文单词'); return; }
+    if (editing) {
+      custom[editIdx - DATA.length].zh = zh;
+      saveAll(); closeModal(); renderList(); return;
+    }
+    const dupKey = en.toLowerCase();
+    if (ALL.some(d => String(d.en).toLowerCase() === dupKey)) { alert('该词已在卡片中'); return; }
+    let ipa = '';
+    if ($('mwIpa') && $('mwIpa').checked) ipa = await lookupIpa(en);
+    const seq = (+localStorage.getItem(K.seq) || 0) + 1;
+    localStorage.setItem(K.seq, String(seq));
+    custom.push({ cid: 'u' + seq, en, zh, ipa });
+    rebuildAll(); saveAll(); closeModal(); renderList(true); renderGroupSelLearn();
+  };
+}
+$('btnAddWord').onclick = () => openAddWord(null);
+
+function openAddToList(i) {
+  const id = idOf(i);
+  openModal(`<h3>加入词表</h3>
+    <div class="mrow"><select id="mtSel">
+      <option value="__new">＋ 新建词表…</option>
+      ${lists.map((l, x) => `<option value="${x}">${esc(l.name)}（${l.ids.length}）</option>`).join('')}
+    </select></div>
+    <div class="mrow" id="mtNewRow" hidden><input type="text" id="mtNewName" placeholder="新词表名称"></div>
+    <div class="modal-actions">
+      <button class="btn-ghost" id="mtCancel">取消</button>
+      <button class="btn-primary" id="mtSave">加入</button>
+    </div>`);
+  $('mtSel').onchange = () => { $('mtNewRow').hidden = $('mtSel').value !== '__new'; };
+  $('mtCancel').onclick = closeModal;
+  $('mtSave').onclick = () => {
+    let v = $('mtSel').value;
+    if (v === '__new') {
+      const name = $('mtNewName').value.trim();
+      if (!name) { alert('请输入词表名称'); return; }
+      lists.push({ name, ids: [] }); v = String(lists.length - 1);
+    }
+    const l = lists[+v];
+    if (!l.ids.includes(id)) l.ids.push(id);
+    saveAll(); closeModal(); renderList();
+    alert(`已加入「${l.name}」`);
+  };
+}
+
+// 导入词表
+$('btnImport').onclick = () => {
+  openModal(`<h3>导入词表</h3>
+    <div class="mrow"><input type="text" id="miName" placeholder="保存为词表名称（可留空，仅加入生词）"></div>
+    <div class="mrow"><textarea id="miText" placeholder="每行一个词，支持格式：&#10;word${'\t'}中文意思&#10;word, 中文意思&#10;word - 中文意思&#10;只有英文也可以，释义留空"></textarea></div>
+    <div class="mrow"><input type="file" id="miFile" accept=".txt,.csv,text/plain,text/csv" style="font-size:13px"></div>
+    <p class="note" style="margin:0 0 6px">Excel 请先另存为 CSV（逗号分隔）再导入；重复单词自动跳过。</p>
+    <div class="modal-actions">
+      <button class="btn-ghost" id="miCancel">取消</button>
+      <button class="btn-primary" id="miSave">导入</button>
+    </div>`);
+  $('miFile').onchange = () => {
+    const f = $('miFile').files[0]; if (!f) return;
+    const rd = new FileReader();
+    rd.onload = () => { $('miText').value = String(rd.result).replace(/^\uFEFF/, ''); };
+    rd.readAsText(f, 'utf-8');
+  };
+  $('miCancel').onclick = closeModal;
+  $('miSave').onclick = () => {
+    const lines = $('miText').value.split(/\r?\n/);
+    const exist = new Set(ALL.map(d => String(d.en).toLowerCase()));
+    const ids = []; let added = 0, skipped = 0;
+    lines.forEach(raw => {
+      const line = raw.trim(); if (!line) return;
+      let en = line, zh = '';
+      const m = line.match(/^(.+?)\s*(?:\t|,|，| - | — )\s*(.*)$/);
+      if (m) { en = m[1].trim(); zh = m[2].trim(); }
+      if (!en) return;
+      if (exist.has(en.toLowerCase())) { skipped++; return; }
+      exist.add(en.toLowerCase());
+      const seq = (+localStorage.getItem(K.seq) || 0) + 1;
+      localStorage.setItem(K.seq, String(seq));
+      const cid = 'u' + seq;
+      custom.push({ cid, en, zh });
+      ids.push(cid); added++;
+    });
+    if (!added) { alert(skipped ? `全部 ${skipped} 个词均已存在，未导入新词` : '未识别到有效内容'); return; }
+    const name = $('miName').value.trim();
+    if (name) lists.push({ name, ids });
+    rebuildAll(); saveAll(); closeModal();
+    if (name) { listState.list = 'L' + (lists.length - 1); }
+    renderList(true); renderGroupSelLearn();
+    alert(`导入完成：新增 ${added} 词` + (skipped ? `，跳过重复 ${skipped} 词` : ''));
+  };
+};
+
+// ---------- 测试模块 ----------
+function renderQuizMenu() {
+  $('quizMenu').hidden = false; $('quizRun').hidden = true; $('quizResult').hidden = true;
+  const learned = ALL.filter((d, i) => { const c = S[idOf(i)]; return c && c.s > 0; }).length;
+  $('qDailyInfo').textContent = learned >= 4 ? '10 题 · 已学内容为主' : `已学仅 ${learned} 词，至少需 4 词`;
+  $('qDaily').classList.toggle('disabled', learned < 4 && ALL.length < 4);
+  $('qWrongInfo').textContent = `错题本 ${wrongSet.size} 词` + (wrongSet.size < 4 ? '（至少 4 词可测）' : '');
+  $('qWrong').classList.toggle('disabled', wrongSet.size < 4);
+  const sel = $('qStageSel');
+  if (!sel.options.length) {
+    sel.innerHTML = '<option value="">全部范围（随机 20 题）</option>' +
+      groups.map(g => `<option value="${g}">${g}</option>`).join('');
+  }
+}
+function makeOpts(id) {
+  const i = indexOfId(id), correct = stripTags(ALL[i].zh);
+  const sameG = [], others = [];
+  for (let j = 0; j < ALL.length; j++) {
+    if (j === i) continue;
+    const z = stripTags(ALL[j].zh);
+    if (!z || z === correct) continue;
+    (ALL[j].group === ALL[i].group ? sameG : others).push(z);
+  }
+  shuffleArr(sameG); shuffleArr(others);
+  const pool = sameG.concat(others);
+  const opts = [correct];
+  for (const z of pool) { if (opts.length >= 4) break; if (!opts.includes(z)) opts.push(z); }
+  shuffleArr(opts);
+  return { opts, ans: opts.indexOf(correct) };
+}
+let quiz = null;
+function startQuiz(kind) {
+  let ids = [];
+  if (kind === 'daily') {
+    const due = [], learned = [], fresh = [];
+    const today = dstr();
+    for (let i = 0; i < ALL.length; i++) {
+      const id = idOf(i), c = S[id];
+      if (!c || c.s === 0) { fresh.push(id); continue; }
+      if (c.due && c.due <= today) due.push(id); else learned.push(id);
+    }
+    shuffleArr(due); shuffleArr(learned); shuffleArr(fresh);
+    ids = due.concat(learned).concat(fresh).slice(0, 10);
+  } else if (kind === 'stage') {
+    const scope = $('qStageSel').value;
+    for (let i = 0; i < ALL.length; i++) if (!scope || ALL[i].group === scope) ids.push(idOf(i));
+    ids = shuffleArr(ids).slice(0, 20);
+  } else if (kind === 'wrong') {
+    ids = shuffleArr([...wrongSet]).slice(0, 20);
+  }
+  if (ids.length < 4) { alert('可用卡片不足 4 张，无法生成测试'); return; }
+  quiz = { kind, qs: ids.map(id => { const o = makeOpts(id); return { id, opts: o.opts, ans: o.ans }; }), cur: 0, ok: 0, wrongs: [] };
+  showView('viewQuiz');
+  $('quizMenu').hidden = true; $('quizResult').hidden = true; $('quizRun').hidden = false;
+  renderQuizQ();
+}
+function renderQuizQ() {
+  const q = quiz.qs[quiz.cur], d = ALL[indexOfId(q.id)];
+  $('qProgFill').style.width = (quiz.cur / quiz.qs.length * 100) + '%';
+  $('qProgNum').textContent = `${quiz.cur + 1}/${quiz.qs.length}`;
+  $('quizWord').innerHTML = esc(d.en);
+  $('quizIpaText').textContent = d.ipa || '';
+  $('quizIpa').hidden = !d.ipa && !d.audio;
+  $('quizSpeak').hidden = !d.audio;
+  $('quizOpts').innerHTML = q.opts.map((z, i) =>
+    `<button class="quiz-opt" data-i="${i}">${esc(z.length > 80 ? z.slice(0, 80) + '…' : z)}</button>`).join('');
+  $('quizOpts').querySelectorAll('.quiz-opt').forEach(b => b.onclick = () => pickOpt(+b.dataset.i));
+}
+function pickOpt(i) {
+  const q = quiz.qs[quiz.cur];
+  const btns = $('quizOpts').querySelectorAll('.quiz-opt');
+  btns.forEach(b => b.disabled = true);
+  btns[q.ans].classList.add('ok');
+  const id = q.id, c = getC(id);
+  if (i === q.ans) {
+    quiz.ok++; record('ok');
+    c.r++; S[id] = c;
+  } else {
+    btns[i].classList.add('bad');
+    quiz.wrongs.push(id);
+    record('bad');
+    c.w++; wrongSet.add(id); localStorage.setItem(K.everWrong, '1'); S[id] = c;
+  }
+  record('q'); saveAll();
+  setTimeout(() => {
+    quiz.cur++;
+    if (quiz.cur >= quiz.qs.length) finishQuiz(); else renderQuizQ();
+  }, i === q.ans ? 500 : 1000);
+}
+function finishQuiz() {
+  $('quizRun').hidden = true;
+  const n = quiz.qs.length, ok = quiz.ok;
+  const perfect = ok === n && n >= 5;
+  if (perfect) localStorage.setItem(K.perfect, '1');
+  const wrongHtml = quiz.wrongs.map(id => {
+    const d = ALL[indexOfId(id)];
+    return `<div class="wrong-item"><b>${esc(d.en)}</b><br><span>${esc(stripTags(d.zh))}</span></div>`;
+  }).join('');
+  $('quizResult').innerHTML = `<div class="quiz-result">
+    <div class="score">${ok} / ${n}</div>
+    <p style="color:var(--text-sub);font-size:13px;margin:6px 0 14px">${perfect ? '满分！保持这个状态' : ok / n >= 0.6 ? '不错，错题已自动收入错题本' : '别灰心，错题已收入错题本，多复习几轮'}</p>
+    ${wrongHtml ? '<div style="text-align:left;margin-bottom:14px"><b style="font-size:13px">错题回顾</b>' + wrongHtml + '</div>' : ''}
+    <button class="btn-primary" id="qzRetry" style="width:100%;margin-bottom:8px">再测一次</button>
+    <button class="btn-ghost" id="qzBack" style="width:100%">返回测试菜单</button>
+  </div>`;
+  $('quizResult').hidden = false;
+  const kind = quiz.kind;
+  $('qzRetry').onclick = () => startQuiz(kind);
+  $('qzBack').onclick = renderQuizMenu;
+}
+$('qDaily').onclick = () => startQuiz('daily');
+$('qStage').onclick = e => { if (e.target.tagName !== 'SELECT') startQuiz('stage'); };
+$('qWrong').onclick = () => { if (wrongSet.size >= 4) startQuiz('wrong'); };
+$('btnQuizQuit').onclick = renderQuizMenu;
+$('quizSpeak').addEventListener('click', e => {
+  e.stopPropagation(); e.preventDefault();
+  if (!quiz) return;
+  const d = ALL[indexOfId(quiz.qs[quiz.cur].id)];
+  if (d.audio) playAudio(audioUrl(d.audio), $('quizSpeak'));
+});
+
+// ---------- 统计模块 ----------
+function barChart(el, cols) {
+  const max = Math.max(1, ...cols.flatMap(c => c.bars.map(b => b.v)));
+  el.innerHTML = cols.map(c => `<div class="bcol" title="${esc(c.bars.map(b => b.tip).join('　'))}">
+    ${c.top ? `<span class="btop">${c.top}</span>` : ''}
+    <div class="bgroup">${c.bars.map(b => `<i class="bbar ${b.cls}" style="height:${Math.max(2, Math.round(b.v / max * 100))}%"></i>`).join('')}</div>
+    <span class="blab">${c.label}</span></div>`).join('');
+}
+function renderStats() {
+  const today = dstr(), t = log[today] || {};
+  let mastered = 0, learning = 0, fragile = 0, unlearned = 0;
+  for (let i = 0; i < ALL.length; i++) {
+    const c = S[idOf(i)];
+    const s = c ? c.s : 0;
+    if (s === 0) unlearned++; else if (s === 1) learning++; else if (s === 2) mastered++; else fragile++;
+  }
+  let okAll = 0, badAll = 0, newAll = 0, revAll = 0, days = 0;
+  for (const d in log) { const e = log[d]; okAll += e.ok || 0; badAll += e.bad || 0; newAll += e.n || 0; revAll += e.r || 0; if (hasActivity(d)) days++; }
+  const acc = okAll + badAll ? Math.round(okAll / (okAll + badAll) * 100) : 100;
+  $('statCards').innerHTML = `
+    <div class="scard"><b>${streak()}</b><span>连续天数</span></div>
+    <div class="scard"><b>${(t.n || 0) + (t.r || 0)}</b><span>今日已学</span></div>
+    <div class="scard"><b>${mastered}<small style="font-size:11px;color:#9aa1b2">/${ALL.length}</small></b><span>已掌握</span></div>
+    <div class="scard"><b>${acc}%</b><span>总正确率</span></div>`;
+
+  // 热力图（近 26 周）
+  const cells = [];
+  const start = new Date(); start.setDate(start.getDate() - 181);
+  while (start.getDay() !== 1) start.setDate(start.getDate() - 1);
+  const d = new Date(start);
+  while (dstr(d) <= today) {
+    const ds = dstr(d), e = log[ds];
+    const v = e ? (e.n || 0) + (e.r || 0) + (e.q || 0) : 0;
+    const cls = v === 0 ? '' : v <= 10 ? 'h1' : v <= 30 ? 'h2' : 'h3';
+    cells.push(`<i class="hcell ${cls}" title="${ds} · 新${e ? e.n || 0 : 0} 复${e ? e.r || 0 : 0} 测${e ? e.q || 0 : 0}"></i>`);
+    d.setDate(d.getDate() + 1);
+  }
+  $('heatmap').innerHTML = cells.join('');
+
+  // 近 14 天新词/复习
+  const cols = [];
+  for (let i = 13; i >= 0; i--) {
+    const ds = addDays(today, -i), e = log[ds] || {};
+    cols.push({ label: ds.slice(8), bars: [
+      { v: e.n || 0, cls: 'blu', tip: `新词 ${e.n || 0}` },
+      { v: e.r || 0, cls: 'grn', tip: `复习 ${e.r || 0}` }
+    ] });
+  }
+  barChart($('barsDaily'), cols);
+
+  // 记忆保持率（按距上次学习的间隔分桶）
+  const buckets = [
+    { name: '首次', test: iv => iv === 0 }, { name: '1天', test: iv => iv === 1 },
+    { name: '2-3天', test: iv => iv >= 2 && iv <= 3 }, { name: '4-7天', test: iv => iv >= 4 && iv <= 7 },
+    { name: '8-15天', test: iv => iv >= 8 && iv <= 15 }, { name: '16天+', test: iv => iv >= 16 }
+  ].map(b => ({ ...b, ok: 0, n: 0 }));
+  revlog.forEach(r => { const b = buckets.find(b => b.test(r.iv)); if (b) { b.n++; if (r.g > 0) b.ok++; } });
+  barChart($('barsRet'), buckets.map(b => ({
+    label: b.name,
+    top: b.n >= 3 ? Math.round(b.ok / b.n * 100) + '%' : '—',
+    bars: [{ v: b.n >= 3 ? b.ok / b.n * 100 : 0, cls: b.n >= 3 && b.ok / b.n < 0.6 ? 'red' : 'grn', tip: `${b.name}：${b.n} 次复习，记住 ${b.ok} 次` }]
+  })));
+
+  // 掌握度分布
+  const total = ALL.length || 1;
+  const seg = [
+    { n: unlearned, c: '#c9cfdd', t: '未学' }, { n: learning, c: '#818cf8', t: '学习中' },
+    { n: mastered, c: '#22a06b', t: '已掌握' }, { n: fragile, c: '#e5484d', t: '易忘' }
+  ];
+  $('masteryDist').innerHTML = `<div class="mstack">${seg.map(s => `<i style="width:${(s.n / total * 100).toFixed(1)}%;background:${s.c}"></i>`).join('')}</div>
+    <div class="mlegend">${seg.map(s => `<span><i style="background:${s.c}"></i>${s.t} ${s.n}</span>`).join('')}</div>`;
+
+  // 错词趋势
+  barChart($('barsWrong'), Array.from({ length: 14 }, (_, k) => {
+    const ds = addDays(today, k - 13), e = log[ds] || {};
+    return { label: ds.slice(8), bars: [{ v: e.bad || 0, cls: 'red', tip: `${ds} 错 ${e.bad || 0} 次` }] };
+  }));
+
+  // 薄弱词榜
+  const weak = [];
+  for (let i = 0; i < ALL.length; i++) {
+    const id = idOf(i), c = S[id];
+    if (c && c.w > 0) weak.push({ i, w: c.w, s: c.s });
+  }
+  weak.sort((a, b) => b.w - a.w);
+  $('weakList').innerHTML = weak.length
+    ? weak.slice(0, 10).map(x => {
+        const d = ALL[x.i];
+        return `<div class="weak-row" data-find="${esc(d.en)}"><b>${esc(d.en)}</b><span class="lz">${esc(stripTags(d.zh))}</span><span class="stbadge st${x.s}">${STATE_NAMES[x.s]}</span><span class="wn">错 ${x.w} 次</span></div>`;
+      }).join('')
+    : '<p class="note" style="margin:4px 0">还没有错词记录，继续保持</p>';
+  $('weakList').querySelectorAll('.weak-row').forEach(r => r.onclick = () => {
+    listState.search = r.dataset.find; listState.f = 'all'; listState.list = '';
+    $('listSearch').value = r.dataset.find;
+    showView('viewList');
+  });
+}
+$('btnExportJson').onclick = () => {
+  const payload = { app: 'vocab-srs', set: document.title, exported: new Date().toISOString(), cfg, srs: S, log, revlog, custom, lists, wrong: [...wrongSet], seq: localStorage.getItem(K.seq) || '0' };
+  download(document.title.replace(/[|\\\/:*?"<>]/g, '') + '_学习备份_' + dstr() + '.json', JSON.stringify(payload), 'application/json');
+};
+$('btnExportCsv').onclick = () => {
+  const rows = [['单词', '释义', '分组', '状态', '下次复习', '间隔天数', '复习次数', '遗忘次数', '错误次数']];
+  for (let i = 0; i < ALL.length; i++) {
+    const d = ALL[i], c = getC(idOf(i));
+    rows.push([d.en, stripTags(d.zh), d.group || '自定义', STATE_NAMES[c.s], c.due || '', c.iv, c.reps, c.lap, c.w]);
+  }
+  const csv = '\uFEFF' + rows.map(r => r.map(x => '"' + String(x).replace(/"/g, '""') + '"').join(',')).join('\r\n');
+  download(document.title.replace(/[|\\\/:*?"<>]/g, '') + '_词表_' + dstr() + '.csv', csv, 'text/csv;charset=utf-8');
+};
+$('btnImportBackup').onclick = () => $('fileBackup').click();
+$('fileBackup').onchange = () => {
+  const f = $('fileBackup').files[0]; if (!f) return;
+  const rd = new FileReader();
+  rd.onload = () => {
+    try {
+      const p = JSON.parse(String(rd.result));
+      if (!p || typeof p !== 'object' || !p.srs) throw new Error('bad');
+      if (!confirm('导入备份将覆盖当前全部学习数据，确定继续？')) return;
+      S = p.srs; log = p.log || {}; revlog = p.revlog || [];
+      custom = Array.isArray(p.custom) ? p.custom : [];
+      lists = Array.isArray(p.lists) ? p.lists : [];
+      wrongSet = new Set(p.wrong || []);
+      cfg = Object.assign(cfg, p.cfg || {});
+      localStorage.setItem(K.seq, String(p.seq || custom.length));
+      saveAll(); rebuildAll(); renderGroupSelLearn(); buildLearnQueue();
+      alert('备份导入成功');
+    } catch (e) { alert('备份文件格式不正确'); }
+    $('fileBackup').value = '';
+  };
+  rd.readAsText(f, 'utf-8');
+};
+
+// ---------- 我的 / 设置 ----------
+function renderMe() {
+  $('cfgNew').value = cfg.newPerDay;
+  $('cfgGoal').value = cfg.goal;
+  $('cfgRemindTime').value = cfg.remindTime;
+  $('cfgRemindOn').checked = cfg.remindOn;
+  renderAch();
+}
+$('cfgNew').onchange = e => { cfg.newPerDay = Math.min(100, Math.max(1, +e.target.value || 20)); e.target.value = cfg.newPerDay; saveAll(); buildLearnQueue(); };
+$('cfgGoal').onchange = e => { cfg.goal = Math.min(500, Math.max(1, +e.target.value || 30)); e.target.value = cfg.goal; saveAll(); };
+$('cfgRemindTime').onchange = e => { cfg.remindTime = e.target.value || '20:00'; saveAll(); };
+$('cfgRemindOn').onchange = e => {
+  cfg.remindOn = e.target.checked; saveAll();
+  if (cfg.remindOn && 'Notification' in window && Notification.permission === 'default') {
+    Notification.requestPermission().then(updateRemindStatus).catch(() => {});
+  }
+  updateRemindStatus();
+};
+function updateRemindStatus() {
+  let s = '打开本页面时检查；到点未完成目标则横幅提醒';
+  if (cfg.remindOn && 'Notification' in window) {
+    s += Notification.permission === 'granted' ? ' · 系统通知已开启' : ' · 系统通知未授权（仅页面内横幅）';
+  }
+  $('remindStatus').textContent = s;
+}
+function checkReminder() {
+  if (!cfg.remindOn || !cfg.remindTime) return;
+  const now = new Date();
+  const hm = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+  const today = dstr();
+  if (hm >= cfg.remindTime && localStorage.getItem(K.remind) !== today) {
+    const t = log[today] || {};
+    const doneCnt = (t.n || 0) + (t.r || 0);
+    if (doneCnt < cfg.goal) {
+      localStorage.setItem(K.remind, today);
+      $('remindText').textContent = `该背单词啦！今日还差 ${cfg.goal - doneCnt} 张（目标 ${cfg.goal}）`;
+      $('remindBanner').hidden = false;
+      try {
+        if ('Notification' in window && Notification.permission === 'granted')
+          new Notification('背单词提醒', { body: `今日还差 ${cfg.goal - doneCnt} 张，坚持打卡！` });
+      } catch (e) {}
+    }
+  }
+}
+$('remindGo').onclick = () => { $('remindBanner').hidden = true; showView('viewStudy'); };
+$('remindClose').onclick = () => { $('remindBanner').hidden = true; };
+setInterval(checkReminder, 30000);
+
+$('btnIcs').onclick = () => {
+  const [hh, mm] = (cfg.remindTime || '20:00').split(':');
+  const start = new Date(); start.setHours(+hh, +mm, 0, 0);
+  if (start < new Date()) start.setDate(start.getDate() + 1);
+  const fmt = d => d.getFullYear() + String(d.getMonth() + 1).padStart(2, '0') + String(d.getDate()).padStart(2, '0') + 'T' + String(d.getHours()).padStart(2, '0') + String(d.getMinutes()).padStart(2, '0') + '00';
+  const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//VocabCards//SRS//CN', 'CALSCALE:GREGORIAN', 'BEGIN:VEVENT',
+    'UID:vc-' + P + '-' + Date.now() + '@vocab-cards',
+    'DTSTAMP:' + fmt(new Date()),
+    'DTSTART;TZID=Asia/Shanghai:' + fmt(start),
+    'RRULE:FREQ=DAILY',
+    'SUMMARY:背单词提醒 · ' + document.title.replace(/[|\\\/:*?"<>]/g, ''),
+    'DESCRIPTION:打开 ' + location.href + ' 完成今日新词与复习（目标 ' + cfg.goal + ' 张）',
+    'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+  download('背单词每日提醒.ics', ics, 'text/calendar;charset=utf-8');
+};
+
+function renderAch() {
+  let days = 0, newAll = 0, revAll = 0, qAll = 0;
+  for (const d in log) { if (hasActivity(d)) days++; const e = log[d]; newAll += e.n || 0; revAll += e.r || 0; qAll += e.q || 0; }
+  let mastered = 0; for (let i = 0; i < ALL.length; i++) { const c = S[idOf(i)]; if (c && c.s === 2) mastered++; }
+  const st = streak();
+  const ach = [
+    ['起步', '完成第一天学习', days >= 1],
+    ['连续 7 天', '坚持打卡一周', st >= 7],
+    ['连续 30 天', '坚持打卡一个月', st >= 30],
+    ['新学 100 词', '累计学习 100 个新词', newAll >= 100],
+    ['新学 500 词', '累计学习 500 个新词', newAll >= 500],
+    ['掌握 100 词', '100 个词进入已掌握', mastered >= 100],
+    ['全部掌握', ALL.length + ' 张全部掌握', mastered >= ALL.length],
+    ['首次测验', '完成任意一次测试', qAll > 0],
+    ['测验满分', '单次测试全部答对', !!localStorage.getItem(K.perfect)],
+    ['复习 500 次', '累计复习 500 次', revAll >= 500],
+    ['错题清零', '错题本从有到清空', !!localStorage.getItem(K.everWrong) && wrongSet.size === 0]
+  ];
+  $('achGrid').innerHTML = ach.map(a => `<div class="a ${a[2] ? 'done' : 'locked'}"><b>${a[2] ? '✓ ' : ''}${a[0]}</b>${a[1]}</div>`).join('');
+}
+$('btnResetAll').onclick = () => {
+  if (!confirm('确定清空本套卡片的全部学习数据？此操作不可恢复！')) return;
+  if (!confirm('再次确认：所有学习记录、自定义词表、统计数据都将被删除。')) return;
+  Object.values(K).forEach(k => localStorage.removeItem(k));
+  localStorage.removeItem(KNOWN_KEY); localStorage.removeItem(WRONG_KEY);
+  location.reload();
+};
+
+// ---------- 启动 ----------
+updateRemindStatus();
+checkReminder();
+buildLearnQueue();
+}
 </script>
 </body>
 </html>
