@@ -703,8 +703,9 @@ function download(name, text, mime) {
 }
 
 // ---------- 音频播放（两种模式共用） ----------
-let _audioCache = {};
-const _audioRev = String(Date.now());
+// 每次点击都新建 Audio：不复用旧实例，避免移动端复用 ended/失败状态导致“点了没声音”。
+// 不在 URL 上拼时间戳：保留浏览器 HTTP 缓存，弱网下第二次播放可立即出声。
+let _curAudio = null;
 function audioUrl(rel) {
   if (!rel) return '';
   const p = location.pathname.replace(/index\.html$/, '').replace(/\/$/, '');
@@ -712,21 +713,43 @@ function audioUrl(rel) {
   const up = '../'.repeat(Math.max(0, segs.length - 1));
   return new URL(up + rel, document.baseURI).href;
 }
-function playAudio(url, btn) {
-  if (!url) return;
-  const prev = _audioCache['_current'];
-  if (prev && prev !== _audioCache[url]) { try { prev.pause(); prev.currentTime = 0; } catch (e) {} }
-  let a = _audioCache[url];
-  if (!a || a.error) {
-    a = new Audio(); a.preload = 'none';
-    a.src = url + (url.includes('?') ? '&' : '?') + 'v=' + _audioRev;
-    _audioCache[url] = a;
-  }
-  _audioCache['_current'] = a;
+function speakFallback(text, mark) {
+  if (!text || !('speechSynthesis' in window)) { if (mark) mark(); return; }
+  try {
+    const u = new SpeechSynthesisUtterance(String(text).replace(/<[^>]+>/g, ''));
+    u.lang = 'en-US';
+    u.rate = 0.9;
+    if (mark) { u.onend = mark; u.onerror = mark; }
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+  } catch (e) { if (mark) mark(); }
+}
+function playAudio(url, btn, text) {
+  if (!url) { speakFallback(text, btn ? () => btn.classList.remove('playing') : null); return; }
+  if (_curAudio) { try { _curAudio.pause(); } catch (e) {} }
+  const a = new Audio();
+  a.preload = 'auto';
+  a.src = url;
+  _curAudio = a;
+  const mark = () => { if (btn) btn.classList.remove('playing'); };
+  a.onended = mark;
+  a.onerror = () => { speakFallback(text, mark); };   // MP3 缺失/加载失败 → 用系统语音朗读兜底
   if (btn) btn.classList.add('playing');
-  const cleanup = () => { if (btn) btn.classList.remove('playing'); };
-  a.onended = cleanup; a.onerror = cleanup;
-  try { a.play().catch(e => { console.warn('audio play failed:', e); cleanup(); }); } catch (e) { cleanup(); }
+  const retry = () => {
+    if (a.error) { speakFallback(text, mark); return; }
+    try {
+      a.load();
+      const p2 = a.play();
+      if (p2 && p2.catch) p2.catch(() => speakFallback(text, mark));
+    } catch (e) { speakFallback(text, mark); }
+  };
+  try {
+    const p = a.play();
+    if (p && p.catch) p.catch(err => {
+      if (err && err.name === 'NotAllowedError') { mark(); return; }
+      retry();
+    });
+  } catch (e) { retry(); }
 }
 
 if (!LEARN_MODE) {
@@ -868,7 +891,7 @@ function renderDone() {
 $('speakFront').addEventListener('click', e => {
   e.stopPropagation(); e.preventDefault();
   const d = DATA[queue[cur]];
-  if (d.audio) { playAudio(audioUrl(d.audio), $('speakFront')); }
+  if (d.audio) { playAudio(audioUrl(d.audio), $('speakFront'), d.en); }
 });
 
 // ---------- interactions ----------
@@ -1199,7 +1222,7 @@ $('speakFront').addEventListener('click', e => {
   e.stopPropagation(); e.preventDefault();
   if (session.cur >= session.queue.length) return;
   const d = ALL[indexOfId(currentId())];
-  if (d.audio) playAudio(audioUrl(d.audio), $('speakFront'));
+  if (d && d.audio) playAudio(audioUrl(d.audio), $('speakFront'), d.en);
 });
 document.onkeydown = e => {
   if (e.target && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
@@ -1271,7 +1294,7 @@ function renderList(reset) {
 }
 $('listRows').addEventListener('click', e => {
   const say = e.target.closest('[data-say]');
-  if (say) { const d = ALL[+say.dataset.say]; if (d.audio) playAudio(audioUrl(d.audio), say); return; }
+  if (say) { const d = ALL[+say.dataset.say]; if (d.audio) playAudio(audioUrl(d.audio), say, d.en); return; }
   const uw = e.target.closest('[data-unwrong]');
   if (uw) { const id = isNaN(+uw.dataset.unwrong) ? uw.dataset.unwrong : +uw.dataset.unwrong; wrongSet.delete(id); saveAll(); renderList(); return; }
   const tl = e.target.closest('[data-tolist]');
@@ -1545,8 +1568,10 @@ $('btnQuizQuit').onclick = renderQuizMenu;
 $('quizSpeak').addEventListener('click', e => {
   e.stopPropagation(); e.preventDefault();
   if (!quiz) return;
-  const d = ALL[indexOfId(quiz.qs[quiz.cur].id)];
-  if (d.audio) playAudio(audioUrl(d.audio), $('quizSpeak'));
+  const q = quiz.qs[quiz.cur];      // 答完最后一题后 quiz.cur 会越界，需保护
+  if (!q) return;
+  const d = ALL[indexOfId(q.id)];
+  if (d && d.audio) playAudio(audioUrl(d.audio), $('quizSpeak'), d.en);
 });
 
 // ---------- 统计模块 ----------
