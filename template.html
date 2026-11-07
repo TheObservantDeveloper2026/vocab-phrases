@@ -104,6 +104,7 @@
   #viewStudy {
     display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1;
   }
+  #viewStudy[hidden] { display: none !important; }
   #viewList, #viewQuiz, #viewStats, #viewMe { max-width: 640px; margin: 0 auto; }
 
   .progress-wrap { width: 100%; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
@@ -153,6 +154,8 @@
     word-break: break-word;
     line-height: 1.2;
   }
+  /* 长题干（法条问答类卡片）缩小字号 */
+  .word.long { font-size: 20px; line-height: 1.55; font-weight: 600; }
   .word.zh { font-size: clamp(26px, 6vw, 42px); color: var(--primary-dark); font-weight: 600; }
   .ipa {
     margin-top: 10px;
@@ -367,6 +370,9 @@
     padding: 26px 20px; text-align: center; margin-bottom: 14px;
   }
   .quiz-qbox .word { font-size: clamp(24px, 6vw, 38px); }
+  /* 长题干（法条问答类卡片）缩小字号，避免撑破 */
+  .quiz-qbox .word.long { font-size: 18px; line-height: 1.55; }
+  .face.back .word.zh.long { font-size: 16px; line-height: 1.75; font-weight: 500; text-align: left; }
   .quiz-opt {
     display: block; width: 100%; text-align: left; margin-bottom: 10px;
     padding: 12px 14px; border: 1px solid #dfe3ee; border-radius: 12px;
@@ -784,6 +790,13 @@ function setExample(d) {
   $('exZhB').textContent = hasZh ? ex.zh : '';
 }
 
+// 背面释义：长答案（法条问答类）自动缩小字号并左对齐
+function setBackZh(html) {
+  const w = $('wordBack');
+  w.innerHTML = html || '';
+  w.classList.toggle('long', stripTags(html || '').length > 45);
+}
+
 if (!LEARN_MODE) {
 // ================= 经典模式（原有逻辑，未改动） =================
 const store = {
@@ -862,6 +875,7 @@ function render() {
   $('btnKnown').hidden = true;
   // 正面内容立即更新（翻回时正面后半段才可见，安全）
   $('wordFront').innerHTML = d.en;
+  $('wordFront').classList.toggle('long', String(d.en).length > 24);
   $('ipaText').textContent = d.ipa || '';
   $('ipaFront').hidden = !d.ipa;
   // 英语正面：有 MP3 就显示喇叭（法律类卡虽无 IPA 但有 MP3 也会显示）
@@ -877,19 +891,19 @@ function render() {
   // 答案（背面）内容：若当前已翻转，翻回动画前半段背面仍可见，
   // 先清空避免新答案闪现，等动画过半（约 250ms）背面不可见时再填入
   if (wasFlipped) {
-    $('wordBack').innerHTML = '';
+    setBackZh('');
     $('enBack').textContent = '';
     $('tagBack').textContent = '';
     $('exWrapB').hidden = true;
     backFillTimer = setTimeout(() => {
-      $('wordBack').innerHTML = d.zh;
+      setBackZh(d.zh);
       $('tagBack').textContent = d.group;
       $('enBack').textContent = d.en + (d.ipa ? '  ' + d.ipa : '');
       setExample(d);
       backFillTimer = null;
     }, 250);
   } else {
-    $('wordBack').innerHTML = d.zh;
+    setBackZh(d.zh);
     $('tagBack').textContent = d.group;
     $('enBack').textContent = d.en + (d.ipa ? '  ' + d.ipa : '');
     setExample(d);
@@ -1165,6 +1179,7 @@ function renderLearnCard() {
   $('btnFlip').hidden = false;
   $('rateBar').hidden = true;
   $('wordFront').innerHTML = esc(d.en);
+  $('wordFront').classList.toggle('long', String(d.en).length > 24);
   $('ipaText').textContent = d.ipa || '';
   $('ipaFront').hidden = !d.ipa;
   $('speakFront').hidden = !d.audio;
@@ -1184,17 +1199,17 @@ function renderLearnCard() {
   $('btnHard').querySelector('small').textContent = previewIv(c, 1) + ' 天后复习';
   $('btnGood').querySelector('small').textContent = previewIv(c, 2) + ' 天后复习';
   if (wasFlipped) {
-    $('wordBack').innerHTML = ''; $('enBack').textContent = ''; $('tagBack').textContent = '';
+    setBackZh(''); $('enBack').textContent = ''; $('tagBack').textContent = '';
     $('exWrapB').hidden = true;
     backFillTimer = setTimeout(() => {
-      $('wordBack').innerHTML = d.zh;
+      setBackZh(d.zh);
       $('tagBack').textContent = d.group || '自定义';
       $('enBack').textContent = d.en + (d.ipa ? '  ' + d.ipa : '');
       setExample(d);
       backFillTimer = null;
     }, 250);
   } else {
-    $('wordBack').innerHTML = d.zh;
+    setBackZh(d.zh);
     $('tagBack').textContent = d.group || '自定义';
     $('enBack').textContent = d.en + (d.ipa ? '  ' + d.ipa : '');
     setExample(d);
@@ -1548,6 +1563,7 @@ function renderQuizQ() {
   $('qProgFill').style.width = (quiz.cur / quiz.qs.length * 100) + '%';
   $('qProgNum').textContent = `${quiz.cur + 1}/${quiz.qs.length}`;
   $('quizWord').innerHTML = esc(d.en);
+  $('quizWord').classList.toggle('long', String(d.en).length > 24);
   $('quizIpaText').textContent = d.ipa || '';
   $('quizIpa').hidden = !d.ipa && !d.audio;
   $('quizSpeak').hidden = !d.audio;
